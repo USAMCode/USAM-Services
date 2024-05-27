@@ -1,118 +1,167 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={`min-h-screen ${inter.className}`}>
+      <br />
+
+      <div className="flex flex-row bg-white text-Neutral-400 font-mono italic font-bold justify-between">
+        <div><h1 className="font-bubble text-3xl">USAM Technology</h1></div>
+
+        <div>
+          <ul className="flex flex-row space-x-4 text-lg">
+            <li className="cursor-pointer hover:text-gray-700">Home</li>
+            <li className="cursor-pointer hover:text-gray-700">Services</li>
+            <li className="cursor-pointer hover:text-gray-700">About</li>
+            <li className="cursor-pointer hover:text-gray-700">Contact</li>
+          </ul>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <br />
+      {/* ============================================== IMAGE SECTION =============================================================================== */}
+
+      <div className="flex w-full">
+        <img 
+          src="/images/created_with_our_tool_center@2x.webp" 
+          alt="Picture of the author" 
+          className="w-full h-96 object-cover" 
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      {/* ============================================== SECTION 2 SECTION =============================================================================== */}
+      
+      <div className="flex flex-row"> 
+        <div>
+          <h1>ABOUT US</h1>
+          <h3>We Turn Ideas Into Reality</h3>
+          <p>We apply innovative design solutions to enhance people’s residential well-being and to help workplaces succeed & achieve more in the comfortable environments!
+            All our team collaborates with our clients, across all of our 3 offices, which are located throughout the US. Our mission is to implement the outstanding design ideas and solutions for any project we’re working on. During that process, we carefully combine client’s guidelines, technical possibilities as well as the environmental issues. Engineering and interior design solutions that we deliver are usually born after a collaborative process.
           </p>
-        </a>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div>
+          <h1>17</h1>
+          <h3>YEARS</h3>
+          <h5>OF SUCCESSFUL WORK IN THE MARKET</h5>
+        </div>
       </div>
+
+      <br></br>
+
+      {/* ============================================== SECTION 3 SECTION =============================================================================== */}
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+
+      <br></br>
+      <div>
+        <h1>Our Services</h1>
+
+        <h3>Automation</h3>
+        <h3>Consulting</h3>
+        <h3>Data & Insights</h3>
+
+      </div>
+
+      <br></br>
+
+    {/* ============================================== SECTION 4 SECTION =============================================================================== */}
+
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+
+      <br></br>
+      <div className="flex flex-row">
+      <div><h1>PROJECTS</h1></div>
+      <div><p>Below you can take a look at our featured and recent projects that have been numerously awarded for our unique architectural approach.</p></div>
+      </div>
+
+      {/* ============================================== SECTION 5 SECTION =============================================================================== */}
+
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+
+      <br></br>
+      <div className="flex flex-row">
+      <div><h1>TESTIMONIALS</h1></div>
+      <div><p>CUSTOMER 1.</p></div>
+      </div>
+
+      {/* ============================================== SECTION 6 SECTION =============================================================================== */}
+
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+
+      <br></br>
+      <div className="flex flex-row">
+      <div><h1>GET IN TOUCH WITH OUR TEAM</h1></div>
+      <div><p>LET’S WORK TOGETHER!</p></div>
+      </div>
+
+
+      {/* ============================================== SECTION 7 SECTION =============================================================================== */}
+
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+      <hr className=""></hr>
+
+      <br></br>
+      {/* ========================================= CHAT BOT ======================================================================= */}
+
+      <div><script src="//code.tidio.co/cnt7rui7jqr7ydpajx0ogmjeavdqmsua.js"></script></div>
+
+      {/* ========================================== CHAT BOT ================================================================== */}
     </main>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* =================================================================================================== */}
+
+      {/* <div className="relative">
+      <video autoPlay loop muted className="w-full h-full object-cover bg-black" preload="none">
+        <source src="/1616969.mp4" type="video/mp4" />
+        <source src="/1616969.webm" type="video/webm" />
+        <track
+          src="/path/to/captions.vtt"
+          kind="subtitles"
+          srcLang="en"
+          label="English"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div className="absolute inset-0 flex items-center justify-center">
+        <p className="font-bubble bubble-effect text-white text-3xl">
+          Bubble Font Example
+        </p>
+
+      </div>
+    </div> */}
+
+      {/* ============================================================================================================= */}

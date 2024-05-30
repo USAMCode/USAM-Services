@@ -4,9 +4,10 @@ import ServicesDropdown from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Section5() {
+export default function Section6() {
   return (
     <main className={`${inter.className}`}>
+
       <hr className=""></hr>
       <hr className=""></hr>
       <hr className=""></hr>
@@ -14,20 +15,12 @@ export default function Section5() {
 
       <br></br>
       <div className="flex flex-row">
-      <div><h1>TESTIMONIALS</h1></div>
-      <div><p>CUSTOMER 1.</p></div>
+      <div><div>GET IN TOUCH WITH OUR TEAM</div></div>
+      <div><div>LET’S WORK TOGETHER!</div></div>
       </div>
     </main>
   );
 }
-
-
-
-
-
-
-
-
 
 
 

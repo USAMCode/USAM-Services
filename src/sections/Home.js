@@ -1,35 +1,24 @@
-import { Inter } from "next/font/google";
+import { motion } from "framer-motion";
+import { slideIn } from "@/utils/motion";
+import SectionWrapper from "@/section/SectionWrapper";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Section1() {
+const Home = () => {
   return (
-    <main className={`${inter.className}`}>
-      <div className="bg-neutral-800 h-screen flex flex-col justify-center items-center text-center p-8">
-        <h1 className="text-4xl md:text-6xl text-white font-bold mb-4">
-          Welcome to Our Service
-        </h1>
-        <p className="text-lg md:text-xl text-gray-300 mb-8">
-          We provide the best solutions to enhance your business and life.
-        </p>
-        <button className="bg-orange-500 text-white px-6 py-3 rounded-full text-lg md:text-xl hover:bg-orange-600 transition duration-300">
-          Learn More
-        </button>
+    <div  className="bg-[#CDD2E8] h-screen flex flex-col justify-center items-center text-center bg-fixed">
+      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="text-4xl md:text-6xl text-black font-bold mb-4">
+        Welcome to Our Service
+      </motion.div>
+      <div className="text-lg md:text-xl text-black mb-8">
+        We provide the best solutions to enhance your business and life.
       </div>
-    </main>
+      <button className="bg-primary text-white px-6 py-3 rounded-full text-lg md:text-xl hover:bg-orange-600 transition duration-300">
+        Learn More
+      </button>
+    </div>
   );
-}
+};
 
-
-
-
-
-
-
-
-
-
-
+export default SectionWrapper(Home, "Home");
 
 // import { Inter } from "next/font/google";
 // import Image from "next/image";
@@ -44,10 +33,10 @@ export default function Section1() {
 //         <div className="bg-neutral-800 h-full"></div>
 
 //       {/* <div className=" w-full">
-//         <img 
-//           src="/images/pexels-photo-2290740.jpeg" 
-//           alt="Picture of the author" 
-//           className="w-full h-96 object-cover bg-fixed" 
+//         <img
+//           src="/images/pexels-photo-2290740.jpeg"
+//           alt="Picture of the author"
+//           className="w-full h-96 object-cover bg-fixed"
 //         />
 //       </div> */}
 
@@ -65,20 +54,6 @@ export default function Section1() {
 //         </video>
 //       </div> */}
 
-     
 //     </main>
 //   );
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,8 +8,8 @@ export default function Section4() {
   return (
     <main className={` ${inter.className}`}>
       <div className="flex flex-row">
-      <div><h1 className="font-bold">PROJECTS</h1></div>
-      <div><p>Below you can take a look at our featured and recent projects that have been numerously awarded for our unique architectural approach.</p></div>
+      <div><div className="font-bold">PROJECTS</div></div>
+      <div><div>Below you can take a look at our featured and recent projects that have been numerously awarded for our unique architectural approach.</div></div>
       </div>
 
     </main>

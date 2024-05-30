@@ -1,15 +1,12 @@
-import { Inter } from "next/font/google";
-import Image from "next/image";
+import React from 'react'
+import Contact from '@/utils/Contact'
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const Footer = () => {
   return (
-    <main className={`min-h-screen ${inter.className}`}>
-        
-    </main>
-  );
+    <div className='flex flex-col bg-white p-10'>
+      <Contact/>
+    </div>
+  )
 }
 
-
-
+export default Footer

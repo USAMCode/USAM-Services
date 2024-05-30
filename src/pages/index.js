@@ -1,25 +1,27 @@
 import { Inter } from "next/font/google";
-import ServicesDropdown from "@/components/header";
-import Section1 from "./Section1";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
-import Section4 from "./Section4";
-import Section5 from "./Section5";
-import Section6 from "./Section6";
+import Header from "@/components/header";
+import Home from "../sections/Home";
+import About from "../sections/About";
+import Services from "../sections/Services";
+import Section4 from "../sections/Section4";
+import Section5 from "../sections/Section5";
+import Section6 from "../sections/Section6";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function App() {
   return (
-    <main className={`${inter.className}`}>
-      <ServicesDropdown/>
-      <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
+    <>
+      <Header/>
+      <Home/>
+      <About/>
+      <Services/>
+      <Footer/>
+      {/* <Section4/>
       <Section5/>
-      <Section6/>
-    </main>
+      <Section6/> */}
+    </>
   );
 }
 

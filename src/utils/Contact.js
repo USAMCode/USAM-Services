@@ -82,11 +82,11 @@ const Contact = () => {
         autoHideDuration={2000}
       /> */}
       <div
-        className={`flex flex-col w-1/2 justify-center items-center xs:gap-10 overflow-hidden`}
+        className={`flex xl:flex-row flex-col-reverse m-auto justify-around  xs:gap-10 overflow-hidden`}
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.4] w-1/2 bg-quaternary p-6 rounded-2xl"
+          className="flex-[0.4] bg-quaternary p-6 rounded-2xl"
         >
           {/* <p className="sm:text-[18px] text-[14px] text-tertiary uppercase tracking-wider">
             Get in touch
@@ -130,7 +130,8 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
-                className="bg-white py-4 px-4 placeholder:text-primary text-black rounded-lg outline-none border-none font-medium"
+                className="bg-white py-4 px-4 placeholder:text-primary
+                 text-black rounded-lg outline-none border-none font-medium"
               />
             </label>
 
@@ -142,8 +143,84 @@ const Contact = () => {
             </button>
           </form>
         </motion.div>
+        <motion.div
+          variants={slideIn("right", "tween", 0.2, 1)}
+          className="xl:flex xl:h-auto w-1/3 gap-4 pt-10 px-10 xs:px-2 flex flex-col items-center"
+        >
+          <div className="flex text-black text-5xl xs:text-4xl font-semibold">
+            Follow Us
+          </div>
+          <ul className="flex flex-row gap-12 xs:gap-4 flex-wrap py-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+              <a
+                className="flex flex-row gap-5 items-center"
+                // href="https://www.linkedin.com/in/joel-revington-105994135"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <img
+                  className="w-12 h-12"
+                  src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Linkedin.png"
+                  alt=""
+                  />
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex flex-row gap-5 items-center"
+                // href="https://twitter.com/JoelRevington15"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <img
+                  className="w-12 h-12"
+                  src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Twitter.png"
+                  alt=""
+                  />
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex flex-row gap-5 items-center"
+                // href="https://www.instagram.com/joel_revington/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="w-12 h-12"
+                  src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Instagram.png"
+                  alt=""
+                  />
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex flex-row gap-5 items-center"
+                // href="https://www.facebook.com/profile.php?id=100009270750468"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <img
+                  className="w-12 h-12"
+                  src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Facebook.png"
+                  alt=""
+                  />
+              </a>
+            </li>
+          </ul>
+          <div className="flex flex-row w-full justify-around">
+            <div className="flex flex-col gap-2 w-full text-black text-center justify-around">
+              <div>Privacy Policy</div>
+              <div>Terms & Conditions</div>
+            </div>
+            <div className="flex flex-col gap-2 w-full text-black justify-around text-center">
+              <div>1234567890</div>
+              <div>usam.tech@gmail.com</div>
+            </div>
+          </div>
+            <div className="flex text-center text-black">No 4, 1st Cross Street, CIT Colony, Mylapore, Chennai – 600004.</div>
+        </motion.div>
       </div>
-      <div className="flex flex-row w-1/2"></div>
     </>
   );
 };

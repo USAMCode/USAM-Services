@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import Home from "../sections/Home";
 import About from "../sections/About";
 import Services from "../sections/Services";
-import Section4 from "../sections/Section4";
+import Projects from "../sections/Projects";
 import Section5 from "../sections/Section5";
 import Section6 from "../sections/Section6";
 import Footer from "@/components/footer";
@@ -17,10 +17,10 @@ export default function App() {
       <Home/>
       <About/>
       <Services/>
+      <Projects/>
       <Footer/>
-      {/* <Section4/>
-      <Section5/>
-      <Section6/> */}
+      {/* <Section5/> */}
+      {/* <Section6/> */}
     </>
   );
 }

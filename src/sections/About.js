@@ -17,7 +17,7 @@ const About = () => {
                 well-being and to help workplaces succeed & achieve more in
                 comfortable environments!
               </div>
-              <div className="text-lg italic w-2/3 font-extralight text-black mb-4">
+              <div className="text-lg italic w-2/3 font-light text-black mb-4">
                 Our team collaborates with clients across all our offices located
                 throughout the US. Our mission is to implement outstanding design
                 ideas and solutions for any project we’re working on, carefully

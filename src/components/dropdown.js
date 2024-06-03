@@ -207,7 +207,7 @@ const Products = () => {
 
 const TABS = [
   {
-    title: "Products",
+    title: "Services",
     Component: Products,
   },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));

@@ -7,6 +7,7 @@ import Projects from "../sections/Projects";
 import Section5 from "../sections/Section5";
 import Section6 from "../sections/Section6";
 import Footer from "@/components/footer";
+import Testimonials from "@/sections/Testimonials";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function App() {
       <Home/>
       <About/>
       <Services/>
+      <Testimonials/>
       <Projects/>
       <Footer/>
       {/* <Section5/> */}

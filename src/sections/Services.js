@@ -1,14 +1,17 @@
 import SectionWrapper from "@/section/SectionWrapper";
 import { Inter } from "next/font/google";
+import { motion } from "framer-motion";
+import { slideIn } from "@/utils/motion";
+import { fadeIn } from "@/utils/motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const Services = () => {
   return (
     <>
-      <div className="bg-quaternary justify-center items-center text-center px-4 py-10">
-        <div>
-          <div className="text-6xl font-bold text-black">Our Services</div>
+      <div className="bg-quaternary h-screen justify-center items-center text-center px-4 py-10">
+        <div className="flex w-full justify-center py-8">
+          <motion.div variants={fadeIn ("left", "type", 0.2, 0.6)} className="text-6xl font-bold text-black">Our Services</motion.div>
         </div>
         <div className="flex flex-row w-[95%] m-auto justify-around text-lg text-black p-10">
           <div className="flex flex-col gap-2 justify-center items-center">
@@ -19,11 +22,11 @@ const Services = () => {
             /> */}
             <div className="h-72 rounded-xl w-96 bg-white"></div>
             <div className="flex flex-col w-96">
-              <div className="font-semibold text-3xl">Automation</div>
-              <div className="font-light">
+              <motion.div variants={fadeIn ("left", "type", 0.5, 0.7)} className="font-semibold text-3xl">Automation</motion.div>
+              <motion.div variants={fadeIn ("left", "type", 0.8, 0.5)} className="font-light">
                 Unlock innovation and creativity and achieve outcomes faster
                 with automation.
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="flex flex-col gap-2 items-center">
@@ -34,11 +37,11 @@ const Services = () => {
               className="object-contain w-[500px] bg-fixed rounded-lg"
             /> */}
             <div className="flex flex-col w-96">
-              <div className="font-semibold text-3xl">Consulting</div>
-              <div className="font-light w-">
+              <motion.div variants={fadeIn ("left", "type", 0.5, 0.5)}  className="font-semibold text-3xl">Consulting</motion.div>
+              <motion.div variants={fadeIn ("left", "type", 0.8, 0.5)}  className="font-light w-">
                 Guiding Your Project Towards Success: Expert Consulting Every
                 Step of the Way.
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="flex flex-col gap-2 items-center">
@@ -49,11 +52,11 @@ const Services = () => {
               className="object-contain w-[500px] bg-fixed rounded-lg"
             /> */}
             <div className="flex flex-col w-96">
-              <div className="font-semibold text-3xl">Data & Insights</div>
-              <div className="font-light">
+              <motion.div variants={fadeIn ("left", "type", 0.5, 0.5)}  className="font-semibold text-3xl">Data & Insights</motion.div>
+              <motion.div variants={fadeIn ("left", "type", 0.8, 0.5)} className="font-light">
                 The right people get the right information at the right time
                 with connected data.
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -61,4 +64,4 @@ const Services = () => {
     </>
   );
 };
-export default SectionWrapper(Services, "Services");
+export default SectionWrapper(Services, "services");

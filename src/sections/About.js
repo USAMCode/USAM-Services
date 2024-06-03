@@ -1,12 +1,12 @@
 import SectionWrapper from "@/section/SectionWrapper";
 import { motion } from "framer-motion";
-import { slideIn, fadeScaleIn, slideRotateIn } from "@/utils/motion";
+import { slideIn, fadeScaleIn, slideRotateIn ,fadeIn } from "@/utils/motion";
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:flex-row p-4 bg-white">
+    <div className="flex flex-col h-screen lg:flex-row px-4 py-10 bg-white">
       <div className="flex flex-col gap-4 py-8 items-center text-black justify-center">
-        <div className="text-6xl flex w-full justify-center font-bold text-primary">ABOUT US</div>
+        <motion.div variants={fadeIn ("left", "type", 0.5, 0.5)} className="text-6xl flex w-full justify-center font-bold text-primary">ABOUT US</motion.div>
         <div className="flex w-48 border-2 rounded-tr-full rounded-br-full border-secondary"></div>
         <div className="flex mt-8 flex-row">
           <div className="flex flex-col w-2/3">
@@ -37,4 +37,4 @@ const About = () => {
     </div>
   );
 };
-export default SectionWrapper(About, "About");
+export default SectionWrapper(About, "about");

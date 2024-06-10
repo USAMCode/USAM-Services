@@ -29,8 +29,8 @@ const Home = () => {
   });
 
   return (
-    <div className="flex flex-row bg-[#CDD2E8] h-screen">
-      <div className="flex flex-col w-3/5 justify-center items-center text-center bg-fixed">
+    <div className="flex flex-row bg-quaternary h-screen">
+      <div className="flex flex-col w-3/5 xs:w-full justify-center items-center text-center bg-fixed">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="text-4xl md:text-6xl text-black font-bold mb-4"
@@ -44,13 +44,13 @@ const Home = () => {
           Learn More
         </button>
       </div>
-      <div className="flex w-2/5 items-center justify-end">
-        <div className="w-5/6 h-3/5 relative rounded-md bg-secondary z-10">
+      <div className="flex w-2/5 xs:hidden items-center justify-end">
+        <div className="w-5/6 h-3/5 relative rounded-md bg-primary z-10">
           <div className="absolute w-full h-full rounded-md top-16 right-16 bg-white">
-            <div className="relative w-full h-full object-contain">
+            <div className="relative w-full h-full object-contain rounded-md">
               {transitions((style, item) => (
                 <animated.div style={{ ...style, position: 'absolute', top: 0, left: 0, width: '100%', height:'100%', objectFit:'cover' }}>
-                  <img src={item} className="w-full h-full object-cover" alt={`slide ${index}`} />
+                  <img src={item} className="w-full h-full object-cover rounded-md" alt={`slide ${index}`} />
                 </animated.div>
               ))}
             </div>

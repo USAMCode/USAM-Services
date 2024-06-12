@@ -3,11 +3,13 @@ import { Inter } from "next/font/google";
 import { motion } from "framer-motion";
 import { slideIn } from "@/utils/motion";
 import { fadeIn } from "@/utils/motion";
+import { Card, CardContent } from "@mui/material";
+import Link from "next/link";
 
 const Services = () => {
   return (
     <>
-      <div className="bg-quaternary flex flex-col h-screen justify-center items-center text-center px-4 xs:px-0 xs:py-10 py-10">
+      <div className="bg-quaternary flex flex-col h-screen justify-center items-center text-center md:text-start px-4 xs:px-0 xs:py-10 py-10">
         {/* <div className="flex w-full justify-center h-1/4 xs:1/5 items-center py-10 xs:py-5">
           <motion.div
             variants={fadeIn("", "", 0.2, 0.6)}
@@ -16,7 +18,7 @@ const Services = () => {
             Our Services
           </motion.div>
         </div> */}
-        <div className="flex xl:flex-row xs:flex-col xs:hidden sm:flex-col w-[95%] xs:w-full m-auto justify-around text-lg text-black p-10 xs:p-4">
+        <div className="flex xl:flex-row xs:flex-col xs:hidden md:hidden sm:flex-col w-[95%] xs:w-full m-auto justify-around text-lg text-black p-10 xs:p-4">
           <div className="flex flex-col gap-2 justify-center items-center">
             {/* <img
               src="/images/api.jpg"
@@ -87,7 +89,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-full h-4/5 justify-center items-center 2xl:hidden xl:hidden">
+        <div className="flex flex-col w-full h-4/5 justify-center items-center 2xl:hidden xl:hidden md:hidden">
           <div className="w-full p-4 h-full flex flex-col justify-center gap-6">
             <div className="relative overflow-hidden rounded-lg shadow-lg bg-white">
               <img
@@ -121,6 +123,47 @@ const Services = () => {
                 <div className="font-semibold text-lg">Data & Insights</div>
                 <div className="underline">Learn More</div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex w-[90%] h-full mx-auto 2xl:hidden xl:hidden lg:hidden xs:hidden">
+          <div className="flex flex-col w-full h-full gap-8">
+            <div className="flex flex-row w-full h-1/2 gap-4 justify-center items-center">
+              <Card sx={{backgroundImage:"url(https://usam.s3.ap-south-1.amazonaws.com/Image2.jpg)", opacity:"1"}} className="w-1/2 h-3/4">
+                <CardContent className="flex flex-col gap-2 h-full justify-center">
+                  <div className="flex font-semibold text-3xl">
+                    Automation
+                  </div>
+                  <div className="text-lg">
+                  Unlock innovation and creativity and achieve outcomes faster with automation.
+                  </div>
+                  <Link className="text-xl underline font-semibold" href="">Explore More</Link>
+                </CardContent>
+              </Card>
+              <Card sx={{backgroundImage:"url(https://usam.s3.ap-south-1.amazonaws.com/Image2.jpg)", opacity:"1"}} className="w-1/2 h-3/4">
+                <CardContent className="flex flex-col gap-2 h-full justify-center">
+                  <div className="flex font-semibold text-2xl">
+                    Consulting
+                  </div>
+                  <div className="text-lg">
+                  Unlock innovation and creativity and achieve outcomes faster with automation.
+                  </div>
+                  <Link className="text-xl underline font-semibold" href="">Explore More</Link>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="flex w-full h-1/2 justify-center">
+              <Card sx={{backgroundImage:"url(https://usam.s3.ap-south-1.amazonaws.com/Image2.jpg)", opacity:"1"}} className="w-1/2 h-3/4">
+                <CardContent className="flex flex-col gap-2 h-full justify-center">
+                  <div className="flex font-semibold text-2xl">
+                    Data & Insights
+                  </div>
+                  <div className="text-lg">
+                  Unlock innovation and creativity and achieve outcomes faster with automation.
+                  </div>
+                  <Link className="text-xl underline font-semibold" href="">Explore More</Link>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

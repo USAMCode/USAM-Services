@@ -1,9 +1,8 @@
 import "@/styles/globals.css";
-// import header from ""
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="App">
+    <div className="App w-screen overflow-x-hidden">
       <Component {...pageProps} />
     </div>
   )

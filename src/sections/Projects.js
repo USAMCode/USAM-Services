@@ -1,16 +1,74 @@
 // src/components/Projects.js
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "@/utils/motion";
 import SectionWrapper from "@/section/SectionWrapper";
-import { Carousel } from "react-bootstrap";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const CarouselComponent = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const Projects = [
+    {
+      "img":"",
+      "content":""
+    },
+    {
+      "img":"",
+      "content":""
+    },
+    {
+      "img":"",
+      "content":""
+    },
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const isLastSlide = currentIndex === Projects.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+  return (
+    <div className="w-full relative h-full ">
+      <div className="relative overflow-hidden h-full">
+        <div
+          className="flex transition-transform duration-500 ease-out h-full"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {Projects.map((project, index) => (
+            <div key={index} className="flex-shrink-0 focus:outline-none gap-4 h-full justify-center items-center w-full">
+              <div className="flex flex-col gap-4 h-full w-full justify-center items-center">
+                <img
+                  src=""
+                  alt="Welcome to USAM"
+                  className="w-full bg-white h-2/3" 
+                />
+                <div className="text-black">Welcome to USAM</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const Projects = () => {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    adaptiveHeight: true,
+  };
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex)
-  }
   return (
     <>
       <div className="h-screen w-full flex flex-col gap-4 justify-center bg-quaternary items-center text-center">
@@ -21,7 +79,7 @@ const Projects = () => {
           PROJECTS
         </motion.div> */}
         {/* <div className="flex w-56 xs:w-44 border-2 justify-center items-center text-center rounded-tr-full rounded-br-full border-secondary"></div> */}
-        <div className="flex justify-around w-[90%] mx-auto xs:hidden">
+        <div className="flex justify-around w-[90%] mx-auto xs:hidden md:hidden">
           <div className="relative m-4 text-black transition-transform duration-500 group hover:transform-none">
             <img
               src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg"
@@ -74,15 +132,42 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-full h-auto p-4 bg-white xl:hidden">
-          <Carousel controls={false} activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
-              <div className="flex flex-col justify-center items-center bg-white w-full">
-                <img src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg" alt=""/>
-                <div className="flex text-black">Welcome to USAM</div>
+        <div className="flex flex-row overflow-hidden w-full h-auto 2xl:hidden xl:hidden md:hidden">
+          <Slider {...settings} className="flex flex-row w-full p-4 h-full">
+            <div className="flex flex-col focus:outline-none gap-4 justify-center items-center w-full">
+              <div className="flex flex-col gap-4">
+                <img
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg"
+                  alt="Welcome to USAM"
+                  className="w-full"
+                />
+                <div className="text-black">Welcome to USAM</div>
               </div>
-            </Carousel.Item>
-          </Carousel>
+            </div>
+            <div className="flex flex-col focus:outline-none gap-4 justify-center items-center w-full">
+              <div className="flex flex-col gap-4">
+                <img
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg"
+                  alt="Welcome to USAM"
+                  className="w-full"
+                />
+                <div className="text-black">Welcome to USAM</div>
+              </div>
+            </div>
+            <div className="flex flex-col focus:outline-none gap-4 justify-center items-center w-full">
+              <div className="flex flex-col gap-4">
+                <img
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg"
+                  alt="Welcome to USAM"
+                  className="w-full"
+                />
+                <div className="text-black">Welcome to USAM</div>
+              </div>
+            </div>
+          </Slider>
+        </div>
+        <div className="2xl:hidden xl:hidden lg:hidden xs:hidden flex justify-center items-center w-[90%] h-screen mx-auto">
+          <CarouselComponent/>
         </div>
       </div>
     </>

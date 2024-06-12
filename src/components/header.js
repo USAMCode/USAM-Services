@@ -67,14 +67,14 @@ const Header= () => {
     }`}
   >
     <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-      <img className="w-64 xs:w-48 h-14 object-contain" src="https://usam.s3.ap-south-1.amazonaws.com/usam_logo.png" alt=""/>
-      <ul className="list-none flex flex-row justify-center xs:hidden gap-10">
+      <img className="w-64 xs:w-48 md:w-52 h-14 object-contain" src="https://usam.s3.ap-south-1.amazonaws.com/usam_logo.png" alt=""/>
+      <ul className="list-none flex flex-row justify-center xs:hidden sm:hidden md:hidden gap-10">
         {navLinks.map((nav) => (
           <li
             key={nav.id}
             className={`${
               active === nav.id ? "text-primary" : scrolled ? `text-white` : " text-black"
-            } hover:text-primary text-2xl font-semibold cursor-pointer`}
+            } hover:text-primary text-xl font-semibold cursor-pointer`}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
@@ -88,7 +88,7 @@ const Header= () => {
           </button>
       </ul>
 
-      <div className="hidden xl:hidden xs:flex sm:flex flex-1 justify-end items-center">
+      <div className="hidden xl:hidden xs:flex sm:flex md:flex flex-1 justify-end items-center">
         <img
           src={toggle ? "https://portfolio20072023.s3.ap-south-1.amazonaws.com/close.svg" : "https://portfolio20072023.s3.ap-south-1.amazonaws.com/Menu.svg"}
           alt="menu"

@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-row bg-quaternary h-screen">
-      <div className="flex flex-col w-3/5 xs:w-full md:hidden justify-center items-center text-center bg-fixed">
+      <div className="flex flex-col w-3/5 xs:w-full md:hidden lg:hidden sm:hidden justify-center items-center text-center bg-fixed">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="text-4xl md:text-6xl text-black font-bold mb-4"
@@ -44,7 +44,7 @@ const Home = () => {
           Learn More
         </button>
       </div>
-      <div className="flex w-2/5 xs:hidden md:hidden items-center justify-end">
+      <div className="flex w-2/5 xs:hidden sm:hidden md:hidden lg:hidden items-center justify-end">
         <div className="w-5/6 h-3/5 relative rounded-md bg-primary z-10">
           <div className="absolute w-full h-full rounded-md top-16 right-16 bg-white">
             <div className="relative w-full h-full object-contain rounded-md">
@@ -68,7 +68,7 @@ const Home = () => {
             <div className="flex absolute flex-col w-full h-full xs:hidden 2xl:hidden xl:hidden justify-center items-center text-center bg-fixed">
               <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
-                className="text-4xl md:text-6xl text-black font-bold mb-4"
+                className="text-4xl md:text-5xl sm:text-5xl lg:text-6xl text-black font-bold mb-4"
               >
                 Welcome to Our Service
               </motion.div>

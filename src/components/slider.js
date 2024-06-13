@@ -43,11 +43,11 @@ export default function Sliders() {
 
   return (
     <>
-      <div className="flex flex-col gap-10 justify-center items-center w-[90%] xs:w-[100%] h-full mx-auto">
-        <div className="flex text-5xl xs:text-3xl p-8 font-bold text-black">
+      <div className="flex flex-col gap-10 sm:gap-4 justify-center items-center w-[90%] xs:w-[100%] h-full mx-auto">
+        <div className="flex text-5xl xs:text-3xl sm:text-3xl p-8 font-bold text-black">
           We value our Client's Feedback
         </div>
-        <div className="relative flex xs:hidden md:hidden flex-col w-full h-2/3">
+        <div className="relative flex xs:hidden sm:hidden md:hidden flex-col w-full h-2/3">
           <div className="overflow-hidden h-full w-full justify-center flex flex-col rounded-lg">
             <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
               {slides.map((slide, index) => (
@@ -70,10 +70,9 @@ export default function Sliders() {
             </ReactCardCarousel>
           </div>
         </div>
-        <div className="flex w-full h-full xl:hidden 2xl:hidden md:hidden">
+        <div className="flex w-[90%] mx-auto h-full justify-center items-center xl:hidden 2xl:hidden md:hidden sm:hidden lg:hidden">
           <Carousel
             indicators={false}
-            show-arrows={false}
             leftControl
             rightControl
             className="p-4"
@@ -90,7 +89,7 @@ export default function Sliders() {
             ))}
           </Carousel>
         </div>
-        <div className="h-56 xs:hidden sm:hidden md:h-2/3 md:w-full xl:hidden 2xl:hidden">
+        <div className="xs:hidden sm:w-full sm:h-3/4 md:h-2/3 md:w-full xl:hidden 2xl:hidden lg:hidden">
           <Carousel indicators={false} leftControl rightControl>
             <div className="bg-white w-full h-full p-4">
               <div className="h-full w-full flex flex-col">

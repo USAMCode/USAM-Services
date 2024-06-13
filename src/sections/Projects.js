@@ -79,7 +79,7 @@ const Projects = () => {
           PROJECTS
         </motion.div> */}
         {/* <div className="flex w-56 xs:w-44 border-2 justify-center items-center text-center rounded-tr-full rounded-br-full border-secondary"></div> */}
-        <div className="flex justify-around w-[90%] mx-auto xs:hidden md:hidden">
+        <div className="flex justify-around w-[90%] mx-auto xs:hidden md:hidden sm:hidden">
           <div className="relative m-4 text-black transition-transform duration-500 group hover:transform-none">
             <img
               src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg"
@@ -132,7 +132,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row overflow-hidden w-full h-auto 2xl:hidden xl:hidden md:hidden">
+        <div className="flex flex-row overflow-hidden w-[90%] mx-auto h-auto 2xl:hidden xl:hidden md:hidden sm:hidden lg:hidden">
           <Slider {...settings} className="flex flex-row w-full p-4 h-full">
             <div className="flex flex-col focus:outline-none gap-4 justify-center items-center w-full">
               <div className="flex flex-col gap-4">
@@ -166,8 +166,24 @@ const Projects = () => {
             </div>
           </Slider>
         </div>
-        <div className="2xl:hidden xl:hidden lg:hidden xs:hidden flex justify-center items-center w-[90%] h-screen mx-auto">
+        <div className="2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden flex justify-center items-center w-[90%] h-screen mx-auto">
           <CarouselComponent/>
+        </div>
+        <div className="xs:hidden md:hidden lg:hidden xl:hidden 2xl:hidden flex w-[90%] mx-auto items-center overflow-hidden">
+          <div className="flex flex-row gap-4 overflow-x-scroll snap-x snap-mandatory items-center h-2/3">
+            <div className="flex flex-col gap-4 h-2/3 w-full p-2 justify-center items-center snap-center shrink-0">
+                <img className="object-cover w-full h-full" src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg" alt=""/>
+                <div className="text-xl font-semibold text-black">Welcome to USAM</div>
+            </div>
+            <div className="flex flex-col gap-4 h-2/3 w-full p-2 justify-center items-center snap-center shrink-0">
+                <img className="object-cover w-full h-full" src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg" alt=""/>
+                <div className="text-xl font-semibold text-black">Welcome to USAM</div>
+            </div>
+            <div className="flex flex-col gap-4 h-2/3 w-full p-2 justify-center items-center snap-center shrink-0">
+                <img className="object-cover w-full h-full" src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg" alt=""/>
+                <div className="text-xl font-semibold text-black">Welcome to USAM</div>
+            </div>
+          </div>
         </div>
       </div>
     </>

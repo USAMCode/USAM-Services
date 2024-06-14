@@ -6,7 +6,7 @@ import StandardisationAutomation from "./automation/StandardisationAutomation";
 import WorkflowEnforcement from "./automation/WorkflowEnforcement";
 import DrawingAutomation from "./automation/DrawingAutomation";
 import Head from 'next/head';
-import Tabs from "@/components/tab";
+import Tabs from "@/components/AutomationTab";
 const AutomationSample = () => {
   return (
     <>

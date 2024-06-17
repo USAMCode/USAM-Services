@@ -5,7 +5,7 @@ import StandardisationAutomation from '@/pages/services/automation/Standardisati
 import WorkflowEnforcement from '@/pages/services/automation/WorkflowEnforcement';
 import DrawingAutomation from '@/pages/services/automation/DrawingAutomation';
 
-const Tabs = () => {
+const AutomationTab = () => {
   const [activeTab, setActiveTab] = useState(0);
   const indicatorRef = useRef(null);
   const tabRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
@@ -31,7 +31,7 @@ const Tabs = () => {
         <div
           role="tablist"
           aria-label="tabs"
-          className="relative w-max mx-auto h-12 grid grid-cols-4 items-center px-[3px] rounded-full bg-gray-900/20 overflow-hidden shadow-2xl shadow-900/20 transition"
+          className="relative w-max mx-auto h-12 grid grid-cols-4 items-center px-[3px] rounded-full bg-gray-900/20 overflow-hidden shadow-2xl shadow-900/20 transition lg:px-0 lg:mx-auto lg:w-max lg:relative"
         >
           <div ref={indicatorRef} className="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full bg-primary shadow-md"></div>
           {['Product Configuration', 'Standardisation Automation', 'Workflow Enforcement', 'Drawing Automation'].map((tab, index) => (
@@ -52,7 +52,7 @@ const Tabs = () => {
             </button>
           ))}
         </div>
-        <div className="mt-6 relative rounded-3xl bg-white">
+        <div className="mt-6 relative rounded-3xl bg-white ">
           {[
             <ProductConfiguration key="0" />,
             <StandardisationAutomation key="1" />,
@@ -76,4 +76,4 @@ const Tabs = () => {
   );
 };
 
-export default Tabs;
+export default AutomationTab;

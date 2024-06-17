@@ -1,0 +1,79 @@
+import { useState, useRef, useEffect } from 'react';
+
+import Dashboard from '@/pages/services/Consulting/Dashboard';
+import DataIntegration from '@/pages/services/Consulting/DataIntegration';
+import DataManagement from '@/pages/services/Consulting/DataManagement';
+import IoTandSensorIntegration from '@/pages/services/Consulting/IoTandSensorIntegration';
+
+const ConsultingTab = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  const indicatorRef = useRef(null);
+  const tabRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+
+  useEffect(() => {
+    const handleIndicator = () => {
+      const currentTab = tabRefs[activeTab].current;
+      indicatorRef.current.style.width = `${currentTab.offsetWidth}px`;
+      indicatorRef.current.style.left = `${currentTab.offsetLeft}px`;
+    };
+
+    handleIndicator();
+    window.addEventListener('resize', handleIndicator);
+
+    return () => {
+      window.removeEventListener('resize', handleIndicator);
+    };
+  }, [activeTab]);
+
+  return (
+    <div className="w-full h-full px-8 sm:px-0">
+      <div className="sm:w-7/12 sm:mx-auto p-5">
+        <div
+          role="tablist"
+          aria-label="tabs"
+          className="relative w-max mx-auto h-12 grid grid-cols-4 items-center px-[3px] rounded-full bg-gray-900/20 overflow-hidden shadow-2xl shadow-900/20 transition"
+        >
+          <div ref={indicatorRef} className="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full bg-primary shadow-md"></div>
+          {['Data Management', 'Data Integration', 'Iot and Sensor Integration', 'Custom Dashboards and Reports'].map((tab, index) => (
+            <button
+              key={index}
+              ref={tabRefs[index]}
+              role="tab"
+              aria-selected={activeTab === index}
+              aria-controls={`panel-${index}`}
+              id={`tab-${index}`}
+              tabIndex={activeTab === index ? 0 : -1}
+              className={`relative block h-10 px-6 tab rounded-full ${
+                activeTab === index ? 'text-white' : 'text-gray-800'
+              }`}
+              onClick={() => setActiveTab(index)}
+            >
+              <span>{tab}</span>
+            </button>
+          ))}
+        </div>
+        <div className="mt-6 relative rounded-3xl bg-white">
+          {[
+            <DataManagement key="0" />,
+            <DataIntegration key="1" />,
+            <IoTandSensorIntegration key="2" />,
+            <Dashboard key="3" />
+          ].map((Component, index) => (
+            <div
+              key={index}
+              role="tabpanel"
+              id={`panel-${index}`}
+              className={`tab-panel p-6 transition duration-300 ${
+                activeTab === index ? 'visible opacity-100' : 'absolute top-0 invisible opacity-0'
+              }`}
+            >
+              {Component}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ConsultingTab;

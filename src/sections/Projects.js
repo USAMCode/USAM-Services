@@ -71,7 +71,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="h-screen w-full flex flex-col gap-4 justify-center bg-quaternary items-center text-center">
+      <div className="h-screen w-full flex flex-col gap-4 justify-center bg-quinary items-center text-center">
         {/* <motion.div
           variants={fadeIn("", "", 0.5, 0.5)}
           className="text-primary font-extrabold text-6xl xs:text-4xl py-1 justify-center items-center text-center"

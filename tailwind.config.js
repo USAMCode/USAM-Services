@@ -35,7 +35,7 @@ module.exports = {
           secondary: "#9E7777",
           tertiary: "#DEBA9D",
           quaternary: "#F5E8C7",
-          quinary: "#FFF2D7",
+          quinary: "#F6F3EA",
           navy:"#1d1836"
         },
       borderColor:{

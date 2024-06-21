@@ -67,14 +67,14 @@ const Header= () => {
     }`}
   >
     <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-      <img className="w-64 xs:w-48 md:w-52 h-14 object-contain" src="https://usam.s3.ap-south-1.amazonaws.com/usam_logo.png" alt=""/>
+      <img className="w-64 xs:w-48 md:w-52 h-14 object-contain" src="https://usam.s3.ap-south-1.amazonaws.com/UsamBlack.png" alt=""/>
       <ul className="list-none flex flex-row justify-center xs:hidden sm:hidden md:hidden gap-10">
         {navLinks.map((nav) => (
           <li
             key={nav.id}
             className={`${
               active === nav.id ? "text-primary" : scrolled ? `text-white` : " text-black"
-            } hover:text-primary text-xl font-semibold cursor-pointer`}
+            } hover:text-primary text-xl font-semibold cursor-pointer `}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>

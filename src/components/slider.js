@@ -44,10 +44,10 @@ export default function Sliders() {
   return (
     <>
       <div className="flex flex-col gap-10 sm:gap-4 justify-center items-center w-[90%] xs:w-[100%] h-full mx-auto">
-        <div className="flex text-5xl xs:text-3xl sm:text-3xl p-8 font-bold text-black">
+        <div className="flex text-5xl md:text-4xl xs:text-3xl sm:text-3xl p-8 font-bold text-black">
           We value our Client's Feedback
         </div>
-        <div className="relative flex xs:hidden sm:hidden md:hidden flex-col w-full h-2/3">
+        <div className="relative flex xs:hidden sm:hidden md:hidden flex-col w-[90%] mx-auto h-2/3">
           <div className="overflow-hidden h-full w-full justify-center flex flex-col rounded-lg">
             <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
               {slides.map((slide, index) => (

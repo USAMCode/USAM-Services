@@ -9,15 +9,15 @@ import Link from "next/link";
 const Services = () => {
   return (
     <>
-      <div className="bg-quaternary flex flex-col h-screen justify-center items-center text-center md:text-start px-4 xs:px-0 xs:py-10 py-10">
-        {/* <div className="flex w-full justify-center h-1/4 xs:1/5 items-center py-10 xs:py-5">
+      <div className="bg-quinary flex flex-col h-screen justify-center items-center text-center md:text-start px-4 xs:px-0 xs:py-10 py-10">
+        <div className="flex w-full justify-center h-1/4 xs:1/5 items-center py-10 xs:py-5">
           <motion.div
             variants={fadeIn("", "", 0.2, 0.6)}
             className="text-6xl xs:text-4xl font-bold text-black"
           >
             Our Services
           </motion.div>
-        </div> */}
+        </div>
         <div className="flex xl:flex-row xs:flex-col xs:hidden md:hidden sm:hidden w-[95%] lg:w-full xl:w-full xs:w-full m-auto justify-around text-lg text-black p-10 lg:p-0 xs:p-4">
           <div className="flex flex-col gap-2 justify-center items-center">
             {/* <img
@@ -168,10 +168,10 @@ const Services = () => {
           </div>
         </div>
         <div className="2xl:hidden xl:hidden lg:hidden md:hidden xs:hidden flex w-[90%] m-auto h-full justify-center items-center">
-          <div className="flex flex-col w-full h-3/4 items-center justify-around">
+          <div className="flex flex-col w-full h-3/4 items-center justify-between">
             <div className="flex flex-row w-full gap-4 justify-center items-center">
               <Card sx={{backgroundImage:"url(https://usam.s3.ap-south-1.amazonaws.com/Image2.jpg)", opacity:"1"}} className="w-1/2">
-                <CardContent className="flex flex-col gap-2 justify-center">
+                <CardContent className="flex flex-col gap-2 justify-center items-start text-left">
                   <div className="flex font-semibold text-3xl">
                     Automation
                   </div>
@@ -182,8 +182,8 @@ const Services = () => {
                 </CardContent>
               </Card>
               <Card sx={{backgroundImage:"url(https://usam.s3.ap-south-1.amazonaws.com/Image2.jpg)", opacity:"1"}} className="w-1/2">
-                <CardContent className="flex flex-col gap-2 justify-center">
-                  <div className="flex font-semibold text-3xl">
+                <CardContent className="flex flex-col gap-2 justify-centeritems-start text-left">
+                  <div className="flex font-semibold text-3xl ">
                     Consulting
                   </div>
                   <div className="text-lg">
@@ -195,7 +195,7 @@ const Services = () => {
             </div>
             <div className="flex w-full justify-center">
               <Card sx={{backgroundImage:"url(https://usam.s3.ap-south-1.amazonaws.com/Image2.jpg)", opacity:"1"}} className="w-1/2">
-                <CardContent className="flex flex-col gap-2 h-full justify-center">
+                <CardContent className="flex flex-col gap-2 h-full justify-center items-start text-left">
                   <div className="flex font-semibold text-3xl">
                     Data & Insights
                   </div>

@@ -14,8 +14,8 @@ const AutomationTab = () => {
   useEffect(() => {
     const handleIndicator = () => {
       const currentTab = tabRefs[activeTab].current;
-      indicatorRef.current.style.width = `${currentTab.offsetWidth}px`;
-      indicatorRef.current.style.left = `${currentTab.offsetLeft}px`;
+      // indicatorRef.current.style.width = `${currentTab.offsetWidth}px`;
+      // indicatorRef.current.style.left = `${currentTab.offsetLeft}px`;
     };
 
     handleIndicator();
@@ -34,9 +34,9 @@ const AutomationTab = () => {
             <div
               role="tablist"
               aria-label="tabs"
-              className="relative w-max mx-auto h-max grid grid-cols-4 items-center px-[3px] rounded-full bg-gray-900/20 overflow-hidden shadow-md shadow-900/20 transition lg:px-0 lg:mx-auto lg:w-max lg:relative"
+              className="relative w-max mx-auto md:w-[80%] sm:w-[90%] xs:w-full xs:grid-cols-2 xs:rounded-md sm:rounded-md sm: sm:grid-cols-2 xs:p-2 sm:p-2 md:p-2 md:rounded-md h-max grid grid-cols-4 md:grid-cols-2 items-center px-[3px] rounded-full bg-gray-900/20 overflow-hidden shadow-md shadow-900/20 transition lg:px-0 lg:mx-auto lg:w-max lg:relative"
             >
-              <div ref={indicatorRef} className="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full bg-primary shadow-md"></div>
+              {/* <div ref={indicatorRef} className="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full shadow-md"></div> */}
               {['Product Configuration', 'Standardisation Automation', 'Workflow Enforcement', 'Drawing Automation'].map((tab, index) => (
                 <button
                   key={index}
@@ -46,8 +46,8 @@ const AutomationTab = () => {
                   aria-controls={`panel-${index}`}
                   id={`tab-${index}`}
                   tabIndex={activeTab === index ? 0 : -1}
-                  className={`relative block h-10 px-6 tab rounded-full ${
-                    activeTab === index ? 'text-white' : 'text-gray-800'
+                  className={`relative block 2xl:text-xl xl:text-lg lg:text-base md:text-lg sm:text-lg h-10 px-6 tab rounded-full md:rounded-md sm:rounded-md xs:rounded-md ${
+                    activeTab === index ? 'text-white bg-primary' : 'text-gray-800'
                   }`}
                   onClick={() => setActiveTab(index)}
                 >

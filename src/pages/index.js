@@ -12,9 +12,9 @@ export default function App() {
     <>
       <Header />
       <Home />
-      <div className="flex w-full border border-primary"></div>
+      {/* <div className="flex w-full border border-primary"></div> */}
       <Services />
-      <div className="flex w-full border border-primary"></div>
+      {/* <div className="flex w-full border border-primary"></div> */}
       <About />
       <div className="flex w-full border border-primary"></div>
       <Projects />

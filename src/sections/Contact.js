@@ -33,8 +33,8 @@ const Contact = () => {
         minWidth: 700,
         el: vantaRef.current,
         THREE,
-        backgroundColor: 0xF5E8C7,
-        color: 0x6F4C5B,
+        backgroundColor: 0xF6F3EA,
+        color: 0x000000,
         color2: 0x6F4C5B,
       }));
     }
@@ -135,7 +135,7 @@ const Contact = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Enter your Name"
-                  className="backdrop-blur-sm bg-white/30 py-2 px-4 md:text-xl sm:text-xl xs:text-lg placeholder:text-primary text-black rounded-lg outline-none border-none font-medium"
+                  className="backdrop-blur-sm bg-primary/20 py-2 px-4 md:text-xl sm:text-xl xs:text-lg placeholder:text-primary text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -146,7 +146,7 @@ const Contact = () => {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="Enter your Email"
-                  className="backdrop-blur-sm bg-white/30 py-2 px-4 md:text-xl sm:text-xl xs:text-lg placeholder:text-primary text-black rounded-lg outline-none border-none font-medium"
+                  className="backdrop-blur-sm bg-primary/20 py-2 px-4 md:text-xl sm:text-xl xs:text-lg placeholder:text-primary text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -157,7 +157,7 @@ const Contact = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What do you want to say?"
-                  className="backdrop-blur-sm bg-white/30 py-4 px-4 md:text-xl sm:text-xl xs:text-lg placeholder:text-primary
+                  className="backdrop-blur-sm bg-primary/20 py-4 px-4 md:text-xl sm:text-xl xs:text-lg placeholder:text-primary
                   text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>

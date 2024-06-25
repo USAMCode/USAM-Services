@@ -65,7 +65,7 @@ const Services = () => {
               </motion.div>
             </div>
           </div>
-          <div className="flex flex-col gap-2 items-center">
+          <div className="flex flex-col gap-2 items-center z-20">
             <div className="h-72 xs:h-48 rounded-xl w-96 lg:w-80 bg-white"></div>
             {/* <img
               src="/images/meeting-strategy-marketing-analytic_18660-1060.avif"
@@ -207,6 +207,9 @@ const Services = () => {
               </Card>
             </div>
           </div>
+        </div>
+        <div className="xs:hidden sm:hidden md:hidden lg:hidden absolute flex justify-end w-full h-full">
+          <img className="h-full" src="https://usam.s3.ap-south-1.amazonaws.com/abstract.png" alt=""/>
         </div>
       </div>
     </>

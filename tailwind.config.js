@@ -36,7 +36,10 @@ module.exports = {
           tertiary: "#DEBA9D",
           quaternary: "#F5E8C7",
           quinary: "#F6F3EA",
-          navy:"#1d1836"
+          navy:"#1d1836",
+          first:"#5479f7",
+          second:"#99b9ff",
+          third:"#caddff"
         },
       borderColor:{
         primary: "#6F4C5B",
@@ -44,7 +47,10 @@ module.exports = {
         tertiary: "#DEBA9D",
         quaternary: "#F5E8C7",
         quinary: "#FFF2D7",
-        navy:"#1d1836"
+        navy:"#1d1836",
+        first:"#5479f7",
+        second:"#99b9ff",
+        third:"#caddff"
         },
       textColor: {
         primary: "#6F4C5B",
@@ -52,7 +58,10 @@ module.exports = {
         tertiary: "#DEBA9D",
         quaternary: "#F5E8C7",
         quinary: "#FFF2D7",
-        navy:"#1d1836"
+        navy:"#1d1836",
+        first:"#5479f7",
+        second:"#99b9ff",
+        third:"#caddff"
         },
       fontFamily: {
         bubble: ['"Baloo 2"', "cursive"],

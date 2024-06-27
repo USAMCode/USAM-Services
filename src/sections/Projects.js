@@ -74,14 +74,16 @@ const Projects = () => {
   return (
     <>
       <div className="h-screen w-full flex flex-col gap-4 justify-center bg-quinary items-center text-center">
+      {/* <img src="/img/custom.png" className="relative w-full h-full">
+      </img> */}
         <motion.div
           variants={fadeIn("", "", 0.5, 0.5)}
-          className="text-black font-extrabold text-6xl xs:text-4xl py-1 justify-center items-center text-center"
+          className="text-black font-extrabold text-6xl xs:text-4xl py-1 justify-center items-center text-center z-10"
         >
           PROJECTS
         </motion.div>
         {/* <div className="flex w-56 xs:w-44 border-2 justify-center items-center text-center rounded-tr-full rounded-br-full border-secondary"></div> */}
-        <div className="flex justify-around w-[90%] xl:w-[95%] lg:w-[95%] mx-auto xs:hidden md:hidden sm:hidden">
+        <div className="flex justify-around w-[90%] xl:w-[95%] lg:w-[95%] mx-auto xs:hidden md:hidden sm:hidden z-10">
           <div className="relative m-4 text-black transition-transform duration-500 group hover:transform-none">
             <img
               src="https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg"

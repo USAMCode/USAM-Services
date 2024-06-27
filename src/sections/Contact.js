@@ -34,8 +34,8 @@ const Contact = () => {
         el: vantaRef.current,
         THREE,
         backgroundColor: 0xF6F3EA,
-        color: 0x000000,
-        color2: 0x6F4C5B,
+        color: 0x1d4ed8,
+        color2: 0x1d4ed8,
       }));
     }
     return () => {

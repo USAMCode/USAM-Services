@@ -3,7 +3,7 @@ import SectionWrapper from "@/section/SectionWrapper"
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col h-screen justify-around bg-quinary">
+    <div className="flex flex-col h-screen bg-white">
       <Slider />
     </div>
   )

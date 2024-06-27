@@ -76,8 +76,8 @@ const Footer = () => {
               <div>Terms & Conditions</div>
             </div>
             <div className="flex flex-col xs:flex-row gap-2 w-full justify-around text-center">
-              <div>1234567890</div>
-              <div>usam.tech@gmail.com</div>
+              <div>+(91)-9344375567</div>
+              <div>mahesh.m@usam.in</div>
             </div>
           </div>
             <div className="flex text-center tracking-wide text-cyan-400">No 4, 1st Cross Street, CIT Colony, Mylapore, Chennai – 600004.</div>

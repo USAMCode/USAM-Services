@@ -32,21 +32,19 @@ const DataInsightsTab = () => {
 
   return (
     <>
-      <div className="w-full h-full pb-16 sm:px-0 xs:px-0">
+    <div className="w-full h-full pb-20 sm:px-0 xs:px-0">
         <div className="sm:w-full sm:mx-auto xs:w-full xs:mx-auto">
-          <div className="fixed p-5 xs:p-2 top-0 left-0 w-full bg-white z-10 shadow-md">
+          <div className="fixed h-20 flex justify-center items-center top-0 left-0 w-full bg-white z-10 shadow-md">
             <div
               role="tablist"
               aria-label="tabs"
-              className="relative w-max mx-auto md:w-[80%] sm:w-[90%] xs:w-full xs:grid-cols-2 xs:rounded-md sm:rounded-md sm: sm:grid-cols-2 xs:p-2 sm:p-2 md:p-2 md:rounded-md h-max grid grid-cols-4 md:grid-cols-2 items-center px-[3px] rounded-full bg-gray-900/20 overflow-hidden shadow-md shadow-900/20 transition lg:px-0 lg:mx-auto lg:w-max lg:relative"
+              className="relative w-[80%] h-full mx-auto md:w-[80%] sm:w-[90%] xs:w-full xs:grid-cols-2 xs:rounded-md sm:rounded-md xs:gap-2 sm: sm:grid-cols-2 xs:py-2 sm:p-2 md:p-2 md:rounded-md grid grid-cols-4 md:grid-cols-2 items-center px-[3px] overflow-hidden transition lg:px-0 lg:mx-auto lg:w-max lg:relative"
             >
               {/* <div ref={indicatorRef} className="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full shadow-md"></div> */}
-              {[
-                "Dashboard",
+              {["Dashboard",
                 "Data Integration",
                 "Data Management",
-                "IoT and Sensor Integration",
-              ].map((tab, index) => (
+                "IoT and Sensor Integration"].map((tab, index) => (
                 <button
                   key={index}
                   ref={tabRefs[index]}
@@ -55,10 +53,8 @@ const DataInsightsTab = () => {
                   aria-controls={`panel-${index}`}
                   id={`tab-${index}`}
                   tabIndex={activeTab === index ? 0 : -1}
-                  className={`relative block 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base xs:text-sm h-10 px-6 tab rounded-full md:rounded-md sm:rounded-md xs:rounded-md ${
-                    activeTab === index
-                      ? "text-white bg-primary"
-                      : "text-gray-800"
+                  className={`relative block 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base xs:text-sm h-full px-6 xs:px-0 tab md:rounded-md sm:rounded-md xs:rounded-md ${
+                    activeTab === index ? 'text-black border-b-4 border-t-4 font-semibold border-t-red-400 border-b-red-400' : 'text-gray-800'
                   }`}
                   onClick={() => setActiveTab(index)}
                 >
@@ -67,37 +63,30 @@ const DataInsightsTab = () => {
               ))}
             </div>
           </div>
-          <div
-            ref={tabContentRef}
-            className="mt-6 relative top-14 rounded-3xl bg-white"
-          >
-            <AnimatePresence mode="wait">
-              {[
-                <DataManagement key="0" />,
-                <DataIntegration key="1" />,
-                <IoTandSensorIntegration key="2" />,
-                <Dashboard key="3" />,
-              ].map(
-                (Component, index) =>
-                  activeTab === index && (
-                    <motion.div
-                      key={index}
-                      role="tabpanel"
-                      id={`panel-${index}`}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -20 }}
-                      transition={{ duration: 0.4 }}
-                      className={`tab-panel transition duration-300 ${
-                        activeTab === index
-                          ? "visible opacity-100"
-                          : "absolute top-0 invisible opacity-0"
-                      }`}
-                    >
-                      {Component}
-                    </motion.div>
-                  )
-              )}
+          <div ref={tabContentRef} className="mt-6 relative top-14 rounded-3xl bg-white">
+            <AnimatePresence mode='wait'>
+            {[
+              <Dashboard key="0" />,
+              <DataIntegration key="1" />,
+              <DataManagement key="2" />,
+              <IoTandSensorIntegration key="3" />,
+            ].map((Component, index) => (
+              activeTab === index && (
+              <motion.div
+                key={index}
+                role="tabpanel"
+                id={`panel-${index}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+                className={`tab-panel transition duration-300 ${
+                  activeTab === index ? 'visible opacity-100' : 'absolute top-0 invisible opacity-0'
+                }`}
+              >
+                {Component}
+              </motion.div>
+            )))}
             </AnimatePresence>
           </div>
         </div>

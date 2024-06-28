@@ -4,10 +4,10 @@ import { slideIn } from '@/utils/motion';
 
 const Footer = () => {
   return (
-    <div className='flex flex-col bg-neutral-800 xs:pb-4 md:pb-10 sm:pb-5'>
+    <div className='flex flex-col bg-neutral-900 xs:pb-4 md:pb-10 sm:pb-5'>
       <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-col text-cyan-400 gap-4 pt-5 px-10 xs:px-2 flex items-center"
+          className="xl:flex flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-col text-second gap-4 pt-5 px-10 xs:px-2 flex items-center"
         >
           {/* <div className="flex text-black text-5xl xs:text-4xl font-semibold">
             Follow Us
@@ -16,12 +16,12 @@ const Footer = () => {
             <li>
               <a
                 className="flex flex-row gap-5 items-center"
-                // href="https://www.linkedin.com/in/joel-revington-105994135"
+                href="https://www.linkedin.com/company/usam-technoloy-solutions-p-ltd/about/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
                 <img
-                  className="w-12 h-12"
+                  className="w-10 h-10"
                   src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Linkedin.png"
                   alt=""
                   />
@@ -30,12 +30,12 @@ const Footer = () => {
             <li>
               <a
                 className="flex flex-row gap-5 items-center"
-                // href="https://twitter.com/JoelRevington15"
+                href="https://x.com/UsamTech"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
                 <img
-                  className="w-12 h-12"
+                  className="w-10 h-10"
                   src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Twitter.png"
                   alt=""
                   />
@@ -44,12 +44,12 @@ const Footer = () => {
             <li>
               <a
                 className="flex flex-row gap-5 items-center"
-                // href="https://www.instagram.com/joel_revington/"
+                href="https://www.instagram.com/usam_since_1990/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  className="w-12 h-12"
+                  className="w-10 h-10"
                   src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Instagram.png"
                   alt=""
                   />
@@ -58,12 +58,12 @@ const Footer = () => {
             <li>
               <a
                 className="flex flex-row gap-5 items-center"
-                // href="https://www.facebook.com/profile.php?id=100009270750468"
+                href=" https://www.facebook.com/usam.technology/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
                 <img
-                  className="w-12 h-12"
+                  className="w-10 h-10"
                   src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Facebook.png"
                   alt=""
                   />
@@ -71,16 +71,16 @@ const Footer = () => {
             </li>
           </ul>
           <div className="flex text-lg flex-row xs:flex-col xs:gap-4 sm:w-full md:w-full lg:flex lg:flex-row lg:w-full xl:flex xl:flex-row xl:w-full w-1/3 xs:w-full justify-around">
-            <div className="flex flex-col xs:flex-row gap-2 w-full text-center justify-around">
+            {/* <div className="flex flex-col xs:flex-row gap-2 w-full text-center justify-around">
               <div>Privacy Policy</div>
               <div>Terms & Conditions</div>
-            </div>
+            </div> */}
             <div className="flex flex-col xs:flex-row gap-2 w-full justify-around text-center">
-              <div>1234567890</div>
-              <div>usam.tech@gmail.com</div>
+              <div>+(91)-9344375567</div>
+              <div>mahesh.m@usam.in</div>
             </div>
           </div>
-            <div className="flex text-center tracking-wide text-cyan-400">No 4, 1st Cross Street, CIT Colony, Mylapore, Chennai – 600004.</div>
+            <div className="flex text-center tracking-wide text-second">No 4, 1st Cross Street, CIT Colony, Mylapore, Chennai – 600004.</div>
         </motion.div>
     </div>
   )

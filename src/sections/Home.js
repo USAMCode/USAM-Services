@@ -1,90 +1,90 @@
-import React, { useState, useEffect } from 'react';
-import { useTransition, animated } from 'react-spring'; // Changed import from 'react-spring'
+import React, { useState, useEffect } from "react";
+import { useTransition, animated } from "react-spring"; // Changed import from 'react-spring'
 import { motion } from "framer-motion";
 import { slideIn } from "@/utils/motion";
-import SectionWrapper from '@/section/SectionWrapper';
+import SectionWrapper from "@/section/SectionWrapper";
+import { Carousel } from "flowbite-react";
+import Link from "next/link";
 
 const Home = () => {
-  const images = [
-    "https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg",
-    "https://usam.s3.ap-south-1.amazonaws.com/Image2.jpg",
-    "https://usam.s3.ap-south-1.amazonaws.com/Image3.jpg",
-    "https://usam.s3.ap-south-1.amazonaws.com/Image4.jpg",
+
+  const services = [
+    {
+      title: "Automation",
+      content:
+        "Unlock innovation and creativity and achieve outcomes faster with automation.",
+      image:"https://usam.s3.ap-south-1.amazonaws.com/Automation.png",
+      link:"services/automation"
+    },
+    {
+      title: "Consulting",
+      content:
+        "Guiding Your Project Towards Success: Expert Consulting Every Step of the Way.",
+        image:"https://usam.s3.ap-south-1.amazonaws.com/Consulting.png",
+      link:"services/consulting"
+      },
+    {
+      title: "Data & Insights",
+      content:
+        "The right people get the right information at the right time with connected data.",
+        image:"https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png",
+      link:"services/datainsights"
+      },
   ];
 
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 5000); // Change slide every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
-  const transitions = useTransition(images[index], {
-    from: { opacity: 0},
-    enter: { opacity: 1},
-    leave: { opacity: 0},
-  });
-
   return (
-    <div className="flex flex-row bg-quaternary h-screen">
-      <div className="flex flex-col w-3/5 xs:w-full md:hidden lg:hidden sm:hidden justify-center items-center text-center bg-fixed">
-        <motion.div
-          variants={slideIn("left", "tween", 0.2, 1)}
-          className="text-4xl md:text-6xl text-black font-bold mb-4"
-        >
-          Welcome to Our Service
-        </motion.div>
-        <div className="text-lg md:text-xl text-black mb-8">
-          We provide the best solutions to enhance your business and life.
+    <>
+      <div className="flex flex-col bg-white xs:justify-center h-[80vh]">
+        <div className="flex flex-col w-full absolute z-10 top-96 xs:w-[90%] n justify-center items-center text-center bg-fixed">
         </div>
-        <button className="bg-primary text-white px-6 py-3 rounded-full text-lg md:text-xl hover:bg-orange-600 transition duration-300">
-          Learn More
-        </button>
-      </div>
-      <div className="flex w-2/5 xs:hidden sm:hidden md:hidden lg:hidden items-center justify-end">
-        <div className="w-5/6 h-3/5 relative rounded-md bg-primary z-10">
-          <div className="absolute w-full h-full rounded-md top-16 right-16 bg-white">
-            <div className="relative w-full h-full object-contain rounded-md">
-              {transitions((style, item) => (
-                <animated.div style={{ ...style, position: 'absolute', top: 0, left: 0, width: '100%', height:'100%', objectFit:'cover' }}>
-                  <img src={item} className="w-full h-full object-cover rounded-md" alt={`slide ${index}`} />
-                </animated.div>
+        <div className="w-full  sm:hidden md:hidden lg:hidden items-center h-[100%] justify-center">
+          <div className="relative top-20 xs:top-0 w-full h-[100%] object-contain  hover:backdrop-blur-md">
+            <Carousel className="w-full" slideInterval={5000}>
+              {services.map((service, index) => (
+                <div key={index} className="flex w-full h-full justify-center">
+                  <img className="w-full object-cover" src={service.image} alt=""/>
+                  <div className="absolute inset-0 bg-black opacity-25"></div>
+                  <div className="flex flex-col gap-4 absolute w-full xs:w-[80%] xs:mx-auto h-full justify-center items-center text-center">
+                    <div className="text-5xl md:text-5xl xs:text-4xl text-white font-bold mb-4">{service.title}</div>
+                    <div className="text-2xl lg:text-2xl xl:text-2xl xs:text-base md:text-xl text-white font-medium mb-8">{service.content}</div>
+                    <Link href={service.link}>
+                      <button className="bg-first text-white px-6 py-2 rounded-full text-lg md:text-xl hover:bg-second hover:text-black transition duration-300">
+                        Learn More
+                      </button>
+                    </Link>
+                  </div>
+                </div> 
               ))}
+            </Carousel>
+          </div>
+        </div>
+        {/* ========================================================================== */}
+
+        <div className="2xl:hidden xl:hidden xs:hidden flex flex-col w-full h-full justify-between">
+          <div className="relative flex flex-col w-full justify-center items-center h-full rounded-md">
+            <div className="relative w-full h-full object-contain justify-center items-center rounded-md">
+            <Carousel indicators rightControl=" " leftControl=" " className="w-full" slideInterval={5000}>
+              {services.map((service, index) => (
+                <div key={index} className="flex w-full h-full">
+                  <img className="w-full object-cover" src={service.image} alt=""/>
+                  <div className="absolute inset-0 bg-black opacity-25"></div>
+                  <div className="flex flex-col gap-4 absolute w-full h-full justify-center items-center text-center">
+                    <div className="text-5xl xs:text-4xl text-white font-bold">{service.title}</div>
+                    <div className="text-base text-white font-medium">{service.content}</div>
+                    <Link href={service.link}>
+                      <button className="bg-first text-white px-6 py-2 rounded-full text-lg md:text-lg hover:bg-second transition duration-300">
+                        Learn More
+                      </button>
+                    </Link>
+                  </div>
+                </div> 
+              ))}
+            </Carousel>
             </div>
           </div>
         </div>
       </div>
-      <div className='2xl:hidden xl:hidden xs:hidden flex flex-col w-full h-full justify-between'>
-        <div className="relative flex flex-col w-full justify-center items-center h-full rounded-md">
-          <div className="relative w-full h-3/4 object-contain justify-center items-center rounded-md">
-            {transitions((style, item) => (
-              <animated.div style={{ ...style, position: 'absolute', justifyContent:"center", alignContent:"center", top: 0, left: 0, width: '100%', height:'100%', objectFit:'cover' }}>
-                <img src={item} className="w-full h-3/4 object-cover" alt={`slide ${index}`} />
-              </animated.div>
-            ))}
-            <div className="flex absolute flex-col w-full h-full xs:hidden 2xl:hidden xl:hidden justify-center items-center text-center bg-fixed">
-              <motion.div
-                variants={slideIn("left", "tween", 0.2, 1)}
-                className="text-4xl md:text-5xl sm:text-5xl lg:text-6xl text-black font-bold mb-4"
-              >
-                Welcome to Our Service
-              </motion.div>
-              <div className="text-lg md:text-xl text-black mb-8">
-                We provide the best solutions to enhance your business and life.
-              </div>
-            </div>
-          </div>
-          <div className='flex w-full justify-center'>
-            <button className="bg-primary text-white px-6 py-3 rounded-full text-lg font-semibold md:text-xl hover:bg-orange-600 transition duration-300">
-              Learn More
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 };
 

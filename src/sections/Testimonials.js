@@ -2,8 +2,8 @@ import Slider from "@/components/slider"
 import SectionWrapper from "@/section/SectionWrapper"
 
 const Testimonials = () => {
-  return (
-    <div className="flex flex-col h-screen justify-around bg-quaternary">
+  return ( 
+    <div className="flex flex-col h-[100vh] xs:mx-auto bg-white">
       <Slider />
     </div>
   )

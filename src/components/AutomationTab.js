@@ -52,7 +52,7 @@ const AutomationTab = () => {
                   id={`tab-${index}`}
                   tabIndex={activeTab === index ? 0 : -1}
                   className={`relative block 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base xs:text-sm h-full px-6 xs:px-0 tab md:rounded-md sm:rounded-md xs:rounded-md ${
-                    activeTab === index ? 'text-black border-b-4 border-t-4 font-semibold border-t-cyan-600 border-b-cyan-600' : 'text-gray-800'
+                    activeTab === index ? 'text-black border-b-4 border-t-4 font-semibold border-first border-first' : 'text-gray-800'
                   }`}
                   onClick={() => setActiveTab(index)}
                 >

@@ -16,7 +16,7 @@ const ProductConfiguration = () => {
       <div className="flex flex-col gap-8 relative w-full">
         <div className="w-full relative">
           <img
-            src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+            src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
             alt=""
             className="w-full h-[650px] xs:h-[300px] md:h-[450px] sm:h-[400px] lg:h-[500px] object-cover"
           />
@@ -25,11 +25,11 @@ const ProductConfiguration = () => {
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
           {/* ============================================================================================================================================ */}
 
-          <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-blue-700">
+          <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-first">
             <div className="flex flex-row gap-8 md:gap-4 lg:gap-6 sm:flex-col sm:gap-6 justify-around items-center">
               <div className="w-full lg:w-1/2 h-full flex justify-center items-center ">
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
@@ -53,7 +53,7 @@ const ProductConfiguration = () => {
                   configuration.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-blue-700 2xl:text-2xl text-xl md:text-base text-white">
+                  <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>
@@ -61,10 +61,10 @@ const ProductConfiguration = () => {
               {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
             </div>
           </div>
-          <div className="flex w-full border-2 border-blue-700 rounded-bl-md rounded-tr-md"></div>
+          <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
           {/* ============================================================================================================================================ */}
 
-          <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-blue-700">
+          <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-first">
             <div className="flex flex-row sm:flex-col-reverse sm:gap-6 md:gap-4 justify-around lg:justify-between items-center">
               <div className="h-full flex flex-col gap-6 w-full lg:w-4/6 xl:w-2/4">
                 <div className="font-semibold text-3xl sm:text-2xl md:text-xl md:w-full lg:text-2xl font-serif sm:w-full lg:w-[90%] w-[80%] m-auto ">
@@ -95,7 +95,7 @@ const ProductConfiguration = () => {
                 className="w-full lg:w-3/6 xl:w-2/4 h-full flex justify-center items-center "
               >
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full h-full"
                 />
@@ -103,10 +103,10 @@ const ProductConfiguration = () => {
             </div>
           </div>
 
-          <div className="flex w-full border-2 border-blue-700 rounded-tl-md"></div>
+          <div className="flex w-full border-2 border-first rounded-tl-md"></div>
           {/* =========================================================================================================================================== */}
 
-          <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-blue-700 border-r-4 border-r-blue-700">
+          <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="flex flex-col h-[70%] my-auto gap-10 py-16">
               <div className="flex w-full text-center justify-center font-bold text-3xl sm:text-2xl md:text-2xl font-serif ">
                 Why Choose Our Product Configuration Services
@@ -126,7 +126,7 @@ const ProductConfiguration = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#0891b2"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -158,7 +158,7 @@ const ProductConfiguration = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#0891b2"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -192,7 +192,7 @@ const ProductConfiguration = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#0891b2"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -224,7 +224,7 @@ const ProductConfiguration = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#0891b2"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -247,13 +247,13 @@ const ProductConfiguration = () => {
             </div>
           </div>
           <div className="flex flex-row w-full">
-            <div className="flex w-2/5 border-2 border-blue-700 rounded-r-full"></div>
+            <div className="flex w-2/5 border-2 border-first rounded-r-full"></div>
             <div className="flex w-1/5 border-none "></div>
-            <div className="flex w-2/5 border-2 border-blue-700 rounded-l-full"></div>
+            <div className="flex w-2/5 border-2 border-first rounded-l-full"></div>
           </div>
           {/* ========================================================================================================================================= */}
 
-          <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-blue-700 border-r-4 border-r-blue-700">
+          <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="font-semibold text-3xl sm:text-2xl md:text-2xl text-center font-serif h-[70%] my-auto">
               How We Implement Product Configuration
             </div>
@@ -267,7 +267,7 @@ const ProductConfiguration = () => {
                 className=" flex w-2/4 h-full lg:w-2/4 sm:w-full md:w-full justify-center items-center "
               >
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full xl:w-full lg:w-full lg:h-full sm:w-full h-full"
                 />
@@ -324,7 +324,7 @@ const ProductConfiguration = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full p-20 lg:p-10 md:p-10 sm:p-10 justify-center text-center items-center border-l-4 border-r-4 border-t-4 border-blue-700">
+          <div className="flex flex-col w-full p-20 lg:p-10 md:p-10 sm:p-10 justify-center text-center items-center border-l-4 border-r-4 border-t-4 border-first">
             <motion.div
               initial="hidden"
               whileInView="show"
@@ -339,14 +339,14 @@ const ProductConfiguration = () => {
             </motion.div>
           </div>
           <div className="flex flex-row w-full justify-between">
-            <div className="flex w-2/5 h-0 border-2  border-blue-700"></div>
+            <div className="flex w-2/5 h-0 border-2  border-first"></div>
             <button
-              className="flex w-1/6 px-4 sm:px-2 py-2 bg-blue-600 text-white relative text-center justify-center items-center text-3xl xl:text-4xl sm:text-lg lg:text-2xl md:text-xl sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
+              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-4xl sm:text-lg lg:text-2xl md:text-xl sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us
             </button>
-            <div className="flex w-2/5 border-2 h-0 border-blue-700"></div>
+            <div className="flex w-2/5 border-2 h-0 border-first"></div>
           </div>
         </div>
 
@@ -356,7 +356,7 @@ const ProductConfiguration = () => {
           <div className="bg-white text-black w-full p-20 xs:p-5">
             <div className="flex flex-row xs:gap-4 justify-around items-center xs:w-full xs:flex xs:flex-col xs:p-0 xs:space-y-9  ">
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md"
               />
@@ -407,7 +407,7 @@ const ProductConfiguration = () => {
                 </motion.div>
               </div>
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />
@@ -564,7 +564,7 @@ const ProductConfiguration = () => {
             </div>
             <div className="flex flex-row gap-4 p-5 justify-around items-center xs:flex xs:flex-col ">
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />

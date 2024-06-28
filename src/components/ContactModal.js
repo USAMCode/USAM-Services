@@ -77,7 +77,7 @@ const ContactModal = ({ show, setShow }) => {
       center
       onClose={handleClose}
       classNames={{
-        overlay: "bg-gray-300",
+        overlay: "bg-white",
         modal:
           "2xl:w-2/5 xl:w-2/4 lg:w-2/4 md:w-2/3 sm:w-2/3 xs:w-5/6 rounded-lg shadow-lg",
       }}
@@ -131,7 +131,7 @@ const ContactModal = ({ show, setShow }) => {
         <div className="flex w-full justify-center">
             <button
             type="submit"
-            className="bg-tertiary py-2 px-6 rounded-lg outline-none w-fit text-black font-bold shadow-md text-lg md:text-xl sm:text-xl"
+            className="bg-first py-2 px-6 rounded-lg outline-none w-fit text-white font-bold shadow-md text-lg md:text-xl sm:text-xl"
             >
             {loading ? "Sending..." : "Send"}
             </button>

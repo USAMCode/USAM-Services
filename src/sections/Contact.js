@@ -143,7 +143,7 @@ const Contact = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Enter your Name"
-                  className="backdrop-blur-sm bg-white py-2 px-4 md:text-base sm:text-base xs:text-base placeholder:text-first text-black rounded-lg outline-none border-none font-medium"
+                  className="backdrop-blur-sm bg-white py-2 px-4 md:text-base sm:text-base xs:text-base placeholder:text-gray-500 text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -154,7 +154,7 @@ const Contact = () => {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="Enter your Email"
-                  className="backdrop-blur-sm bg-white py-2 px-4 md:text-base sm:text-base xs:text-base placeholder:text-first text-black rounded-lg outline-none border-none font-medium"
+                  className="backdrop-blur-sm bg-white py-2 px-4 md:text-base sm:text-base xs:text-base placeholder:text-gray-500 text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -203,7 +203,7 @@ const Contact = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What do you want to say?"
-                  className="backdrop-blur-sm bg-white py-4 px-4 md:text-base sm:text-base xs:text-base placeholder:text-first
+                  className="backdrop-blur-sm bg-white py-4 px-4 md:text-base sm:text-base xs:text-base placeholder:text-gray-500
                   text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>

@@ -18,29 +18,41 @@ const Services = () => {
   return (
     <>
       <div className="bg-white h-[100vh] flex justify-center items-center">
-        <div className="flex flex-row w-[90%] xs:w-[90%] h-full items-center sm:justify-center justify-around md:justify-center lg:h-full lg:justify-center lg:gap-5 mx-auto lg:flex lg:flex-col md:h-full md:flex md:flex-col sm:flex-col xs:flex-col z-10 absolute">
-          <div className="flex flex-col w-1/2 xs:gap-2 xs:h-2/4 xs:justify-center md:p-2 lg:w-[95%] sm:w-full lg:mx-auto md:w-full xs:w-full">
-            <div className="text-6xl w-full items-start font-bold md:text-5xl sm:text-4xl xs:text-3xl text-first">
+        <div className="flex flex-row w-[90%] sm:w-[95%] sm:gap-2 xs:w-[95%] h-full items-center sm:justify-center justify-around xs:justify-center xs:gap-1 md:justify-center lg:h-full lg:justify-center lg:gap-5 mx-auto lg:flex lg:flex-col md:h-full md:flex md:flex-col sm:flex-col xs:flex-col z-10 absolute">
+          <div className="flex flex-col gap-2 w-1/2 xs:gap-2 xs:h-2/4 xs:justify-center md:p-2 lg:w-[95%] sm:w-full lg:mx-auto lg:gap-5 sm:gap-3 md:w-full xs:w-full">
+            <div className="text-5xl w-full items-start font-bold md:text-5xl sm:text-4xl xs:text-3xl text-first">
               Our Services
             </div>
-            <div className="text-2xl font-bold tracking-widest md:text-3xl xs:text-xl">
+            {/* <div className="text-2xl font-bold md:text-3xl xs:text-xl">
               For You
-            </div>
+            </div> */}
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeIn("right", "spring", 0.5, 0.8)}
-              className="text-lg w-3/4 xl:w-5/6 lg:w-full sm:w-full xs:w-full mt-4 xs:mt-0 xs:mb-0 mb-8 md:w-full md:text-[17px] sm:text-base xs:text-base  "
+              className="text-lg w-3/4 gap-5 sm:gap-2 xs:gap-2 justify-center items-center flex flex-col xl:w-5/6 lg:w-full sm:w-full xs:w-full xs:mt-0 xs:mb-0 md:w-full md:text-[17px] sm:text-base   "
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in dolore eu fugiat nulla pariatur.
+              <div className=" text-[19px] sm:text-[18px] xs:text-base font-semibold text-gray-800">With over 33 years of experience in the CAD/BIM domain, We at USAM have identified critical areas where design companies often lag</div>
+              <div className="flex flex-col gap-4 lg:gap-6 xs:gap-2]">
+                  <div className="flex flex-col">
+                    <div className=" font-semibold text-base text-gray-800">Leveraging Existing Software</div>
+                    <div className="text-base">Many companies fail to fully utilize the capabilities of their Autodesk software, missing out on features and functionalities that could significantly enhance their design processes</div>
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="font-semibold text-lg text-gray-800">Automating Repetitive Tasks</div>
+                    <div className="text-base">Repetitive and manual tasks consume valuable time and resources, leading to inefficiencies, increased project timelines, and a higher risk of errors.</div>
+                  </div>
+                  <div className="flex flex-col">
+                    <div className="font-semibold text-lg text-gray-800">Managing Data Properly</div>
+                    <div className="text-base">Poor data management and integration result in lost information, poor decision-making, and missed opportunities for optimization.</div>
+                  </div>
+                </div>
             </motion.div>
-            <button className="bg-first lg:hidden sm:hidden xs:hidden md:hidden text-xl w-max text-white rounded-full px-4 py-2 transition-colors duration-200">
+            
+            {/* <button className="bg-first lg:hidden sm:hidden xs:hidden md:hidden text-xl w-max text-white rounded-full px-4 py-2 transition-colors duration-200">
               See more
-            </button>
+            </button> */}
             <div className="flex h-full lg:hidden md:hidden sm:hidden xs:hidden w-3/4 xl:w-4/5">
               <Lottie options={defaultOptions} />
             </div>
@@ -48,7 +60,7 @@ const Services = () => {
 
           <div className="flex flex-row lg:w-[95%] lg:mx-auto gap-8 xl:gap-4 lg:gap-1 lg:justify-around lg:hidden md:hidden xs:hidden">
             <div className="flex flex-col md:gap-3 w-full gap-5 lg:gap-14 lg:flex-row md:flex-row md:justify-center">
-              <div className="flex flex-col gap-5  rounded-lg ">
+              <div className="flex flex-col gap-5 rounded-lg ">
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -244,14 +256,14 @@ const Services = () => {
             </motion.div>
           </div>
           {/* ----------------------------------------xs---------------------------------------- */}
-          <div className="2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden flex h-3/4 flex-col gap-5">
+          <div className="2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden flex flex-col gap-4">
             <div className="flex w-full">
               <motion.div
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 variants={fadeIn("right", "tween", 0.35, 0.5)}
-                className="shadow-lg flex flex-row px-4 py-4 gap-4 items-center bg-gradient-to-br from-second via-second to-first w-full rounded-lg"
+                className="shadow-lg flex flex-row px-4 py-2 gap-4 items-center bg-gradient-to-br from-second via-second to-first w-full rounded-lg"
               >
                 <div className="flex w-1/6">
                   <img
@@ -274,7 +286,7 @@ const Services = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 variants={fadeIn("left", "tween", 0.5, 0.5)}
-                className="shadow-lg flex flex-row px-4 py-4 gap-4 items-center bg-gradient-to-br from-third via-second to-first w-full rounded-lg"
+                className="shadow-lg flex flex-row px-4 py-2 gap-4 items-center bg-gradient-to-br from-third via-second to-first w-full rounded-lg"
               >
                 <div className="flex w-1/6">
                   <img
@@ -297,7 +309,7 @@ const Services = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 variants={fadeIn("right", "tween", 0.65, 0.5)}
-                className="shadow-lg flex flex-row px-4 py-4 gap-4 items-center w-full rounded-lg bg-gradient-to-br from-third via-second to-first"
+                className="shadow-lg flex flex-row px-4 py-2 gap-4 items-center w-full rounded-lg bg-gradient-to-br from-third via-second to-first"
               >
                 <div className="flex w-1/6">
                   <img

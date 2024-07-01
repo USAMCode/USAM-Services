@@ -12,7 +12,7 @@ const navLinks = [
   },
   {
     id: "projects",
-    title: "Projects",
+    title: "Products",
   },
   {
     id: "testimonials",

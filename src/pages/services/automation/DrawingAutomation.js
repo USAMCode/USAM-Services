@@ -3,14 +3,14 @@ import ContactModal from "@/components/ContactModal";
 import { motion } from "framer-motion";
 import { fadeIn, fadeScaleIn, fadeInBlur, textVariant } from "@/utils/motion";
 
-const StandardisationAutomation = () => {
+const DrawingAutomation = () => {
   const [show, setShow] = useState(false);
   return (
     <>
       <div className="flex flex-col gap-8 relative w-full">
         <div className="w-full relative">
           <img
-            src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+            src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
             alt=""
             className="w-full h-[650px] xs:h-[300px] md:h-[450px] sm:h-[400px] lg:h-[500px] object-cover"
           />
@@ -19,18 +19,18 @@ const StandardisationAutomation = () => {
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
           {/* ============================================================================================================================================ */}
 
-          <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-primary">
+          <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-first">
             <div className="flex flex-row gap-8 md:gap-4 lg:gap-6 sm:flex-col sm:gap-6 justify-around items-center">
               <div className="w-full lg:w-1/2 h-full flex justify-center items-center ">
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                    src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
               </div>
               <div className="w-full lg:w-1/2 h-full flex flex-col gap-6 md:gap-2 lg:gap-4 ">
                 <div className="font-semibold text-3xl sm:text-2xl md:text-xl lg:text-2xl font-serif">
-                  What is Product Configuration?
+                What is Drawing Automation?
                 </div>
                 <motion.div
                   initial="hidden"
@@ -39,15 +39,10 @@ const StandardisationAutomation = () => {
                   variants={textVariant(0.5)}
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans"
                 >
-                  Product Configuration involves setting up customizable
-                  templates and automation processes within Autodesk tools to
-                  quickly and accurately configure products based on specific
-                  client needs. This service streamlines the design process,
-                  reduces lead times, and ensures precision in every
-                  configuration.
+                  Drawing Automation involves using advanced features within Autodesk tools to automatically generate drawings from 3D models and BIM data. This service eliminates the need for repetitive manual work, reduces errors, and speeds up the design process.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-primary 2xl:text-2xl text-xl md:text-base text-white">
+                  <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>
@@ -55,15 +50,14 @@ const StandardisationAutomation = () => {
               {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
             </div>
           </div>
-          <div className="flex w-full border-2 border-primary rounded-bl-md rounded-tr-md"></div>
+          <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
           {/* ============================================================================================================================================ */}
 
-          <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-primary">
+          <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-first">
             <div className="flex flex-row sm:flex-col-reverse sm:gap-6 md:gap-4 justify-around lg:justify-between items-center">
               <div className="h-full flex flex-col gap-6 w-full lg:w-4/6 xl:w-2/4">
                 <div className="font-semibold text-3xl sm:text-2xl md:text-xl md:w-full lg:text-2xl font-serif sm:w-full lg:w-[90%] w-[80%] m-auto ">
-                  Optimize Your Design Process with Advanced Product
-                  Configuration
+                Revolutionize Your Design Process with Drawing Automation
                 </div>
                 <motion.div
                   initial="hidden"
@@ -72,12 +66,7 @@ const StandardisationAutomation = () => {
                   variants={textVariant(0.5)}
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans sm:w-full w-[80%] md:w-full lg:w-[90%] m-auto"
                 >
-                  Configuring products to meet specific client needs can be
-                  complex and time-consuming, especially in industries like AEC
-                  and manufacturing. Our Product Configuration services simplify
-                  this process, using Autodesk tools like Inventor, Revit, Civil
-                  3D, and Plant 3D to create flexible and efficient
-                  configurations that meet your exact requirements.
+                  Creating accurate and detailed drawings is a critical component of any AEC or manufacturing project. However, manual drawing processes can be time-consuming and prone to errors. Our Drawing Automation services, leveraging Autodesk tools like AutoCAD, Revit, Civil 3D, and Plant 3D, automate the creation of drawings, ensuring precision and efficiency in every project.
                 </motion.div>
               </div>
               {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
@@ -97,13 +86,13 @@ const StandardisationAutomation = () => {
             </div>
           </div>
 
-          <div className="flex w-full border-2 border-primary"></div>
+          <div className="flex w-full border-2 border-first"></div>
           {/* =========================================================================================================================================== */}
 
-          <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-primary border-r-4 border-r-primary">
+          <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="flex flex-col h-[70%] my-auto gap-10 py-16">
               <div className="flex w-full text-center justify-center font-bold text-3xl sm:text-2xl md:text-2xl font-serif ">
-                Why Choose Our Product Configuration Services
+              Why Choose Our Drawing Automation Services?
               </div>
               <div className="flex flex-row justify-center gap-6 lg:flex lg:flex-col md:flex md:flex-col xl:flex xl:flex-col sm:flex sm:flex-col w-[90%] m-auto ">
                 <div className="flex flex-row gap-6 xl:items-center xl:justify-center ">
@@ -131,11 +120,10 @@ const StandardisationAutomation = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-semibold ">
-                      Customization
+                    Speed and Efficiency
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Easily create customized product configurations that meet
-                      the unique requirements of each project or client.
+                    Drastically reduce the time required to produce detailed drawings, allowing for faster project completion.
                     </div>
                   </motion.div>
 
@@ -163,11 +151,10 @@ const StandardisationAutomation = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-serif font-semibold ">
-                      Efficiency
+                    Accuracy
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Speed up the design process with automated configuration
-                      tools, reducing lead times and increasing productivity.
+                    Ensure high levels of accuracy and consistency in your drawings, reducing the risk of costly errors and rework.
                     </div>
                   </motion.div>
                 </div>
@@ -197,11 +184,10 @@ const StandardisationAutomation = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-serif font-semibold">
-                      Accuracy
+                    Cost Savings
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Ensure precise and error-free configurations with
-                      automated checks and validations.
+                    Save on labour costs by automating repetitive drawing tasks, freeing up your team to focus on more critical aspects of the project.
                     </div>
                   </motion.div>
 
@@ -229,11 +215,10 @@ const StandardisationAutomation = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif md:text-xl font-semibold">
-                      Flexibility
+                    Scalability
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Adapt quickly to changing client demands and project
-                      requirements with flexible configuration options.
+                    Easily scale drawing production to meet the demands of large and complex projects.
                     </div>
                   </motion.div>
                 </div>
@@ -241,15 +226,15 @@ const StandardisationAutomation = () => {
             </div>
           </div>
           <div className="flex flex-row w-full">
-            <div className="flex w-2/5 border-2 border-primary rounded-r-full"></div>
+            <div className="flex w-2/5 border-2 border-first rounded-r-full"></div>
             <div className="flex w-1/5 border-none "></div>
-            <div className="flex w-2/5 border-2 border-primary rounded-l-full"></div>
+            <div className="flex w-2/5 border-2 border-first rounded-l-full"></div>
           </div>
           {/* ========================================================================================================================================= */}
 
-          <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-primary border-r-4 border-r-primary">
+          <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="font-semibold text-3xl sm:text-2xl md:text-2xl text-center font-serif h-[70%] my-auto">
-              How We Implement Product Configuration
+            How We Implement Drawing Automation
             </div>
             <div className="flex flex-row gap-10 xl:gap-0 sm:gap-4 md:gap-4 justify-around items-center xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col">
               {/* <div className="bg-white shadow-xl rounded-md xl:justify-center xl:items-center lg:justify-center lg:items-center">PICTURE</div> */}
@@ -261,7 +246,7 @@ const StandardisationAutomation = () => {
                 className=" flex w-2/4 h-full lg:w-2/4 sm:w-full md:w-full justify-center items-center "
               >
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full xl:w-full lg:w-full lg:h-full sm:w-full h-full"
                 />
@@ -276,11 +261,10 @@ const StandardisationAutomation = () => {
                     className="w-3/4 p-8 xl:p-4 lg:p-4 flex flex-col gap-5 lg:gap-2 rounded-md shadow-lg xl:w-full lg:w-full md:w-full sm:w-full "
                   >
                     <div className="text-xl font-semibold font-serif">
-                      Template Development
+                    Template Development
                     </div>
                     <div className="text-[17px] font-sans">
-                      Create customizable templates within Autodesk tools to
-                      streamline the configuration process.
+                    Create standardized drawing templates within Autodesk tools to ensure consistency across all projects.
                     </div>
                   </motion.div>
                   <motion.div
@@ -294,8 +278,7 @@ const StandardisationAutomation = () => {
                       Automation Tools
                     </div>
                     <div className="text-[17px] font-sans">
-                      Set up automation tools to handle repetitive tasks and
-                      ensure accurate configurations.
+                    Set up automation tools to generate drawings from 3D models and BIM data with minimal manual intervention.
                     </div>
                   </motion.div>
                   <motion.div
@@ -306,19 +289,17 @@ const StandardisationAutomation = () => {
                     className="w-3/4 p-8 xl:p-4 lg:p-4 rounded-md flex flex-col gap-5 lg:gap-2 shadow-lg xl:w-full lg:w-full md:w-full sm:w-full"
                   >
                     <div className="text-xl font-semibold font-serif">
-                      Integration
+                    Customization
                     </div>
                     <div className="text-[17px] font-sans">
-                      Integrate configuration tools with other systems (e.g.,
-                      ERP, CRM) to provide a seamless workflow from design to
-                      production.
+                    Customize automation settings to meet the specific requirements of different projects and clients.
                     </div>
                   </motion.div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full p-20 lg:p-10 md:p-10 sm:p-10 justify-center text-center items-center border-l-4 border-r-4 border-t-4 border-primary">
+          <div className="flex flex-col w-full p-20 lg:p-10 md:p-10 sm:p-10 justify-center text-center items-center border-l-4 border-r-4 border-t-4 border-first">
             <motion.div
               initial="hidden"
               whileInView="show"
@@ -326,37 +307,35 @@ const StandardisationAutomation = () => {
               variants={textVariant(0.5)}
               className="flex text-black text-2xl sm:text-lg md:text-xl"
             >
-              Enhance your design capabilities with our Product Configuration
-              services.
-              <br /> Contact us today to learn how we can help you create
-              precise and efficient configurations tailored to your needs.
+              Revolutionize your design process with our Drawing Automation services.
+              <br /> Contact us today to learn how we can help you achieve faster, more accurate, and cost-effective drawing production.
             </motion.div>
           </div>
           <div className="flex flex-row w-full justify-between">
-            <div className="flex w-2/5 h-0 border-2  border-primary"></div>
+            <div className="flex w-2/5 h-0 border-2  border-first"></div>
             <button
-              className="flex w-1/5 px-4 sm:px-2 py-2 bg-primary relative text-center justify-center items-center text-4xl xl:text-4xl sm:text-lg lg:text-2xl md:text-xl sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-md"
+              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-4xl sm:text-base lg:text-2xl md:text-base sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us
             </button>
-            <div className="flex w-2/5 border-2 h-0 border-primary"></div>
+            <div className="flex w-2/5 border-2 h-0 border-first"></div>
           </div>
         </div>
 
-        {/*  ==========================================DUPLICATe ==========================================*/}
+        {/*  ========================================== xs ==========================================*/}
 
         <div className="bg-white flex flex-col gap-10 xs:gap-4 w-full h-full 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden ">
           <div className="bg-white text-black w-full p-20 xs:p-5">
             <div className="flex flex-row xs:gap-4 justify-around items-center xs:w-full xs:flex xs:flex-col xs:p-0 xs:space-y-9  ">
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md"
               />
               <div className=" w-full">
                 <div className="font-semibold text-2xl font-serif">
-                  What is Product Configuration?
+                What is Drawing Automation?
                 </div>
                 <motion.div
                   initial="hidden"
@@ -365,12 +344,7 @@ const StandardisationAutomation = () => {
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Product Configuration involves setting up customizable
-                  templates and automation processes within Autodesk tools to
-                  quickly and accurately configure products based on specific
-                  client needs. This service streamlines the design process,
-                  reduces lead times, and ensures precision in every
-                  configuration.
+                  Drawing Automation involves using advanced features within Autodesk tools to automatically generate drawings from 3D models and BIM data. This service eliminates the need for repetitive manual work, reduces errors, and speeds up the design process.
                 </motion.div>
               </div>
             </div>
@@ -382,8 +356,7 @@ const StandardisationAutomation = () => {
             <div className="flex flex-row xs:gap-8 xs:flex-col-reverse justify-around items-center">
               <div className="px-20 w-2/3 xs:px-0 xs:w-full space-y-6 ">
                 <div className="font-semibold xs:text-2xl font-serif">
-                  Optimize Your Design Process with Advanced Product
-                  Configuration
+                Revolutionize Your Design Process with Drawing Automation
                 </div>
                 <motion.div
                   initial="hidden"
@@ -392,12 +365,7 @@ const StandardisationAutomation = () => {
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Configuring products to meet specific client needs can be
-                  complex and time-consuming, especially in industries like AEC
-                  and manufacturing. Our Product Configuration services simplify
-                  this process, using Autodesk tools like Inventor, Revit, Civil
-                  3D, and Plant 3D to create flexible and efficient
-                  configurations that meet your exact requirements.
+                  Creating accurate and detailed drawings is a critical component of any AEC or manufacturing project. However, manual drawing processes can be time-consuming and prone to errors. Our Drawing Automation services, leveraging Autodesk tools like AutoCAD, Revit, Civil 3D, and Plant 3D, automate the creation of drawings, ensuring precision and efficiency in every project.
                 </motion.div>
               </div>
               <img
@@ -412,7 +380,7 @@ const StandardisationAutomation = () => {
           <div className="bg-gray-100 w-[90%] mx-auto xs:p-5">
             <div className="p-4 xs:p-0">
               <div className="flex justify-center font-bold text-3xl font-serif p-6 xs:text-2xl xs:text-center ">
-                Why Choose Our Product Configuration Services
+              Why Choose Our Drawing Automation Services
               </div>
               <div className="flex flex-row justify-center gap-6 xs:flex xs:flex-col ">
                 <div className="flex flex-row gap-6 xs:flex xs:flex-col ">
@@ -440,11 +408,10 @@ const StandardisationAutomation = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Customization
+                    Speed and Efficiency
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Easily create customized product configurations that meet
-                      the unique requirements of each project or client.
+                    Drastically reduce the time required to produce detailed drawings, allowing for faster project completion.
                     </div>
                   </motion.div>
 
@@ -472,11 +439,10 @@ const StandardisationAutomation = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Efficiency
+                    Accuracy
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Speed up the design process with automated configuration
-                      tools, reducing lead times and increasing productivity.
+                    Ensure high levels of accuracy and consistency in your drawings, reducing the risk of costly errors and rework.
                     </div>
                   </motion.div>
                 </div>
@@ -506,11 +472,10 @@ const StandardisationAutomation = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Accuracy
+                    Cost Savings
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Ensure precise and error-free configurations with
-                      automated checks and validations.
+                    Save on labour costs by automating repetitive drawing tasks, freeing up your team to focus on more critical aspects of the project.
                     </div>
                   </motion.div>
 
@@ -538,11 +503,10 @@ const StandardisationAutomation = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Flexibility
+                    Scalability
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Adapt quickly to changing client demands and project
-                      requirements with flexible configuration options.
+                    Easily scale drawing production to meet the demands of large and complex projects.
                     </div>
                   </motion.div>
                 </div>
@@ -554,11 +518,11 @@ const StandardisationAutomation = () => {
 
           <div className="bg-white text-black p-20 xs:p-0">
             <div className="font-semibold text-2xl text-center p-8 font-serif xs:p-3">
-              How We Implement Product Configuration
+            How We Implement Drawing Automation
             </div>
             <div className="flex flex-row gap-4 p-5 justify-around items-center xs:flex xs:flex-col ">
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam.s3.ap-south-1.amazonaws.com/Automation.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />
@@ -566,7 +530,7 @@ const StandardisationAutomation = () => {
                 <div className="text-[17px] flex flex-col gap-8 ">
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full">
                     <div className="text-xl font-semibold font-serif">
-                      Template Development
+                    Template Development
                     </div>
                     <motion.div
                       initial="hidden"
@@ -575,13 +539,12 @@ const StandardisationAutomation = () => {
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Create customizable templates within Autodesk tools to
-                      streamline the configuration process.
+                      Create standardized drawing templates within Autodesk tools to ensure consistency across all projects.
                     </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
                     <div className="text-xl font-semibold font-serif">
-                      Automation Tools
+                    Automation Tools
                     </div>
                     <motion.div
                       initial="hidden"
@@ -590,13 +553,12 @@ const StandardisationAutomation = () => {
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Set up automation tools to handle repetitive tasks and
-                      ensure accurate configurations.
+                      Set up automation tools to generate drawings from 3D models and BIM data with minimal manual intervention.
                     </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
                     <div className="text-xl font-semibold font-serif">
-                      Integration
+                    Customization
                     </div>
                     <motion.div
                       initial="hidden"
@@ -605,9 +567,7 @@ const StandardisationAutomation = () => {
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Integrate configuration tools with other systems (e.g.,
-                      ERP, CRM) to provide a seamless workflow from design to
-                      production.
+                      Customize automation settings to meet the specific requirements of different projects and clients.
                     </motion.div>
                   </div>
                 </div>
@@ -622,12 +582,10 @@ const StandardisationAutomation = () => {
               variants={textVariant(0.5)}
               className="flex text-black text-lg text-start"
             >
-              Enhance your design capabilities with our Product Configuration
-              services. Contact us today to learn how we can help you create
-              precise and efficient configurations tailored to your needs.
+              Revolutionize your design process with our Drawing Automation services. Contact us today to learn how we can help you achieve faster, more accurate, and cost-effective drawing production.
             </motion.div>
             <button
-              className="flex px-4 py-2 bg-primary relative text-center justify-center items-center text-2xl rounded-md"
+              className="flex px-4 py-2 bg-first relative text-center justify-center items-center text-2xl rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us
@@ -640,4 +598,4 @@ const StandardisationAutomation = () => {
   );
 };
 
-export default StandardisationAutomation;
+export default DrawingAutomation;

@@ -45,12 +45,7 @@ const ProductConfiguration = () => {
                   variants={textVariant(0.5)}
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans"
                 >
-                  Product Configuration involves setting up customizable
-                  templates and automation processes within Autodesk tools to
-                  quickly and accurately configure products based on specific
-                  client needs. This service streamlines the design process,
-                  reduces lead times, and ensures precision in every
-                  configuration.
+                Product Configuration involves setting up customizable templates and automation processes within Autodesk tools to quickly and accurately configure products based on specific client needs. This service streamlines the design process, reduces lead times, and ensures precision in every configuration.
                 </motion.div>
                 <div className="flex w-full">
                   <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
@@ -78,12 +73,7 @@ const ProductConfiguration = () => {
                   variants={textVariant(0.5)}
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans sm:w-full w-[80%] md:w-full lg:w-[90%] m-auto"
                 >
-                  Configuring products to meet specific client needs can be
-                  complex and time-consuming, especially in industries like AEC
-                  and manufacturing. Our Product Configuration services simplify
-                  this process, using Autodesk tools like Inventor, Revit, Civil
-                  3D, and Plant 3D to create flexible and efficient
-                  configurations that meet your exact requirements.
+                  Configuring products to meet specific client needs can be complex and time-consuming, especially in industries like AEC and manufacturing. Our Product Configuration services simplify this process, using Autodesk tools like Inventor, Revit, Civil 3D, and Plant 3D to create flexible and efficient configurations that meet your exact requirements.
                 </motion.div>
               </div>
               {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
@@ -109,7 +99,7 @@ const ProductConfiguration = () => {
           <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="flex flex-col h-[70%] my-auto gap-10 py-16">
               <div className="flex w-full text-center justify-center font-bold text-3xl sm:text-2xl md:text-2xl font-serif ">
-                Why Choose Our Product Configuration Services
+              Why Choose Our Product Configuration Services
               </div>
               <div className="flex flex-row justify-center gap-6 lg:flex lg:flex-col md:flex md:flex-col xl:flex xl:flex-col sm:flex sm:flex-col w-[90%] m-auto ">
                 <div className="flex flex-row gap-6 xl:items-center xl:justify-center ">
@@ -140,8 +130,7 @@ const ProductConfiguration = () => {
                       Customization
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Easily create customized product configurations that meet
-                      the unique requirements of each project or client.
+                    Easily create customized product configurations that meet the unique requirements of each project or client.
                     </div>
                   </motion.div>
 
@@ -169,11 +158,10 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-serif font-semibold ">
-                      Efficiency
+                    Efficiency
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Speed up the design process with automated configuration
-                      tools, reducing lead times and increasing productivity.
+                    Speed up the design process with automated configuration tools, reducing lead times and increasing productivity.
                     </div>
                   </motion.div>
                 </div>
@@ -206,8 +194,7 @@ const ProductConfiguration = () => {
                       Accuracy
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Ensure precise and error-free configurations with
-                      automated checks and validations.
+                    Ensure precise and error-free configurations with automated checks and validations.
                     </div>
                   </motion.div>
 
@@ -238,8 +225,7 @@ const ProductConfiguration = () => {
                       Flexibility
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Adapt quickly to changing client demands and project
-                      requirements with flexible configuration options.
+                    Adapt quickly to changing client demands and project requirements with flexible configuration options.
                     </div>
                   </motion.div>
                 </div>
@@ -255,7 +241,7 @@ const ProductConfiguration = () => {
 
           <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="font-semibold text-3xl sm:text-2xl md:text-2xl text-center font-serif h-[70%] my-auto">
-              How We Implement Product Configuration
+            How We Implement Product Configuration
             </div>
             <div className="flex flex-row gap-10 xl:gap-0 sm:gap-4 md:gap-4 justify-around items-center xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col">
               {/* <div className="bg-white shadow-xl rounded-md xl:justify-center xl:items-center lg:justify-center lg:items-center">PICTURE</div> */}
@@ -285,8 +271,7 @@ const ProductConfiguration = () => {
                       Template Development
                     </div>
                     <div className="text-[17px] font-sans">
-                      Create customizable templates within Autodesk tools to
-                      streamline the configuration process.
+                    Create customizable templates within Autodesk tools to streamline the configuration process.
                     </div>
                   </motion.div>
                   <motion.div
@@ -297,11 +282,10 @@ const ProductConfiguration = () => {
                     className="w-3/4 p-8 xl:p-4 lg:p-4 flex flex-col gap-5 lg:gap-2 rounded-md shadow-lg xl:w-full lg:w-full md:w-full sm:w-full "
                   >
                     <div className="text-xl font-semibold font-serif">
-                      Automation Tools
+                    Automation Tools
                     </div>
                     <div className="text-[17px] font-sans">
-                      Set up automation tools to handle repetitive tasks and
-                      ensure accurate configurations.
+                    Set up automation tools to handle repetitive tasks and ensure accurate configurations.
                     </div>
                   </motion.div>
                   <motion.div
@@ -315,9 +299,7 @@ const ProductConfiguration = () => {
                       Integration
                     </div>
                     <div className="text-[17px] font-sans">
-                      Integrate configuration tools with other systems (e.g.,
-                      ERP, CRM) to provide a seamless workflow from design to
-                      production.
+                    Integrate configuration tools with other systems (e.g., ERP, CRM) to provide a seamless workflow from design to production.
                     </div>
                   </motion.div>
                 </div>
@@ -341,7 +323,7 @@ const ProductConfiguration = () => {
           <div className="flex flex-row w-full justify-between">
             <div className="flex w-2/5 h-0 border-2  border-first"></div>
             <button
-              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-4xl sm:text-lg lg:text-2xl md:text-xl sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
+              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-2xl sm:text-base lg:text-2xl md:text-base sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us
@@ -362,7 +344,7 @@ const ProductConfiguration = () => {
               />
               <div className=" w-full">
                 <div className="font-semibold text-2xl font-serif">
-                  What is Product Configuration?
+                What is Product Configuration?
                 </div>
                 <motion.div
                   initial="hidden"
@@ -371,12 +353,7 @@ const ProductConfiguration = () => {
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Product Configuration involves setting up customizable
-                  templates and automation processes within Autodesk tools to
-                  quickly and accurately configure products based on specific
-                  client needs. This service streamlines the design process,
-                  reduces lead times, and ensures precision in every
-                  configuration.
+                  Product Configuration involves setting up customizable templates and automation processes within Autodesk tools to quickly and accurately configure products based on specific client needs. This service streamlines the design process, reduces lead times, and ensures precision in every configuration.
                 </motion.div>
               </div>
             </div>
@@ -388,8 +365,7 @@ const ProductConfiguration = () => {
             <div className="flex flex-row xs:gap-8 xs:flex-col-reverse justify-around items-center">
               <div className="px-20 w-2/3 xs:px-0 xs:w-full space-y-6 ">
                 <div className="font-semibold xs:text-2xl font-serif">
-                  Optimize Your Design Process with Advanced Product
-                  Configuration
+                Optimize Your Design Process with Advanced Product Configuration
                 </div>
                 <motion.div
                   initial="hidden"
@@ -398,12 +374,7 @@ const ProductConfiguration = () => {
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Configuring products to meet specific client needs can be
-                  complex and time-consuming, especially in industries like AEC
-                  and manufacturing. Our Product Configuration services simplify
-                  this process, using Autodesk tools like Inventor, Revit, Civil
-                  3D, and Plant 3D to create flexible and efficient
-                  configurations that meet your exact requirements.
+                  Configuring products to meet specific client needs can be complex and time-consuming, especially in industries like AEC and manufacturing. Our Product Configuration services simplify this process, using Autodesk tools like Inventor, Revit, Civil 3D, and Plant 3D to create flexible and efficient configurations that meet your exact requirements.
                 </motion.div>
               </div>
               <img
@@ -449,8 +420,7 @@ const ProductConfiguration = () => {
                       Customization
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Easily create customized product configurations that meet
-                      the unique requirements of each project or client.
+                    Easily create customized product configurations that meet the unique requirements of each project or client.
                     </div>
                   </motion.div>
 
@@ -481,8 +451,7 @@ const ProductConfiguration = () => {
                       Efficiency
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Speed up the design process with automated configuration
-                      tools, reducing lead times and increasing productivity.
+                    Speed up the design process with automated configuration tools, reducing lead times and increasing productivity.
                     </div>
                   </motion.div>
                 </div>
@@ -515,8 +484,7 @@ const ProductConfiguration = () => {
                       Accuracy
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Ensure precise and error-free configurations with
-                      automated checks and validations.
+                    Ensure precise and error-free configurations with automated checks and validations.
                     </div>
                   </motion.div>
 
@@ -547,8 +515,7 @@ const ProductConfiguration = () => {
                       Flexibility
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Adapt quickly to changing client demands and project
-                      requirements with flexible configuration options.
+                    Adapt quickly to changing client demands and project requirements with flexible configuration options.
                     </div>
                   </motion.div>
                 </div>
@@ -581,8 +548,7 @@ const ProductConfiguration = () => {
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Create customizable templates within Autodesk tools to
-                      streamline the configuration process.
+                      Create customizable templates within Autodesk tools to streamline the configuration process.
                     </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
@@ -596,8 +562,7 @@ const ProductConfiguration = () => {
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Set up automation tools to handle repetitive tasks and
-                      ensure accurate configurations.
+                      Set up automation tools to handle repetitive tasks and ensure accurate configurations.
                     </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
@@ -634,7 +599,7 @@ const ProductConfiguration = () => {
               precise and efficient configurations tailored to your needs.
             </motion.div>
             <button
-              className="flex px-4 py-2 bg-primary relative text-center justify-center items-center text-2xl rounded-md"
+              className="flex px-4 py-2 bg-first relative text-center justify-center items-center text-2xl rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us

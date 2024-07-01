@@ -126,14 +126,14 @@ const Contact = () => {
             variants={slideIn("left", "tween", 0.2, 1)}
             className="xl:flex-[0.65] 2xl:flex-[0.5] lg:flex-[0.8] sm:flex-[0.7] xs:flex-[0.9] md:flex-[0.8] p-6 bg-gradient-to-br from-second via-third to-second sm:bg-tertiary sm:bg-opacity-60 md:bg-tertiary md:p-4 md:bg-opacity-70 xs:p-4  md:flex md:flex-col rounded-2xl"
           >
-            <div className="text-black w-full text-center font-black md:text-4xl sm:text-3xl xs:text-3xl text-5xl">
+            <div className="text-black w-full text-center font-black md:text-4xl sm:text-3xl xs:text-3xl xl:text-4xl text-5xl">
               Contact
             </div>
 
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="flex flex-col gap-4 py-4"
+              className="flex flex-col gap-4 py-4 xl:py-0"
             >
               <label className="flex flex-col">
                 <span className="text-black mb-2 xs:text-lg md:text-lg sm:text-lg font-semibold">Name</span>
@@ -143,7 +143,7 @@ const Contact = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Enter your Name"
-                  className="backdrop-blur-sm bg-white py-2 px-4 md:text-base sm:text-base xs:text-base placeholder:text-first text-black rounded-lg outline-none border-none font-medium"
+                  className="backdrop-blur-sm bg-white py-2 px-4 md:text-base sm:text-base xs:text-base placeholder:text-gray-500 text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -154,7 +154,7 @@ const Contact = () => {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="Enter your Email"
-                  className="backdrop-blur-sm bg-white py-2 px-4 md:text-base sm:text-base xs:text-base placeholder:text-first text-black rounded-lg outline-none border-none font-medium"
+                  className="backdrop-blur-sm bg-white py-2 px-4 md:text-base sm:text-base xs:text-base placeholder:text-gray-500 text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
@@ -198,12 +198,12 @@ const Contact = () => {
               <label className="flex flex-col">
                 <span className="text-black mb-2 font-semibold md:text-lg sm:text-lg xs:text-lg">Message</span>
                 <textarea
-                  rows={7}
+                  rows={5}
                   name="message"
                   value={form.message}
                   onChange={handleChange}
                   placeholder="What do you want to say?"
-                  className="backdrop-blur-sm bg-white py-4 px-4 md:text-base sm:text-base xs:text-base placeholder:text-first
+                  className="backdrop-blur-sm bg-white py-4 px-4 md:text-base sm:text-base xs:text-base placeholder:text-gray-500
                   text-black rounded-lg outline-none border-none font-medium"
                 />
               </label>

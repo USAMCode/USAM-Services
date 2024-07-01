@@ -82,7 +82,7 @@ export default function Sliders() {
     <>
     <div className="flex flex-col h-screen w-full">
       <div className="flex flex-col gap-3 xl:gap-2 sm:gap-4 w-[80%] sm:w-[90%] xs:w-[95%] h-3/4 mx-auto justify-center">
-        <div className="flex justify-center w-full text-5xl h-1/5 items-center font-semibold md:text-4xl xs:text-3xl sm:text-3xl p-8 sm:p-2 xs:p-2 text-first">
+        <div className="flex justify-center w-full text-5xl h-1/5 items-center font-semibold md:text-4xl xs:text-2xl sm:text-3xl p-8 sm:p-2 xs:p-2 text-first">
           We value our Client&apos;s Feedback
         </div>
         <div className="w-[75%] xs:w-full xl:w-[90%] sm:w-full lg:w-[95%] h-2/3 md:w-full bg-gray-300/60 rounded-md mx-auto">

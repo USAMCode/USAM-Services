@@ -17,17 +17,17 @@ const About = () => {
                   At USAM, we offer comprehensive solutions to<br></br>
                 </div>
                 <div className="flex flex-col gap-3 ">
-                  <div className="flex flex-row 2xl:justify-center 2xl:items-center xs:justify-center xs:items-center">
+                  <div className="flex flex-row xs:justify-center xs:items-center">
                     <img src="/img/next.png" className="h-6 w-6 xs:h-4 xs:w-4 " />
-                    <div className="pl-2 font-semibold text-base text-gray-800 xs:text-base md:text[16px] sm:text-base">Help you fully leverage your existing Autodesk software, unlocking its full potential.</div>
+                    <div className="pl-2 font-semibold text-base 2xl:text-lg text-gray-800 xs:text-base md:text[16px] sm:text-base">Help you fully leverage your existing Autodesk software, unlocking its full potential.</div>
                   </div>
-                  <div className="flex flex-row 2xl:justify-center 2xl:items-center xs:justify-center xs:items-center ">
+                  <div className="flex flex-row xs:justify-center xs:items-center ">
                     <img src="/img/next.png" className="h-6 w-6 xs:h-4 xs:w-4" />
-                    <div className="pl-2 font-semibold text-base text-gray-800 xs:text-base md:text[16px] sm:text-base">Automate repetitive tasks to enhance efficiency, accuracy, and reduce project timelines.</div>
+                    <div className="pl-2 font-semibold text-base 2xl:text-lg text-gray-800 xs:text-base md:text[16px] sm:text-base">Automate repetitive tasks to enhance efficiency, accuracy, and reduce project timelines.</div>
                   </div>
-                  <div className="flex flex-row 2xl:justify-center 2xl:items-center xs:justify-center xs:items-center ">
+                  <div className="flex flex-row xs:justify-center xs:items-center ">
                     <img src="/img/next.png" className="h-6 w-6 xs:h-4 xs:w-4 " />
-                    <div className="pl-2 font-semibold text-base text-gray-800 xs:text-base md:text[16px] sm:text-base">Implement robust data management and integration solutions, transforming your raw data into actionable insights for better decision-making.</div>
+                    <div className="pl-2 font-semibold text-base 2xl:text-lg text-gray-800 xs:text-base md:text[16px] sm:text-base">Implement robust data management and integration solutions, transforming your raw data into actionable insights for better decision-making.</div>
                   </div>
                 </div>
               </div>
@@ -53,15 +53,15 @@ const About = () => {
                   At USAM, we offer comprehensive solutions to<br></br>
                 </div>
                 <div className="flex flex-col gap-3 md:gap-2 ">
-                  <div className="flex flex-row 2xl:justify-center 2xl:items-center xs:justify-center xs:items-center">
+                  <div className="flex flex-row xs:justify-center xs:items-center">
                     <img src="/img/next.png" className="h-6 w-6 xs:h-4 xs:w-4 " />
                     <div className="pl-2 font-semibold text-lg text-gray-800 xs:text-base md:text-lg sm:text-base">Help you fully leverage your existing Autodesk software, unlocking its full potential.</div>
                   </div>
-                  <div className="flex flex-row 2xl:justify-center 2xl:items-center xs:justify-center xs:items-center ">
+                  <div className="flex flex-row xs:justify-center xs:items-center ">
                     <img src="/img/next.png" className="h-6 w-6 xs:h-4 xs:w-4" />
                     <div className="pl-2 font-semibold text-lg text-gray-800 xs:text-base md:text-base sm:text-base">Automate repetitive tasks to enhance efficiency, accuracy, and reduce project timelines.</div>
                   </div>
-                  <div className="flex flex-row 2xl:justify-center 2xl:items-center xs:justify-lg xs:items-center ">
+                  <div className="flex flex-row xs:justify-lg xs:items-center ">
                     <img src="/img/next.png" className="h-6 w-6 xs:h-4 xs:w-4 " />
                     <div className="pl-2 font-semibold text-lg text-gray-800 xs:text-base md:text-lg sm:text-base">Implement robust data management and integration solutions, transforming your raw data into actionable insights for better decision-making.</div>
                   </div>
@@ -81,7 +81,7 @@ const About = () => {
         </div>
         {/* <div className="flex xs:hidden sm:hidden md:hidden h-full border border-primary"></div> */}
         <div className="flex h-full xs:h-max 2xl:h-1/2 xl:h-96 xl:w-full sm:w-full sm:p-2 lg:p-5 w-2/4 md:w-4/5 md:p-4 md:justify-center  xs:w-full xs:justify-center lg:h-2/5 lg:w-full rounded-xl ">
-          <video loop autoPlay muted className="w-full h-full object-contain rounded-xl ">
+          <video loop autoPlay controls className="w-full h-full object-contain rounded-xl">
             <source src="/img/Technical Services.mp4" type="video/mp4"/>
           </video>
         </div>

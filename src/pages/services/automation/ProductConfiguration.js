@@ -323,7 +323,7 @@ const ProductConfiguration = () => {
           <div className="flex flex-row w-full justify-between">
             <div className="flex w-2/5 h-0 border-2  border-first"></div>
             <button
-              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-4xl sm:text-lg lg:text-2xl md:text-xl sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
+              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-2xl sm:text-base lg:text-2xl md:text-base sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us
@@ -599,7 +599,7 @@ const ProductConfiguration = () => {
               precise and efficient configurations tailored to your needs.
             </motion.div>
             <button
-              className="flex px-4 py-2 bg-first relative text-center justify-center items-center text-2xl rounded-md"
+              className="flex px-4 py-2 bg-first relative text-center justify-center items-center text-2xl rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us

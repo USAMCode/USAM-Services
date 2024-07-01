@@ -18,8 +18,8 @@ const Services = () => {
   return (
     <>
       <div className="bg-white h-screen flex justify-center items-center">
-        <div className="flex flex-row w-[90%] sm:w-[95%] sm:gap-2 xs:w-[95%] h-full items-center sm:justify-center justify-around xs:justify-around xs:gap-1 md:justify-center lg:h-full lg:justify-center lg:gap-5 mx-auto lg:flex lg:flex-col md:h-full md:flex md:flex-col sm:flex-col xs:flex-col z-10 absolute">
-          <div className="flex flex-col gap-2 w-1/2 xs:gap-2 xs:h-max xs:justify-center md:p-2 lg:w-[95%] sm:w-full lg:mx-auto lg:gap-5 sm:gap-3 md:w-full xs:w-full">
+        <div className="flex flex-row w-[90%] sm:w-[95%] sm:gap-2 xs:w-[95%] xl:w-[100%] h-full items-center sm:justify-center xl:justify-center justify-around xs:justify-around xs:gap-1 md:justify-center lg:h-full lg:justify-center lg:gap-5 mx-auto lg:flex lg:flex-col md:h-full md:flex md:flex-col sm:flex-col xs:flex-col z-10 absolute">
+          <div className="flex flex-col gap-2 w-1/2 md:h-1/2 md:justify-center xs:gap-2 xs:h-max xs:justify-center md:p-2 lg:w-[95%] sm:w-full lg:mx-auto lg:gap-5 sm:gap-3 md:w-full xs:w-full">
             <div className="text-5xl w-full items-start font-bold md:text-5xl sm:text-4xl xs:text-3xl text-first">
               Our Services
             </div>
@@ -31,29 +31,29 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeIn("right", "spring", 0.5, 0.8)}
-              className="text-lg w-4/5 gap-2 sm:gap-2 xs:gap-2 justify-center items-center flex flex-col xl:w-5/6 lg:w-full sm:w-full xs:w-full xs:mt-0 xs:mb-0 md:w-full md:text-[17px] sm:text-base   "
+              className="text-lg w-4/5 gap-2 sm:gap-2 xs:gap-2 justify-center items-center flex flex-col xl:w-full lg:w-full sm:w-full xs:w-full xs:mt-0 xs:mb-0 md:w-full md:text-[17px] sm:text-base   "
             >
-              <div className=" text-[19px] sm:text-[18px] xs:text-base font-semibold text-gray-800">With over 33 years of experience in the CAD/BIM domain, We at USAM have identified critical areas where design companies often lag</div>
-              <div className="flex flex-col gap-4 lg:gap-6 xs:gap-1]">
-                  <div className="flex flex-col">
-                    <div className=" font-semibold text-base text-gray-800">Leveraging Existing Software</div>
-                    <div className="xs:text-sm">Many companies fail to fully utilize the capabilities of their Autodesk software, missing out on features and functionalities that could significantly enhance their design processes</div>
-                  </div>
-                  <div className="flex flex-col">
-                    <div className="font-semibold text-lg text-gray-800">Automating Repetitive Tasks</div>
-                    <div className="xs:text-sm">Repetitive and manual tasks consume valuable time and resources, leading to inefficiencies, increased project timelines, and a higher risk of errors.</div>
-                  </div>
-                  <div className="flex flex-col">
-                    <div className="font-semibold text-lg text-gray-800">Managing Data Properly</div>
-                    <div className="xs:text-sm">Poor data management and integration result in lost information, poor decision-making, and missed opportunities for optimization.</div>
-                  </div>
+              <div className=" text-[19px] xl:text-lg sm:text-[18px] xs:text-base font-semibold text-gray-800">With over 33 years of experience in the CAD/BIM domain, We at USAM have identified critical areas where design companies often lag</div>
+              <div className="flex flex-col gap-2 lg:gap-6 xs:gap-1">
+                <div className="flex flex-col">
+                  <div className=" font-semibold text-base md:font-bold text-gray-800">Leveraging Existing Software</div>
+                  <div className="xs:text-sm xl:text-base">Many companies fail to fully utilize the capabilities of their Autodesk software, missing out on features and functionalities that could significantly enhance their design processes</div>
                 </div>
+                <div className="flex flex-col">
+                  <div className="font-semibold text-lg text-gray-800 md:font-bold">Automating Repetitive Tasks</div>
+                  <div className="xs:text-sm xl:text-base">Repetitive and manual tasks consume valuable time and resources, leading to inefficiencies, increased project timelines, and a higher risk of errors.</div>
+                </div>
+                <div className="flex flex-col">
+                  <div className="font-semibold text-lg text-gray-800 md:font-bold">Managing Data Properly</div>
+                  <div className="xs:text-sm xl:text-base">Poor data management and integration result in lost information, poor decision-making, and missed opportunities for optimization.</div>
+                </div>
+              </div>
             </motion.div>
-            
+
             {/* <button className="bg-first lg:hidden sm:hidden xs:hidden md:hidden text-xl w-max text-white rounded-full px-4 py-2 transition-colors duration-200">
               See more
             </button> */}
-            <div className="flex h-full lg:hidden md:hidden sm:hidden xs:hidden w-3/4 xl:w-4/5">
+            <div className="flex h-full lg:hidden md:hidden sm:hidden xs:hidden w-3/4 xl:w-2/4">
               <Lottie options={defaultOptions} />
             </div>
           </div>
@@ -66,12 +66,12 @@ const Services = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.25 }}
                   variants={bounceIn(0.35, 0.5)}
-                  className="shadow-lg flex flex-col p-5 sm:p-3 gap-5 xl:gap-3 bg-gradient-to-br from-third via-second to-first sm:gap-1 sm:w-72 w-80 xl:w-75 lg:w-72 md:w-64 rounded-lg"
+                  className="shadow-lg flex flex-col p-5 sm:p-3 gap-5 xl:gap-3 bg-gradient-to-br from-third via-second to-first sm:gap-1 sm:w-72 w-80 xl:w-72 lg:w-72 md:w-64 rounded-lg"
                 >
                   <img
                     src="https://usam.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
                     alt=""
-                    className="w-full object-contain h-32 sm:h-48 xl:h-60 2xl:h-64"
+                    className="w-full object-contain h-32 sm:h-48 xl:h-40 2xl:h-64"
                   />
                   <Link
                     href={"/services/automation"}
@@ -88,12 +88,12 @@ const Services = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.25 }}
                   variants={bounceIn(0.65, 0.5)}
-                  className="shadow-lg flex flex-col p-5 sm:p-3 xl:gap-3 bg-gradient-to-br from-third via-second to-first gap-5 sm:gap-1 sm:w-72 w-80 xl:w-75 lg:w-72 md:w-64 rounded-lg"
+                  className="shadow-lg flex flex-col p-5 sm:p-3 xl:gap-3 bg-gradient-to-br from-third via-second to-first gap-5 sm:gap-1 sm:w-72 w-80 xl:w-72 lg:w-72 md:w-64 rounded-lg"
                 >
                   <img
                     src="https://usam.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
                     alt=""
-                    className="w-full object-contain h-32 sm:h-48 xl:h-60 2xl:h-64"
+                    className="w-full object-contain h-32 sm:h-48 xl:h-40 2xl:h-64"
                   />
                   <Link
                     href={"/services/consulting"}
@@ -112,12 +112,12 @@ const Services = () => {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.25 }}
                   variants={bounceIn(0.5, 0.5)}
-                  className="shadow-lg flex flex-col p-5 sm:p-3 gap-5 sm:gap-1 w-80 xl:gap-3 sm:w-72 xl:w-75 lg:w-72 md:w-64 rounded-lg bg-gradient-to-br from-third via-second to-first"
+                  className="shadow-lg flex flex-col p-5 sm:p-3 gap-5 sm:gap-1 w-80 xl:gap-3 sm:w-72 xl:w-72 lg:w-72 md:w-64 rounded-lg bg-gradient-to-br from-third via-second to-first"
                 >
                   <img
                     src="https://usam.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
                     alt=""
-                    className="w-full object-contain h-32 sm:h-48 xl:h-60 2xl:h-64"
+                    className="w-full object-contain h-32 sm:h-48 xl:h-40 2xl:h-64"
                   />
                   <Link
                     href={"/services/datainsights"}
@@ -196,13 +196,13 @@ const Services = () => {
             </div>
           </div>
           {/* ------------------------------Medium----------------------------------- */}
-          <div className="flex flex-row w-full justify-around gap-4 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden">
+          <div className="flex flex-row w-full h-1/2 justify-around gap-4 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden">
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.35, 0.5)}
-              className="shadow-lg flex flex-col px-4 py-4 gap-5 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
+              className="shadow-lg flex flex-col px-4 py-4 gap-5 w-full h-max bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
@@ -221,7 +221,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.65, 0.5)}
-              className="shadow-lg flex flex-col px-4 py-4 w-full bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
+              className="shadow-lg flex flex-col px-4 py-4 w-full bg-gradient-to-br h-max from-third via-second to-first gap-5 rounded-lg"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
@@ -230,7 +230,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/consulting"}
-                className="text-2xl flex w-full justify-center font-semibold text-black md:text-xl"
+                className="text-2xl flex w-full justify-center font-semibold text-black"
               >
                 Consulting
               </Link>
@@ -240,7 +240,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.5, 0.5)}
-              className="shadow-lg flex flex-col px-4 py-4 gap-5 w-full rounded-lg bg-gradient-to-br from-third via-second to-first"
+              className="shadow-lg flex flex-col px-4 py-4 gap-5 w-full rounded-lg h-max bg-gradient-to-br from-third via-second to-first"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
@@ -249,7 +249,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/datainsights"}
-                className="text-2xl flex w-full justify-center font-semibold md:text-xl text-black"
+                className="text-2xl flex w-full justify-center font-semibold text-black"
               >
                 Data & Insights
               </Link>

@@ -381,7 +381,7 @@ const ProjectHandhold = () => {
             >
               With our Project Handhold services, you can tackle your projects with confidence, knowing that expert help is just a call away.
                Let us guide you through the complexities of your projects, ensuring success and satisfaction at every step.<br></br><br></br>
-               Take your projects to the next level with our Project Handhold services – because we're with you every step of the way.
+               Take your projects to the next level with our Project Handhold services – because we&apos;re with you every step of the way.
             </motion.div>
           </div>
           <div className="flex flex-row w-full justify-between">
@@ -699,7 +699,7 @@ const ProjectHandhold = () => {
               With our Project Handhold services, you can tackle your projects with confidence, knowing that expert help is just a call away.
                Let us guide you through the complexities of your projects, ensuring success and satisfaction at every step.
               <br></br> <br></br>
-              Take your projects to the next level with our Project Handhold services – because we're with you every step of the way.
+              Take your projects to the next level with our Project Handhold services – because we&apos;re with you every step of the way.
             </motion.div>
             <button
               className="flex px-4 py-2 bg-first text-white relative text-center justify-center items-center text-2xl rounded-full"

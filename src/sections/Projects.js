@@ -106,7 +106,7 @@ const Projects = () => {
                   <div className="text-2xl font-semibold lg:text-xl md:text-lg xl:text-2xl">
                     Gap Hunter
                   </div>
-                  <div className="lg:text-[14px] md:text-[14px] text-lg">
+                  <div className="lg:text-[14px] md:text-[14px] text-lg xs:text-base">
                     GapHunter automatically detects any gaps in your sketches
                     and zooms directly to the area, allowing you to quickly and
                     accurately address issues that could impact your design.{" "}
@@ -141,7 +141,7 @@ const Projects = () => {
                   <div className="text-2xl font-semibold lg:text-xl md:text-lg xl:text-2xl">
                     Dim Check
                   </div>
-                  <div className="lg:text-[14px] md:text-[14px] text-lg">
+                  <div className="lg:text-[14px] md:text-[14px] text-lg xs:text-base">
                     DimCheck scans your drawings to identify any overridden
                     dimensions, ensuring that all measurements adhere to your
                     specified standards{" "}
@@ -176,7 +176,7 @@ const Projects = () => {
                   <div className="text-2xl font-semibold lg:text-xl xl:text-2xl">
                     Balloon Master
                   </div>
-                  <div className="lg:text-[14px] text-lg">
+                  <div className="lg:text-[14px] text-lg xs:text-base">
                     BalloonMaster, the ultimate tool for ballooning dimensions
                     specifically for inspection purposes in Inventor.{" "}
                   </div>

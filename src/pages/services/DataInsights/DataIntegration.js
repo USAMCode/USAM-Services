@@ -9,14 +9,14 @@ import {
   textVariant,
 } from "@/utils/motion";
 
-const ProductConfiguration = () => {
+const DataIntegration = () => {
   const [show, setShow] = useState(false);
   return (
     <>
       <div className="flex flex-col gap-8 relative w-full">
         <div className="w-full relative">
           <img
-            src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+            src="https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png"
             alt=""
             className="w-full h-[650px] xs:h-[300px] md:h-[450px] sm:h-[400px] lg:h-[500px] object-cover"
           />
@@ -25,19 +25,18 @@ const ProductConfiguration = () => {
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
           {/* ============================================================================================================================================ */}
 
-          <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-primary">
+          <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-first">
             <div className="flex flex-row gap-8 md:gap-4 lg:gap-6 sm:flex-col sm:gap-6 justify-around items-center">
               <div className="w-full lg:w-1/2 h-full flex justify-center items-center ">
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
               </div>
               <div className="w-full lg:w-1/2 h-full flex flex-col gap-6 md:gap-2 lg:gap-4 ">
                 <div className="font-semibold text-3xl sm:text-2xl md:text-xl lg:text-2xl font-serif">
-                  What is Product Configuration?
-                </div>
+                  What are Data Integration Services?                </div>
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -45,15 +44,11 @@ const ProductConfiguration = () => {
                   variants={textVariant(0.5)}
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans"
                 >
-                  Product Configuration involves setting up customizable
-                  templates and automation processes within Autodesk tools to
-                  quickly and accurately configure products based on specific
-                  client needs. This service streamlines the design process,
-                  reduces lead times, and ensures precision in every
-                  configuration.
+                  Data Integration involves connecting and synchronizing data across different software platforms to create a unified and cohesive data environment.
+                  This service helps eliminate data silos, enhance collaboration, and provide a holistic view of your projects and operations.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-primary 2xl:text-2xl text-xl md:text-base text-white">
+                  <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>
@@ -61,16 +56,14 @@ const ProductConfiguration = () => {
               {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
             </div>
           </div>
-          <div className="flex w-full border-2 border-primary rounded-bl-md rounded-tr-md"></div>
+          <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
           {/* ============================================================================================================================================ */}
 
-          <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-primary">
+          <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-first">
             <div className="flex flex-row sm:flex-col-reverse sm:gap-6 md:gap-4 justify-around lg:justify-between items-center">
-              <div className="h-full flex flex-col gap-6 w-full lg:w-4/6 xl:w-2/3">
+              <div className="h-full flex flex-col gap-6 w-full lg:w-4/6 xl:w-2/4">
                 <div className="font-semibold text-3xl sm:text-2xl md:text-xl md:w-full lg:text-2xl font-serif sm:w-full lg:w-[90%] w-[80%] m-auto ">
-                  Optimize Your Design Process with Advanced Product
-                  Configuration
-                </div>
+                  Seamlessly Connect Your Data with Data Integration Services                </div>
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -78,12 +71,8 @@ const ProductConfiguration = () => {
                   variants={textVariant(0.5)}
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans sm:w-full w-[80%] md:w-full lg:w-[90%] m-auto"
                 >
-                  Configuring products to meet specific client needs can be
-                  complex and time-consuming, especially in industries like AEC
-                  and manufacturing. Our Product Configuration services simplify
-                  this process, using Autodesk tools like Inventor, Revit, Civil
-                  3D, and Plant 3D to create flexible and efficient
-                  configurations that meet your exact requirements.
+                 Once your data is optimally managed, the next step is to ensure it flows seamlessly across all your tools and platforms. 
+                 Our Data Integration services are designed to connect your Autodesk tools with ERP, Project Management, Accounts software, Reality Capture, Site Management, and Data & Analytics systems.
                 </motion.div>
               </div>
               {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
@@ -92,10 +81,10 @@ const ProductConfiguration = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 variants={fadeInBlur(0.25, 0.5)}
-                className="w-full lg:w-3/6 xl:w-1/3 h-full flex justify-center items-center "
+                className="w-full lg:w-3/6 xl:w-2/4 h-full flex justify-center items-center "
               >
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full h-full"
                 />
@@ -103,13 +92,13 @@ const ProductConfiguration = () => {
             </div>
           </div>
 
-          <div className="flex w-full border-2 border-primary"></div>
+          <div className="flex w-full border-2 border-first rounded-tl-md"></div>
           {/* =========================================================================================================================================== */}
 
-          <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-primary border-r-4 border-r-primary">
+          <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="flex flex-col h-[70%] my-auto gap-10 py-16">
               <div className="flex w-full text-center justify-center font-bold text-3xl sm:text-2xl md:text-2xl font-serif ">
-                Why Choose Our Product Configuration Services
+Why Choose Our Data Integration Services?
               </div>
               <div className="flex flex-row justify-center gap-6 lg:flex lg:flex-col md:flex md:flex-col xl:flex xl:flex-col sm:flex sm:flex-col w-[90%] m-auto ">
                 <div className="flex flex-row gap-6 xl:items-center xl:justify-center ">
@@ -126,7 +115,7 @@ const ProductConfiguration = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#6F4C5B"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -137,11 +126,10 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-semibold ">
-                      Customization
+                      Unified Data Environment
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Easily create customized product configurations that meet
-                      the unique requirements of each project or client.
+                     Ensure that data flows seamlessly between your Autodesk tools and other business systems, creating a single source of truth.
                     </div>
                   </motion.div>
 
@@ -158,7 +146,7 @@ const ProductConfiguration = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#6F4C5B"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -169,11 +157,10 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-serif font-semibold ">
-                      Efficiency
+                    Enhanced Collaboration
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Speed up the design process with automated configuration
-                      tools, reducing lead times and increasing productivity.
+                    Facilitate better communication and collaboration across different departments and teams by integrating data.
                     </div>
                   </motion.div>
                 </div>
@@ -192,7 +179,7 @@ const ProductConfiguration = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#6F4C5B"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -203,11 +190,10 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-serif font-semibold">
-                      Accuracy
+                    Improved Decision-Making
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Ensure precise and error-free configurations with
-                      automated checks and validations.
+                    Gain valuable insights and make informed decisions with real-time data access and analytics.
                     </div>
                   </motion.div>
 
@@ -224,7 +210,7 @@ const ProductConfiguration = () => {
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#6F4C5B"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -235,11 +221,10 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif md:text-xl font-semibold">
-                      Flexibility
+                    Increased Efficiency
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                      Adapt quickly to changing client demands and project
-                      requirements with flexible configuration options.
+                    Automate data transfer and synchronization, reducing manual data entry and minimizing errors.
                     </div>
                   </motion.div>
                 </div>
@@ -247,16 +232,15 @@ const ProductConfiguration = () => {
             </div>
           </div>
           <div className="flex flex-row w-full">
-            <div className="flex w-2/5 border-2 border-primary rounded-r-full"></div>
+            <div className="flex w-2/5 border-2 border-first rounded-r-full"></div>
             <div className="flex w-1/5 border-none "></div>
-            <div className="flex w-2/5 border-2 border-primary rounded-l-full"></div>
+            <div className="flex w-2/5 border-2 border-first rounded-l-full"></div>
           </div>
           {/* ========================================================================================================================================= */}
 
-          <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-primary border-r-4 border-r-primary">
+          <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="font-semibold text-3xl sm:text-2xl md:text-2xl text-center font-serif h-[70%] my-auto">
-              How We Implement Product Configuration
-            </div>
+              How We Implement Data Integration Services            </div>
             <div className="flex flex-row gap-10 xl:gap-0 sm:gap-4 md:gap-4 justify-around items-center xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col">
               {/* <div className="bg-white shadow-xl rounded-md xl:justify-center xl:items-center lg:justify-center lg:items-center">PICTURE</div> */}
               <motion.div
@@ -267,7 +251,7 @@ const ProductConfiguration = () => {
                 className=" flex w-2/4 h-full lg:w-2/4 sm:w-full md:w-full justify-center items-center "
               >
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full xl:w-full lg:w-full lg:h-full sm:w-full h-full"
                 />
@@ -282,11 +266,9 @@ const ProductConfiguration = () => {
                     className="w-3/4 p-8 xl:p-4 lg:p-4 flex flex-col gap-5 lg:gap-2 rounded-md shadow-lg xl:w-full lg:w-full md:w-full sm:w-full "
                   >
                     <div className="text-xl font-semibold font-serif">
-                      Template Development
-                    </div>
+                      System Assessment                    </div>
                     <div className="text-[17px] font-sans">
-                      Create customizable templates within Autodesk tools to
-                      streamline the configuration process.
+                      Evaluate your current systems and identify integration points for Autodesk tools and other software platforms.
                     </div>
                   </motion.div>
                   <motion.div
@@ -297,11 +279,9 @@ const ProductConfiguration = () => {
                     className="w-3/4 p-8 xl:p-4 lg:p-4 flex flex-col gap-5 lg:gap-2 rounded-md shadow-lg xl:w-full lg:w-full md:w-full sm:w-full "
                   >
                     <div className="text-xl font-semibold font-serif">
-                      Automation Tools
-                    </div>
+                      Integration Setup                    </div>
                     <div className="text-[17px] font-sans">
-                      Set up automation tools to handle repetitive tasks and
-                      ensure accurate configurations.
+                      Implement data connectors and APIs to facilitate seamless data transfer between systems.
                     </div>
                   </motion.div>
                   <motion.div
@@ -312,41 +292,48 @@ const ProductConfiguration = () => {
                     className="w-3/4 p-8 xl:p-4 lg:p-4 rounded-md flex flex-col gap-5 lg:gap-2 shadow-lg xl:w-full lg:w-full md:w-full sm:w-full"
                   >
                     <div className="text-xl font-semibold font-serif">
-                      Integration
+                      Real-Time Synchronization
                     </div>
                     <div className="text-[17px] font-sans">
-                      Integrate configuration tools with other systems (e.g.,
-                      ERP, CRM) to provide a seamless workflow from design to
-                      production.
-                    </div>
+                      Ensure that data is updated in real-time across all integrated platforms, providing accurate and up-to-date information.                    </div>
+                  </motion.div>
+                  <motion.div
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.25 }}
+                    variants={fadeIn("left", "spring", 0.5, 0.5)}
+                    className="w-3/4 p-8 xl:p-4 lg:p-4 rounded-md flex flex-col gap-5 lg:gap-2 shadow-lg xl:w-full lg:w-full md:w-full sm:w-full"
+                  >
+                    <div className="text-xl font-semibold font-serif">
+                    Monitoring and Support                    </div>
+                    <div className="text-[17px] font-sans">
+                      Continuously monitor the integration process and provide support to address any issues or improvements.                    </div>
                   </motion.div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-full p-20 lg:p-10 md:p-10 sm:p-10 justify-center text-center items-center border-l-4 border-r-4 border-t-4 border-primary">
+          <div className="flex flex-col w-full p-20 lg:p-10 md:p-10 sm:p-10 justify-center text-center items-center border-l-4 border-r-4 border-t-4 border-first">
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={textVariant(0.5)}
               className="flex text-black text-2xl sm:text-lg md:text-xl"
-            >
-              Enhance your design capabilities with our Product Configuration
-              services.
-              <br /> Contact us today to learn how we can help you create
-              precise and efficient configurations tailored to your needs.
+            > 
+
+              By integrating Data Management, Data Integration, and Dashboard Visualization services, we provide a comprehensive solution that ensures your data is secure, connected, and effectively visualized, driving efficiency, accuracy, and innovation across your projects.
             </motion.div>
           </div>
           <div className="flex flex-row w-full justify-between">
-            <div className="flex w-2/5 h-0 border-2  border-primary"></div>
+            <div className="flex w-2/5 h-0 border-2  border-first"></div>
             <button
-              className="flex w-1/5 px-4 sm:px-2 py-2 bg-primary relative text-center justify-center items-center text-4xl xl:text-4xl sm:text-lg lg:text-2xl md:text-xl sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-md"
-              onClick={() => setShow(true)}
+              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-3xl sm:text-base lg:text-2xl md:text-base sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
+            onClick={() => setShow(true)}
             >
               Contact Us
             </button>
-            <div className="flex w-2/5 border-2 h-0 border-primary"></div>
+            <div className="flex w-2/5 border-2 h-0 border-first"></div>
           </div>
         </div>
 
@@ -356,14 +343,13 @@ const ProductConfiguration = () => {
           <div className="bg-white text-black w-full p-20 xs:p-5">
             <div className="flex flex-row xs:gap-4 justify-around items-center xs:w-full xs:flex xs:flex-col xs:p-0 xs:space-y-9  ">
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md"
               />
               <div className=" w-full">
                 <div className="font-semibold text-2xl font-serif">
-                  What is Product Configuration?
-                </div>
+                  What are Data Integration Services?                </div>
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -371,12 +357,8 @@ const ProductConfiguration = () => {
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Product Configuration involves setting up customizable
-                  templates and automation processes within Autodesk tools to
-                  quickly and accurately configure products based on specific
-                  client needs. This service streamlines the design process,
-                  reduces lead times, and ensures precision in every
-                  configuration.
+                  Data Integration involves connecting and synchronizing data across different software platforms to create a unified and cohesive data environment.
+                  This service helps eliminate data silos, enhance collaboration, and provide a holistic view of your projects and operations.
                 </motion.div>
               </div>
             </div>
@@ -388,9 +370,7 @@ const ProductConfiguration = () => {
             <div className="flex flex-row xs:gap-8 xs:flex-col-reverse justify-around items-center">
               <div className="px-20 w-2/3 xs:px-0 xs:w-full space-y-6 ">
                 <div className="font-semibold xs:text-2xl font-serif">
-                  Optimize Your Design Process with Advanced Product
-                  Configuration
-                </div>
+                  Seamlessly Connect Your Data with Data Integration Services                </div>
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -398,16 +378,13 @@ const ProductConfiguration = () => {
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Configuring products to meet specific client needs can be
-                  complex and time-consuming, especially in industries like AEC
-                  and manufacturing. Our Product Configuration services simplify
-                  this process, using Autodesk tools like Inventor, Revit, Civil
-                  3D, and Plant 3D to create flexible and efficient
-                  configurations that meet your exact requirements.
+                  With your data managed and integrated, the final step is to visualize it effectively.
+                  Our Dashboard Visualization services enable you to transform complex data sets into actionable insights, providing a
+                  clear and comprehensive view of your projects and operations.
                 </motion.div>
               </div>
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />
@@ -418,7 +395,7 @@ const ProductConfiguration = () => {
           <div className="bg-gray-100 w-[90%] mx-auto xs:p-5">
             <div className="p-4 xs:p-0">
               <div className="flex justify-center font-bold text-3xl font-serif p-6 xs:text-2xl xs:text-center ">
-                Why Choose Our Product Configuration Services
+Why Choose Our Data Integration Services?
               </div>
               <div className="flex flex-row justify-center gap-6 xs:flex xs:flex-col ">
                 <div className="flex flex-row gap-6 xs:flex xs:flex-col ">
@@ -446,11 +423,10 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Customization
+                      Unified Data Environment
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Easily create customized product configurations that meet
-                      the unique requirements of each project or client.
+                     Ensure that data flows seamlessly between your Autodesk tools and other business systems, creating a single source of truth.
                     </div>
                   </motion.div>
 
@@ -478,11 +454,9 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Efficiency
-                    </div>
+                      Enhanced Collaboration                    </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Speed up the design process with automated configuration
-                      tools, reducing lead times and increasing productivity.
+                    Facilitate better communication and collaboration across different departments and teams by integrating data.
                     </div>
                   </motion.div>
                 </div>
@@ -512,11 +486,10 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Accuracy
+                    Improved Decision-Making
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Ensure precise and error-free configurations with
-                      automated checks and validations.
+                    Gain valuable insights and make informed decisions with real-time data access and analytics.
                     </div>
                   </motion.div>
 
@@ -544,11 +517,10 @@ const ProductConfiguration = () => {
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Flexibility
+                    Increased Efficiency
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                      Adapt quickly to changing client demands and project
-                      requirements with flexible configuration options.
+                    Automate data transfer and synchronization, reducing manual data entry and minimizing errors.
                     </div>
                   </motion.div>
                 </div>
@@ -560,11 +532,10 @@ const ProductConfiguration = () => {
 
           <div className="bg-white text-black p-20 xs:p-0">
             <div className="font-semibold text-2xl text-center p-8 font-serif xs:p-3">
-              How We Implement Product Configuration
-            </div>
+              How We Implement Data Integration Services            </div>
             <div className="flex flex-row gap-4 p-5 justify-around items-center xs:flex xs:flex-col ">
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />
@@ -572,8 +543,8 @@ const ProductConfiguration = () => {
                 <div className="text-[17px] flex flex-col gap-8 ">
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full">
                     <div className="text-xl font-semibold font-serif">
-                      Template Development
-                    </div>
+                      System Assessment                    
+                      </div>
                     <motion.div
                       initial="hidden"
                       whileInView="show"
@@ -581,14 +552,12 @@ const ProductConfiguration = () => {
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Create customizable templates within Autodesk tools to
-                      streamline the configuration process.
+                      Evaluate your current systems and identify integration points for Autodesk tools and other software platforms.
                     </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
                     <div className="text-xl font-semibold font-serif">
-                      Automation Tools
-                    </div>
+                      Integration Setup                    </div>
                     <motion.div
                       initial="hidden"
                       whileInView="show"
@@ -596,13 +565,12 @@ const ProductConfiguration = () => {
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Set up automation tools to handle repetitive tasks and
-                      ensure accurate configurations.
+                      Implement data connectors and APIs to facilitate seamless data transfer between systems.
                     </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
                     <div className="text-xl font-semibold font-serif">
-                      Integration
+                      Real-Time Synchronization
                     </div>
                     <motion.div
                       initial="hidden"
@@ -611,10 +579,19 @@ const ProductConfiguration = () => {
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Integrate configuration tools with other systems (e.g.,
-                      ERP, CRM) to provide a seamless workflow from design to
-                      production.
-                    </motion.div>
+                      Ensure that data is updated in real-time across all integrated platforms, providing accurate and up-to-date information.                    </motion.div>
+                  </div>
+                  <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
+                    <div className="text-xl font-semibold font-serif">
+                    Monitoring and Support                    </div>
+                    <motion.div
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: true, amount: 0.25 }}
+                      variants={textVariant(0.5)}
+                      className="text-[17px] font-sans"
+                    >
+                      Continuously monitor the integration process and provide support to address any issues or improvements.                    </motion.div>
                   </div>
                 </div>
               </div>
@@ -628,13 +605,13 @@ const ProductConfiguration = () => {
               variants={textVariant(0.5)}
               className="flex text-black text-lg text-start"
             >
-              Enhance your design capabilities with our Product Configuration
-              services.
-              Contact us today to learn how we can help you create
-              precise and efficient configurations tailored to your needs.
+              By integrating Data Management, Data Integration, and Dashboard Visualization services,
+              we provide a comprehensive solution that ensures your data is secure,
+              connected, and effectively visualized, driving efficiency, accuracy,
+              and innovation across your projects.
             </motion.div>
             <button
-              className="flex px-4 py-2 bg-primary relative text-center justify-center items-center text-2xl rounded-md"
+              className="flex px-4 py-2 bg-first text-white relative text-center justify-center items-center text-2xl rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us
@@ -647,4 +624,4 @@ const ProductConfiguration = () => {
   );
 };
 
-export default ProductConfiguration;
+export default DataIntegration;

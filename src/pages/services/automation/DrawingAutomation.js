@@ -314,7 +314,7 @@ const DrawingAutomation = () => {
           <div className="flex flex-row w-full justify-between">
             <div className="flex w-2/5 h-0 border-2  border-first"></div>
             <button
-              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-4xl sm:text-base lg:text-2xl md:text-base sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
+              className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-3xl sm:text-base lg:text-2xl md:text-base sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us
@@ -585,7 +585,7 @@ const DrawingAutomation = () => {
               Revolutionize your design process with our Drawing Automation services. Contact us today to learn how we can help you achieve faster, more accurate, and cost-effective drawing production.
             </motion.div>
             <button
-              className="flex px-4 py-2 bg-first relative text-center justify-center items-center text-2xl rounded-full"
+              className="flex px-4 py-2 bg-first text-white relative text-center justify-center items-center text-2xl rounded-full"
               onClick={() => setShow(true)}
             >
               Contact Us

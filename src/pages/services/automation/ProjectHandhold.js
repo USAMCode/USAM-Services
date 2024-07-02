@@ -16,7 +16,7 @@ const ProjecthandholdAutomation = () => {
               a project can be daunting. From initial planning and design to
               implementation and post-deployment support, every step requires
               meticulous attention to detail, coordination, and expertise.
-              That’s where our Project Handhold services come in.
+              That&apos;s where our Project Handhold services come in.
             </div>
           </div>
           <div className="bg-white p-36 rounded-md shadow-2xl">PICTURE</div>

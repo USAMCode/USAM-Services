@@ -38,13 +38,13 @@ const DataInsightsTab = () => {
             <div
               role="tablist"
               aria-label="tabs"
-              className="relative w-[80%] h-full mx-auto md:w-[80%] sm:w-[90%] xs:w-full xs:grid-cols-2 xs:rounded-md sm:rounded-md xs:gap-2 sm: sm:grid-cols-2 xs:py-2 sm:p-2 md:p-2 md:rounded-md grid grid-cols-4 md:grid-cols-2 items-center px-[3px] overflow-hidden transition lg:px-0 lg:mx-auto lg:w-max lg:relative"
+              className="relative w-[80%] h-full mx-auto md:w-[80%] sm:w-[90%] xs:w-full xs:grid-cols-3 xs:rounded-md sm:rounded-md xs:gap-2 sm: sm:grid-cols-3 xs:py-2 sm:p-2 md:p-2 md:rounded-md grid grid-cols-4 md:grid-cols-3 items-center px-[3px] overflow-hidden transition lg:px-0 lg:mx-auto lg:w-max lg:relative"
             >
               {/* <div ref={indicatorRef} className="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full shadow-md"></div> */}
-              {["Dashboard",
+              {["Data Management ",
                 "Data Integration",
-                "Data Management",
-                "IoT and Sensor Integration"].map((tab, index) => (
+                "Dashboard Visualization ",
+               ].map((tab, index) => (
                 <button
                   key={index}
                   ref={tabRefs[index]}
@@ -54,7 +54,7 @@ const DataInsightsTab = () => {
                   id={`tab-${index}`}
                   tabIndex={activeTab === index ? 0 : -1}
                   className={`relative block 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base xs:text-sm h-full px-6 xs:px-0 tab md:rounded-md sm:rounded-md xs:rounded-md ${
-                    activeTab === index ? 'text-black border-b-4 border-t-4 font-semibold border-t-red-400 border-b-red-400' : 'text-gray-800'
+                    activeTab === index ? 'text-black border-b-4 border-t-4 font-semibold border-t-first border-b-first' : 'text-gray-800'
                   }`}
                   onClick={() => setActiveTab(index)}
                 >
@@ -66,10 +66,9 @@ const DataInsightsTab = () => {
           <div ref={tabContentRef} className="mt-6 relative top-14 rounded-3xl bg-white">
             <AnimatePresence mode='wait'>
             {[
-              <Dashboard key="0" />,
+              <DataManagement key="0" />,
               <DataIntegration key="1" />,
-              <DataManagement key="2" />,
-              <IoTandSensorIntegration key="3" />,
+              <Dashboard key="2" />,
             ].map((Component, index) => (
               activeTab === index && (
               <motion.div

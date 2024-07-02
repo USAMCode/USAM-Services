@@ -4,7 +4,7 @@ import { slideIn } from '@/utils/motion';
 
 const Footer = () => {
   return (
-    <div className='flex flex-col bg-neutral-900 xs:pb-4 md:pb-10 sm:pb-5'>
+    <div className='flex flex-col bg-neutral-900 relative xs:pb-4 md:pb-10 sm:pb-5'>
       <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-col text-second gap-4 pt-5 px-10 xs:px-2 flex items-center"

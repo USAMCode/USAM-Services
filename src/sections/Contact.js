@@ -121,10 +121,10 @@ const Contact = () => {
         <div className="flex w-[100%] h-[100%] bg-gradient-to-l xs:hidden sm:hidden">
           <div ref={vantaRef} className="w-full h-full "></div>
         </div>
-        <div className="flex absolute 2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-2/3 xs:relative xs:w-full sm:w-full justify-center">
+        <div className="flex absolute xs:relative 2xl:w-1/2 xl:w-1/2 lg:w-1/2 xs:p-2 md:w-2/3 xs:w-full sm:w-full justify-center">
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className="xl:flex-[0.65] 2xl:flex-[0.5] lg:flex-[0.8] sm:flex-[0.7] xs:flex-[0.9] md:flex-[0.8] p-6 bg-gradient-to-br from-second via-third to-second sm:bg-tertiary sm:bg-opacity-60 md:bg-tertiary md:p-4 md:bg-opacity-70 xs:p-4  md:flex md:flex-col rounded-2xl"
+            className="xl:flex-[0.65] 2xl:flex-[0.5] lg:flex-[0.8] sm:flex-[0.7] xs:flex-[1] md:flex-[0.8] p-6 xs:p-3 bg-gradient-to-br from-second via-third to-second sm:bg-tertiary sm:bg-opacity-60 md:bg-tertiary md:p-4 md:bg-opacity-70  md:flex md:flex-col rounded-2xl"
           >
             <div className="text-black w-full text-center font-black md:text-4xl sm:text-3xl xs:text-3xl xl:text-4xl text-5xl">
               Contact

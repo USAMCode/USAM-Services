@@ -4,15 +4,15 @@ import { slideIn } from '@/utils/motion';
 
 const Footer = () => {
   return (
-    <div className='flex flex-col bg-neutral-900 relative xs:pb-4 md:pb-10 sm:pb-5'>
+    <div className='flex flex-col gap-4 bg-neutral-900 relative xs:pb-4 md:pb-4 sm:pb-5'>
       <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-col text-second gap-4 pt-5 px-10 xs:px-2 flex items-center"
+          className="xl:flex xl:flex-row xl:justify-around sm:px-0 flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-row text-second gap-4 md:py-5 px-10 xs:px-2 flex items-center"
         >
           {/* <div className="flex text-black text-5xl xs:text-4xl font-semibold">
             Follow Us
           </div> */}
-          <ul className="flex flex-row w-1/3 xs:w-full sm:w-full justify-center gap-12 xs:gap-4 md:flex md:flex-row md:w-full lg:flex lg:flex-row xl:w-full xl:flex xl:flex-row lg:w-full sm:flex sm:flex-row flex-wrap py-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <ul className="flex flex-row xs:w-full sm:w-full justify-center gap-12 xs:gap-4 md:flex md:flex-row md:w-full lg:flex lg:flex-row  xl:flex xl:flex-row lg:w-full sm:flex sm:flex-row flex-wrap py-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
               <a
                 className="flex flex-row gap-5 items-center"
@@ -70,18 +70,37 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <div className="flex text-lg flex-row xs:flex-col xs:gap-4 sm:w-full md:w-full lg:flex lg:flex-row lg:w-full xl:flex xl:flex-row xl:w-full w-1/3 xs:w-full justify-around">
+          <div className="flex text-lg flex-row xs:flex-col xs:gap-4 sm:w-full md:w-full lg:flex lg:flex-row lg:w-full xl:flex xl:flex-row xs:w-full justify-around">
             {/* <div className="flex flex-col xs:flex-row gap-2 w-full text-center justify-around">
               <div>Privacy Policy</div>
               <div>Terms & Conditions</div>
             </div> */}
-            <div className="flex flex-col xs:flex-row gap-2 w-full justify-around text-center">
-              <div>+(91)-9344375567</div>
-              <div>mahesh.m@usam.in</div>
+            <div className="flex lg:flex-col md:text-lg lg:text-lg xs:flex-col md:flex-row gap-2 w-full justify-around text-center">
+              <div className='flex w-full justify-center'>+(91)-9344375567</div>
+              <div className='flex w-full justify-center'>mahesh.m@usam.in</div>
+              <div className='flex w-full justify-center'>www.usam.in</div>
             </div>
           </div>
-            <div className="flex text-center tracking-wide text-second">No 4, 1st Cross Street, CIT Colony, Mylapore, Chennai – 600004.</div>
+          <div className='flex flex-col md:w-[85%] sm:w-[90%] mx-auto w-full xs:gap-2 xs:p-4 sm:gap-2 xs:w-full xs:items-center'>
+            <div className="flex w-full text-lg tracking-wide text-second underline">Corporate Office</div>
+            <div className="flex w-full sm:w-full md:w-full lg:w-full xs:w-full tracking-wide text-second"><b>Chennai&nbsp;:</b>&nbsp;No 4, 1st Cross Street, CIT Colony, Mylapore, Chennai – 600004.</div>
+            <div className='flex flex-col'>
+              <div className='flex underline text-lg'>Our Branches&nbsp;:</div>
+              <div className='flex flex-row xs:flex-1 xs:flex-wrap sm:flex-wrap lg:flex-wrap gap-2 lg:gap-0 xs:gap-0 w-full xs:w-[100%] justify-start'>
+                <div>Coimbatore</div>&nbsp;|&nbsp;
+                <div>Trichy</div>&nbsp;|&nbsp;
+                <div>Bangalore</div>&nbsp;|&nbsp;
+                <div>Hyderabad</div>&nbsp;|&nbsp;
+                <div>Kochi</div>&nbsp;|&nbsp;
+                <div>Bhubaneswar</div>
+              </div>
+            </div>
+          </div>
         </motion.div>
+        <div className='flex flex-row xs:flex-col text-second w-[90%] xs:w-full xs:text-sm md:text-base xs:p-4 xs:items-center mx-auto justify-around'>
+          <div>Copyright © 2021 USAM Technology Solutions Pvt Ltd.</div>
+          <div>All rights reserved</div>
+        </div>
     </div>
   )
 }

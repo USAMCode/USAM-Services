@@ -63,10 +63,10 @@ const Contact = () => {
         `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
         {
           from_name: form.name,
-          to_name: "Joel Revington",
+          to_name: "USAM Technologies",
           from_email: form.email,
-          to_email: "joelrevington28@gmail.com",
-          service:form.service,
+          to_email: "connect@usam.in",
+          service: form.service,
           message: form.message,
         },
         `${process.env.NEXT_PUBLIC_EMAILJS_KEY}`
@@ -78,10 +78,11 @@ const Contact = () => {
           {
             from_name: "USAM Technologies",
             to_name: form.name,
-            from_email: "joelrevington28@gmail.com",
+            from_email: "connect@usam.in",
             to_email: form.email,
-            service:form.service,
-            message: "Thanks for Reaching out. We will get back to you shortly",
+            service: form.service,
+            message: "Thanks for Reaching out. Our Team will get in touch with you shortly.",
+            image:"https://usam.s3.ap-south-1.amazonaws.com/AutodeskBlack.png"
           },
           `${process.env.NEXT_PUBLIC_EMAILJS_KEY}`
         );

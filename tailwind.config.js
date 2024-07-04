@@ -12,6 +12,9 @@ module.exports = {
     flowbite.content()
   ],
   theme: {
+    fontFamily:{
+      main:['Quicksand']
+    },
     extend: {
       screens:{
         "xs":{"max": "500px"},

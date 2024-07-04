@@ -412,7 +412,7 @@ Why Choose Our Data Integration Services?
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#6F4C5B"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -443,7 +443,7 @@ Why Choose Our Data Integration Services?
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#6F4C5B"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -475,7 +475,7 @@ Why Choose Our Data Integration Services?
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#6F4C5B"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path
@@ -506,7 +506,7 @@ Why Choose Our Data Integration Services?
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.4}
-                        stroke="#6F4C5B"
+                        stroke="#5479f7"
                         className="size-12"
                       >
                         <path

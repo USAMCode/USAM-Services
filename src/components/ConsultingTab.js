@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import OtherConsulting from "@/pages/services/Consulting/AutomationTraining";
+import OtherConsulting from "@/pages/services/Consulting/OtherConsulting";
 import ProjectHandhold from "@/pages/services/Consulting/ProjectHandhold";
 import Footer from "./footer";
 

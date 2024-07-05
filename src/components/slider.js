@@ -8,7 +8,7 @@ import glide from "@glidejs/glide";
 const slides = [
   {
     id: 1,
-    text: "Thank you very much for being a part of L&T BIM Academy for the long years of delivering the Autodesk product training to our employees for the following Autodesk Revit Architecture. Revit Structure, Revit MEP, AutoCAD, Civi 3D, Dynamo, Plant 3D We do hope that the L&T BIM Academy Experience was rewarding and time well spent. ",
+    text: "Thank you very much for being a part of L&T BIM Academy for the long years of delivering the Autodesk product training to our employees for the following Autodesk Revit Architecture. Revit Structure, Revit MEP, AutoCAD, Civil 3D, Dynamo, Plant 3D We do hope that the L&T BIM Academy Experience was rewarding and time well spent. ",
     name: "- L&T Constructions",
   },
   {
@@ -100,7 +100,7 @@ export default function Sliders() {
                     <div className="text-lg font-semibold">{slide.name}</div>
                     <div className="text-base">{slide.city}</div>
                   </div>
-                  <div className="text-black xs:p-2 w-full text-lg sm:text-base xs:text-sm md:text-base">
+                  <div className="text-black 2xl:text-lg xl:text-lg xs:p-2 w-full text-lg sm:text-base xs:text-base md:text-base">
                     {slide.text}
                   </div>
                   <div className="flex flex-row sm:hidden xs:hidden justify-between w-full">
@@ -122,7 +122,7 @@ export default function Sliders() {
           </div>
         </div>
         <div className="flex flex-col gap-5 w-full h-1/4 items-center justify-around">
-          <div className="flex w-full font-semibold text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-2xl text-first justify-center">
+          <div className="flex w-full font-semibold text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-2xl text-first justify-center ">
             Our Partners
           </div>
           <div

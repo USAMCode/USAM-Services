@@ -8,6 +8,7 @@ const ContactModal = ({ show, setShow }) => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    service:"",
     message: "",
   });
 
@@ -18,6 +19,10 @@ const ContactModal = ({ show, setShow }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
+
+    const handleCheckboxChange = (e) => {
+      setForm({ ...form, serviceType: e.target.value });
+    };
   };
 
   const handleSubmit = (e) => {
@@ -30,9 +35,10 @@ const ContactModal = ({ show, setShow }) => {
         `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
         {
           from_name: form.name,
-          to_name: "Joel Revington",
+          to_name: "USAM Technologies",
           from_email: form.email,
-          to_email: "joelrevington28@gmail.com",
+          to_email: "connect@usam.in",
+          service: form.service,
           message: form.message,
         },
         `${process.env.NEXT_PUBLIC_EMAILJS_KEY}`
@@ -44,9 +50,11 @@ const ContactModal = ({ show, setShow }) => {
           {
             from_name: "USAM Technologies",
             to_name: form.name,
-            from_email: "joelrevington28@gmail.com",
+            from_email: "connect@usam.in",
             to_email: form.email,
-            message: "Thanks for Reaching out. We will get back to you shortly",
+            service: form.service,
+            message: "Thanks for Reaching out. Our Team will get in touch with you shortly.",
+            image:"https://usam.s3.ap-south-1.amazonaws.com/AutodeskBlack.png"
           },
           `${process.env.NEXT_PUBLIC_EMAILJS_KEY}`
         );
@@ -59,6 +67,7 @@ const ContactModal = ({ show, setShow }) => {
           setForm({
             name: "",
             email: "",
+            service:"",
             message: "",
           });
         },
@@ -114,6 +123,46 @@ const ContactModal = ({ show, setShow }) => {
           />
         </label>
         <label className="flex flex-col">
+          <span className="text-black mb-2 font-semibold md:text-lg sm:text-lg xs:text-lg">
+            Service Type
+          </span>
+          <div className="flex flex-row w-full justify-around">
+            <label className="flex lg:text-[14px] md:text-[14px] xs:text-sm text-base items-center font-semibold">
+              <input
+                type="checkbox"
+                name="serviceType"
+                value="Automation"
+                checked={form.serviceType === "Automation"}
+                onChange={handleCheckboxChange}
+                className="mr-1"
+              />
+              Automation
+            </label>
+            <label className="flex lg:text-[14px] md:text-[14px] xs:text-sm items-center font-semibold">
+              <input
+                type="checkbox"
+                name="serviceType"
+                value="Consulting"
+                checked={form.serviceType === "Consulting"}
+                onChange={handleCheckboxChange}
+                className="mr-1"
+              />
+              Consulting
+            </label>
+            <label className="flex lg:text-[14px] md:text-[14px] xs:text-sm items-center font-semibold">
+              <input
+                type="checkbox"
+                name="serviceType"
+                value="Data & Insights"
+                checked={form.serviceType === "Data & Insights"}
+                onChange={handleCheckboxChange}
+                className="mr-1"
+              />
+              Data & Insights
+            </label>
+          </div>
+        </label>
+        <label className="flex flex-col">
           <span className="text-black mb-2 font-semibold md:text-xl sm:text-xl xs:text-xl">
             Message
           </span>
@@ -129,12 +178,12 @@ const ContactModal = ({ show, setShow }) => {
         </label>
 
         <div className="flex w-full justify-center">
-            <button
+          <button
             type="submit"
             className="bg-first py-2 px-6 rounded-lg outline-none w-fit text-white font-bold shadow-md text-lg md:text-xl sm:text-xl"
-            >
+          >
             {loading ? "Sending..." : "Send"}
-            </button>
+          </button>
         </div>
       </form>
     </Modal>

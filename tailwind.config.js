@@ -13,8 +13,8 @@ module.exports = {
   ],
   theme: {
     fontFamily:{
-      main:['Quicksand']
-    },
+      main:['Quicksand'],
+    },  
     extend: {
       screens:{
         "xs":{"max": "500px"},

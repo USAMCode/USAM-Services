@@ -149,8 +149,9 @@ const OtherConsulting = () => {
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans sm:w-full w-[80%] md:w-full lg:w-[90%] m-auto"
                 >
                   Navigate complex project requirements with ease through our project implementation assistance. 
-                  Our team provides hands-on support during the planning, execution, and closing phases of your projects using tools such as Civil 3D for infrastructure projects or Revit for building design.
-                   We ensure all aspects are managed effectively and delivered on time and within budget, such as overseeing the implementation of a large-scale infrastructure project using Civil 3D.
+                  Our team provides hands-on support during the planning, execution, and closing phases of your projects using tools such as Civil 3D for infrastructure 
+                  projects or Revit for building design.We ensure all aspects are managed effectively and 
+                   delivered on time and within budget, such as overseeing the implementation of a large-scale infrastructure project using Civil 3D.
                 </motion.div>
               </div>
               {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
@@ -196,7 +197,8 @@ const OtherConsulting = () => {
                   Achieve consistency and reliability in your operations with our process standardization services. 
                   We help you establish and enforce standardized procedures and best practices across your projects using software like Revit, 
                   Inventor, Plant 3D, and Civil 3D. For example, standardizing the workflow for
-                   HVAC system design in Revit or setting up standard templates and procedures for plant design in Plant 3D ensures uniformity, compliance, and high-quality results every time.
+                   HVAC system design in Revit or setting up standard templates and procedures for plant design in Plant 3D ensures uniformity, compliance,
+                    and high-quality results every time.
                 </motion.div>
                 <div className="flex w-full">
                   <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
@@ -246,23 +248,10 @@ const OtherConsulting = () => {
             </div>
           </div>
 
-          <div className="flex w-full border-2 border-first rounded-tl-md"></div>
+          {/* <div className="flex w-full border-2 border-first rounded-tl-md"></div> */}
           {/* =========================================================================================================================================== */}
 
-          <div className="flex flex-col w-full p-20 lg:p-10 md:p-10 sm:p-10 justify-center text-center items-center border-l-4 border-r-4 border-t-4 border-first">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={textVariant(0.5)}
-              className="flex text-black text-2xl sm:text-lg md:text-xl"
-            >
-              Enhance your design capabilities with our Product Configuration
-              services.
-              <br /> Contact us today to learn how we can help you create
-              precise and efficient configurations tailored to your needs.
-            </motion.div>
-          </div>
+          
           <div className="flex flex-row w-full justify-between">
             <div className="flex w-2/5 h-0 border-2  border-first"></div>
             <button
@@ -296,7 +285,9 @@ const OtherConsulting = () => {
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Product Configuration involves setting up customizable templates and automation processes within Autodesk tools to quickly and accurately configure products based on specific client needs. This service streamlines the design process, reduces lead times, and ensures precision in every configuration.
+                  Product Configuration involves setting up customizable templates and automation processes within Autodesk tools to quickly and
+                   accurately configure products based on specific client needs. This service streamlines the design process, reduces lead times, 
+                   and ensures precision in every configuration.
                 </motion.div>
               </div>
             </div>
@@ -317,7 +308,9 @@ const OtherConsulting = () => {
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Configuring products to meet specific client needs can be complex and time-consuming, especially in industries like AEC and manufacturing. Our Product Configuration services simplify this process, using Autodesk tools like Inventor, Revit, Civil 3D, and Plant 3D to create flexible and efficient configurations that meet your exact requirements.
+                  Configuring products to meet specific client needs can be complex and time-consuming, especially
+                   in industries like AEC and manufacturing. Our Product Configuration services simplify this process, using Autodesk tools like Inventor, 
+                   Revit, Civil 3D, and Plant 3D to create flexible and efficient configurations that meet your exact requirements.
                 </motion.div>
               </div>
               <img

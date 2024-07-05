@@ -19,10 +19,10 @@ const Services = () => {
   return (
     <>
       <div className="flex xs:w-[95%] sm:w-[95%] md:w-[90%] md:mx-auto sm:mx-auto xs:mx-auto h-auto 2xl:flex-row xl:w-[95%] 2xl:w-[90%] xl:mx-auto xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col lg:p-4 xs:gap-2 md:gap-4 sm:gap-4 w-full justify-center">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-4 xl:gap-4 lg:gap-2 md:gap-3 sm:gap-2">
           <motion.div variants={textVariant()}>
-            <div className={styles.sectionSubText}>Services</div>
-            <div className="2xl:text-4xl font-semibold sm:text-2xl">
+            <div className={styles.sectionSubText} >Services</div>
+            <div className="2xl:text-3xl xl:text-3xl lg:text-2xl md:text-2xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
               For You.
             </div>
           </motion.div>
@@ -31,38 +31,38 @@ const Services = () => {
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
             variants={fadeIn("right", "spring", 0.5, 0.8)}
-            className="text-lg 2xl:w-5/6 xl:w-5/6 gap-2 justify-center items-center flex flex-col"
+            className="text-lg 2xl:w-5/6 xl:w-[90%] gap-2 md:gap-0 sm:gap-0 justify-center items-center flex flex-col"
           >
-            <div className=" text-lg font-semibold text-gray-800">
+            <div className="2xl:text-xl xl:text-xl md:text-lg xs:text-lg font-semibold text-gray-900">
               With over 33 years of experience in the CAD/BIM domain, We at USAM
               have identified critical areas where design companies often lag
             </div>
-            <div className="flex flex-col gap-2 xs:gap-1">
+            <div className="flex flex-col gap-4 xs:gap-1 mt-5 xl:mt-3 lg:mt-1">
               <div className="flex flex-col">
-                <div className=" font-semibold text-base md:font-bold text-gray-800">
+                <div className=" font-semibold 2xl:text-xl xl:text-xl md:text-lg xs:text-lg md:font-bold text-gray-800">
                   Leveraging Existing Software
                 </div>
-                <div className="xs:text-sm sm:text-sm xl:text-base">
+                <div className="2xl:text-lg xs:text-base sm:text-sm md:text-base xl:text-base lg:text-base">
                   Many companies fail to fully utilize the capabilities of their
                   Autodesk software, missing out on features and functionalities
                   that could significantly enhance their design processes
                 </div>
               </div>
               <div className="flex flex-col">
-                <div className="font-semibold text-lg text-gray-800 md:font-bold">
+                <div className="font-semibold 2xl:text-xl md:text-lg xs:text-lg text-gray-800 md:font-bold">
                   Automating Repetitive Tasks
                 </div>
-                <div className="xs:text-sm xl:text-base sm:text-sm">
+                <div className="2xl:text-lg xs:text-sm xl:text-base md:text-base sm:text-sm lg:text-base">
                   Repetitive and manual tasks consume valuable time and
                   resources, leading to inefficiencies, increased project
                   timelines, and a higher risk of errors.
                 </div>
               </div>
               <div className="flex flex-col">
-                <div className="font-semibold text-lg text-gray-800 md:font-bold">
+                <div className="font-semibold 2xl:text-xl md:text-lg xs:text-lg text-gray-800 md:font-bold">
                   Managing Data Properly
                 </div>
-                <div className="xs:text-sm xl:text-base sm:text-sm">
+                <div className="2xl:text-lg xs:text-sm md:text-base xl:text-base sm:text-sm lg:text-base">
                   Poor data management and integration result in lost
                   information, poor decision-making, and missed opportunities
                   for optimization.
@@ -82,7 +82,7 @@ const Services = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 variants={bounceIn(0.35, 0.5)}
-                className="shadow-lg flex flex-col xs:flex-row xs:items-center p-5 xs:px-5 xs:py-2 gap-5 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
+                className="shadow-lg flex flex-col xs:flex-row xs:items-center p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
               >
                 <img
                   src="https://usam.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
@@ -91,7 +91,7 @@ const Services = () => {
                 />
                 <Link
                   href={"/services/automation"}
-                  className="2xl:text-3xl xl:text-2xl flex w-full justify-center font-semibold text-black"
+                  className="2xl:text-3xl xl:text-2xl xs:text-xl flex w-full justify-center font-semibold text-black"
                 >
                   Automation
                 </Link>
@@ -104,7 +104,7 @@ const Services = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 variants={bounceIn(0.65, 0.5)}
-                className="shadow-lg flex flex-col xs:items-center xs:flex-row p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first gap-5 2xl:w-80 xl:w-64 rounded-lg"
+                className="shadow-lg flex flex-col xs:items-center xs:flex-row p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
               >
                 <img
                   src="https://usam.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
@@ -113,7 +113,7 @@ const Services = () => {
                 />
                 <Link
                   href={"/services/consulting"}
-                  className="2xl:text-3xl xl:text-2xl w-full flex justify-center font-semibold text-black"
+                  className="2xl:text-3xl xl:text-2xl xs:text-xl w-full flex justify-center font-semibold text-black"
                 >
                   Consulting
                 </Link>
@@ -128,7 +128,7 @@ const Services = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 variants={bounceIn(0.5, 0.5)}
-                className="shadow-lg flex flex-col xs:flex-row p-5 xs:px-5 xs:py-2 xs:items-center gap-5 2xl:w-80 xl:w-64 xs:w-full rounded-lg bg-gradient-to-br from-third via-second to-first"
+                className="shadow-lg flex flex-col xs:flex-row p-5 xs:px-5 xs:py-2 xs:items-center 2xl:w-80 xl:w-64 xs:w-full rounded-lg bg-gradient-to-br from-third via-second to-first"
               >
                 <img
                   src="https://usam.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
@@ -137,7 +137,7 @@ const Services = () => {
                 />
                 <Link
                   href={"/services/datainsights"}
-                  className="2xl:text-3xl xl:text-2xl flex w-full justify-center font-semibold text-black"
+                  className="2xl:text-3xl xl:text-2xl xs:text-xl flex w-full justify-center font-semibold text-black"
                 >
                   Data & Insights
                 </Link>
@@ -153,7 +153,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.35, 0.5)}
-              className="shadow-lg flex flex-col p-2 gap-5 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
+              className="shadow-lg flex flex-col sm:p-5 sm:gap-0 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
@@ -162,7 +162,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/automation"}
-                className="2xl:text-3xl xl:text-2xl flex w-full sm:justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl flex sm:text-xl w-full sm:justify-center font-semibold text-black"
               >
                 Automation
               </Link>
@@ -174,7 +174,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.65, 0.5)}
-              className="shadow-lg flex flex-col w-full p-2 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
+              className="shadow-lg flex flex-col w-full sm:p-5 sm:gap-0 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
@@ -183,7 +183,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/consulting"}
-                className="2xl:text-3xl xl:text-2xl w-full flex sm:justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl sm:text-xl w-full flex sm:justify-center font-semibold text-black"
               >
                 Consulting
               </Link>
@@ -195,7 +195,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.5, 0.5)}
-              className="shadow-lg flex flex-col gap-5 p-2 rounded-lg bg-gradient-to-br from-third via-second to-first"
+              className="shadow-lg flex flex-col sm:p-5 sm:gap-0 rounded-lg bg-gradient-to-br from-third via-second to-first"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
@@ -204,7 +204,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/datainsights"}
-                className="2xl:text-3xl xl:text-2xl flex w-full sm:justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl sm:text-xl flex w-full sm:justify-center font-semibold text-black"
               >
                 Data & Insights
               </Link>
@@ -219,7 +219,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.35, 0.5)}
-              className="shadow-lg flex flex-col p-5 gap-5 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
+              className="shadow-lg flex flex-col p-5 gap-5 md:gap-0 md:p-7 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
@@ -228,7 +228,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/automation"}
-                className="2xl:text-3xl xl:text-2xl flex w-full justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl md:text-xl flex w-full justify-center font-semibold text-black"
               >
                 Automation
               </Link>
@@ -240,7 +240,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.65, 0.5)}
-              className="shadow-lg flex flex-col w-full p-5 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
+              className="shadow-lg flex flex-col w-full p-5 md:gap-0 md:p-7 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
@@ -249,7 +249,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/consulting"}
-                className="2xl:text-3xl xl:text-2xl w-full flex justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl md:text-xl w-full flex justify-center font-semibold text-black"
               >
                 Consulting
               </Link>
@@ -261,7 +261,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.5, 0.5)}
-              className="shadow-lg flex flex-col gap-5 p-5 rounded-lg bg-gradient-to-br from-third via-second to-first"
+              className="shadow-lg flex flex-col gap-5 p-5 md:gap-0 md:p-7 rounded-lg bg-gradient-to-br from-third via-second to-first"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
@@ -270,7 +270,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/datainsights"}
-                className="2xl:text-3xl xl:text-2xl flex w-full justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl md:text-xl flex w-full justify-center font-semibold text-black"
               >
                 Data & Insights
               </Link>
@@ -285,7 +285,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.35, 0.5)}
-              className="shadow-lg flex flex-col p-2 gap-5 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
+              className="shadow-lg flex flex-col p-6 gap-0 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
@@ -294,7 +294,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/automation"}
-                className="2xl:text-3xl xl:text-2xl flex w-full justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl  lg:text-xl flex w-full justify-center font-semibold text-black"
               >
                 Automation
               </Link>
@@ -306,7 +306,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.65, 0.5)}
-              className="shadow-lg flex flex-col w-full p-2 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
+              className="shadow-lg flex flex-col w-full p-6 gap-0 bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
@@ -315,7 +315,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/consulting"}
-                className="2xl:text-3xl xl:text-2xl w-full flex justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl lg:text-xl w-full flex justify-center font-semibold text-black"
               >
                 Consulting
               </Link>
@@ -327,7 +327,7 @@ const Services = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={bounceIn(0.5, 0.5)}
-              className="shadow-lg flex flex-col gap-5 p-2 rounded-lg bg-gradient-to-br from-third via-second to-first"
+              className="shadow-lg flex flex-col p-6 gap-0 rounded-lg bg-gradient-to-br from-third via-second to-first"
             >
               <img
                 src="https://usam.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
@@ -336,7 +336,7 @@ const Services = () => {
               />
               <Link
                 href={"/services/datainsights"}
-                className="2xl:text-3xl xl:text-2xl flex w-full justify-center font-semibold text-black"
+                className="2xl:text-3xl xl:text-2xl lg:text-xl flex w-full justify-center font-semibold text-black"
               >
                 Data & Insights
               </Link>

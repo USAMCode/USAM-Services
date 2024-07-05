@@ -23,6 +23,7 @@ const ProductConfiguration = () => {
           {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
         </div>
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
+          
           {/* ============================================================================================================================================ */}
 
           <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-primary">

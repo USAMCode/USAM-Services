@@ -161,7 +161,7 @@ const Contact = () => {
               <label className="flex flex-col">
                 <span className="text-black mb-2 font-semibold md:text-lg sm:text-lg xs:text-lg">Service Type</span>
                 <div className="flex flex-row w-full justify-around">
-                  <label className="flex lg:text-[14px] md:text-[14px] xs:text-sm text-base items-center font-semibold">
+                  <label className="flex lg:text-[16px] md:text-[14px] xs:text-sm text-base items-center font-semibold">
                     <input
                       type="checkbox"
                       name="serviceType"
@@ -172,7 +172,7 @@ const Contact = () => {
                     />
                     Automation
                   </label>
-                  <label className="flex lg:text-[14px] md:text-[14px] xs:text-sm items-center font-semibold">
+                  <label className="flex lg:text-[16px] md:text-[14px] xs:text-sm items-center font-semibold">
                     <input
                       type="checkbox"
                       name="serviceType"
@@ -183,7 +183,7 @@ const Contact = () => {
                     />
                     Consulting
                   </label>
-                  <label className="flex lg:text-[14px] md:text-[14px] xs:text-sm items-center font-semibold">
+                  <label className="flex lg:text-[16px] md:text-[14px] xs:text-sm items-center font-semibold">
                     <input
                       type="checkbox"
                       name="serviceType"

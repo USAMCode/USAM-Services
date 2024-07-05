@@ -72,7 +72,7 @@ const Header= () => {
       ):(
         <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://usam.s3.ap-south-1.amazonaws.com/usam_logo.png" alt=""/>
       )}
-      <ul className="list-none flex flex-row xs:hidden justify-center gap-10">
+      <ul className="list-none flex flex-row xs:hidden sm:hidden justify-center gap-10">
         {navLinks.map((nav) => (
           <li
             key={nav.id}
@@ -92,9 +92,13 @@ const Header= () => {
           </button>
       </ul>
 
-      <div className="hidden xs:flex flex-1 justify-end items-center">
+      <div className="flex">
+        <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://usam.s3.ap-south-1.amazonaws.com/AutodeskBlack.png" alt=""/>
+      </div>
+
+      <div className="hidden xs:flex sm:flex flex-1 justify-end items-center">
         <img
-          src={toggle ? "https://portfolio20072023.s3.ap-south-1.amazonaws.com/close.svg" : "https://portfolio20072023.s3.ap-south-1.amazonaws.com/Menu.svg"}
+          src={toggle ? "https://usam.s3.ap-south-1.amazonaws.com/close.svg" : "https://usam.s3.ap-south-1.amazonaws.com/menu.svg" }
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
@@ -110,7 +114,7 @@ const Header= () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.id ? "text-white" : "text-secondary"
+                  active === nav.id ? "text-first" : "text-white"
                 }`}
                 onClick={() => {
                   setToggle(!toggle);

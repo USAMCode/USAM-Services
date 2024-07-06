@@ -12,10 +12,10 @@ module.exports = {
     flowbite.content()
   ],
   theme: {
-    fontFamily:{
-      main:['Quicksand'],
-    },  
     extend: {
+      fontFamily:{
+        poppins:['Poppins', 'sans-serif']
+      },
       screens:{
         "xs":{"max": "500px"},
         "sm":{"min":"501px", "max":"767px"}

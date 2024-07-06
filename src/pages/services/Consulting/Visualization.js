@@ -16,7 +16,7 @@ const ProductConfiguration = () => {
       <div className="flex flex-col gap-8 relative w-full">
         <div className="w-full relative">
           <img
-            src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+            src="https://usam-services.s3.ap-south-1.amazonaws.com/1.png"
             alt=""
             className="w-full h-[650px] xs:h-[300px] md:h-[450px] sm:h-[400px] lg:h-[500px] object-cover"
           />
@@ -30,7 +30,7 @@ const ProductConfiguration = () => {
             <div className="flex flex-row gap-8 md:gap-4 lg:gap-6 sm:flex-col sm:gap-6 justify-around items-center">
               <div className="w-full lg:w-1/2 h-full flex justify-center items-center ">
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam-services.s3.ap-south-1.amazonaws.com/1.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
@@ -96,7 +96,7 @@ const ProductConfiguration = () => {
                 className="w-full lg:w-3/6 xl:w-1/3 h-full flex justify-center items-center "
               >
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam-services.s3.ap-south-1.amazonaws.com/1.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full h-full"
                 />
@@ -268,7 +268,7 @@ const ProductConfiguration = () => {
                 className=" flex w-2/4 h-full lg:w-2/4 sm:w-full md:w-full justify-center items-center "
               >
                 <img
-                  src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                  src="https://usam-services.s3.ap-south-1.amazonaws.com/1.png"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full xl:w-full lg:w-full lg:h-full sm:w-full h-full"
                 />
@@ -357,7 +357,7 @@ const ProductConfiguration = () => {
           <div className="bg-white text-black w-full p-20 xs:p-5">
             <div className="flex flex-row xs:gap-4 justify-around items-center xs:w-full xs:flex xs:flex-col xs:p-0 xs:space-y-9  ">
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam-services.s3.ap-south-1.amazonaws.com/1.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md"
               />
@@ -408,7 +408,7 @@ const ProductConfiguration = () => {
                 </motion.div>
               </div>
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam-services.s3.ap-south-1.amazonaws.com/1.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />
@@ -565,7 +565,7 @@ const ProductConfiguration = () => {
             </div>
             <div className="flex flex-row gap-4 p-5 justify-around items-center xs:flex xs:flex-col ">
               <img
-                src="https://usam.s3.ap-south-1.amazonaws.com/1.png"
+                src="https://usam-services.s3.ap-south-1.amazonaws.com/1.png"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />

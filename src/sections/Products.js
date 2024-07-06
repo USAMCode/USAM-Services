@@ -7,21 +7,22 @@ import SectionWrapper from "@/section/SectionWrapper";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Link from "next/link";
 
 const CarouselComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const Projects = [
     {
-      img: "https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg",
+      img: "https://usam-services.s3.ap-south-1.amazonaws.com/Image1.jpg",
       content: "",
     },
     {
-      img: "https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg",
+      img: "https://usam-services.s3.ap-south-1.amazonaws.com/Image1.jpg",
       content: "",
     },
     {
-      img: "https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg",
+      img: "https://usam-services.s3.ap-south-1.amazonaws.com/Image1.jpg",
       content: "",
     },
   ];
@@ -80,29 +81,29 @@ const Projects = () => {
       <div className="flex flex-col gap-8 w-[90%] xs:w-[95%] mx-auto">
         <motion.div variants={textVariant()}>
           <div className={styles.sectionSubText}>Products</div>
-          
+
           <div className="2xl:text-3xl xl:text-3xl lg:text-2xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
-              For You.
-            </div>
+            For You.
+          </div>
         </motion.div>
         <div className="flex 2xl:hidden xl:hidden lg:hidden md:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap sm:justify-center sm:items-center xs:gap-8 sm:gap-8 w-full justify-between">
           {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
+          <motion.div
+
+
+
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className=" bg-second sm:h-75 sm:w-[80%] xs:w-full xs:h-72 relative rounded-3xl"
+          >
             <motion.div
-
-
-
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
-              className=" bg-second sm:h-75 sm:w-[80%] xs:w-full xs:h-72 relative rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                variants={fadeScaleIn(0.2, 0.5)}
-                className="bg-white shadow-2xl sm:h-75 sm:w-full xs:w-full xs:h-72  md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
+              className="bg-white shadow-2xl sm:h-75 sm:w-full xs:w-full xs:h-72  md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
             >
               <div className="w-full p-10 flex flex-col gap-2 lg:p-5 lg:gap-2 md:gap-2">
                 <div className="flex items-center">
@@ -117,31 +118,33 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="2xl:text-lg xl:text-xl sm:text-base xs:text-lg">
-                    GapHunter automatically detects any gaps in your sketches
-                    and zooms directly to the area, allowing you to quickly and
-                    accurately address issues that could impact your design.{" "}
-                  </div>
-                  <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
-                    View
-                  </button>
+                  GapHunter automatically detects any gaps in your sketches
+                  and zooms directly to the area, allowing you to quickly and
+                  accurately address issues that could impact your design.{" "}
                 </div>
-              </motion.div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=8342440050065650514&appLang=en&os=Win64&mode=preview"}>
+                  <div className="bg-first rounded-full w-1/3 p-1 flex justify-center text-white text-lg xl:p-1 ">
+                    View 
+                  </div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative sm:h-75 sm:w-[80%] xs:w-full xs:h-72 md:w-80 lg:w-96 h-80 rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative sm:h-75 sm:w-[80%] xs:w-full xs:h-72 md:w-80 lg:w-96 h-80 rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                variants={fadeScaleIn(0.2, 0.5)}
-                className="bg-white shadow-2xl sm:h-75 sm:w-full xs:w-full xs:h-72 md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
+              className="bg-white shadow-2xl sm:h-75 sm:w-full xs:w-full xs:h-72 md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
             >
               <div className="w-full p-10 flex flex-col gap-3 md:gap-2">
                 <div className="flex items-center">
@@ -156,28 +159,31 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="2xl:text-lg xl:text-lg xs:text-lg sm:text-base">
-                    DimCheck scans your drawings to identify any overridden
-                    dimensions, ensuring that all measurements adhere to your
-                    specified standards{" "}
-                  </div>
+                  DimCheck scans your drawings to identify any overridden
+                  dimensions, ensuring that all measurements adhere to your
+                  specified standards{" "}
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=4214486912770355635&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative sm:h-75 sm:w-[80%] md:w-80 lg:w-96 xs:w-full xs:h-72 rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative sm:h-75 sm:w-[80%] md:w-80 lg:w-96 xs:w-full xs:h-72 rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl sm:h-75 sm:w-full  xs:w-full xs:h-72 md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
@@ -195,15 +201,17 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className=" 2xl:text-lg xl:text-lg xs:text-lg sm:text-base">
-                    BalloonMaster, the ultimate tool for ballooning dimensions
-                    specifically for inspection purposes in Inventor.{" "}
-                  </div>
+                  BalloonMaster, the ultimate tool for ballooning dimensions
+                  specifically for inspection purposes in Inventor.{" "}
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=630776272717761885&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
         </div>
 
@@ -211,16 +219,16 @@ const Projects = () => {
 
         <div className="lg:flex lg:justify-between lg:flex-row lg:flex-nowrap w-full 2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
           {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className=" bg-second lg:w-80 h-75 relative rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className=" bg-second lg:w-80 h-75 relative rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl lg:h-75 lg:w-80 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
@@ -242,21 +250,23 @@ const Projects = () => {
                   and zooms directly to the area, allowing you to quickly and
                   accurately address issues that could impact your design.{" "}
                 </div>
-                <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
-                  View
-                </button>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=8342440050065650514&appLang=en&os=Win64&mode=preview"}>
+                  <div className="bg-first rounded-full w-1/3 p-1 flex justify-center text-white text-lg xl:p-1 ">
+                    View
+                  </div>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative lg:w-80 h-75 rounded-3xl"
-            >
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative lg:w-80 h-75 rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
@@ -280,27 +290,29 @@ const Projects = () => {
                   DimCheck scans your drawings to identify any overridden
                   dimensions, ensuring that all measurements adhere to your
                   specified standards{" "}
-                  </div>
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=4214486912770355635&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative lg:w-80 lg:h-75 rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative lg:w-80 lg:h-75 rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl lg:h-75 lg:w-80 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
             >
               <div className="w-full lg:p-10 flex flex-col gap-4">
@@ -316,15 +328,17 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className=" 2xl:text-lg xl:text-lg xs:text-base lg:text-base">
-                    BalloonMaster, the ultimate tool for ballooning dimensions
-                    specifically for inspection purposes in Inventor.{" "}
-                  </div>
+                  BalloonMaster, the ultimate tool for ballooning dimensions
+                  specifically for inspection purposes in Inventor.{" "}
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=630776272717761885&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
         </div>
 
@@ -334,16 +348,16 @@ const Projects = () => {
 
         <div className="2xl:flex justify-around w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
           {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className=" bg-second w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 relative rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className=" bg-second w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 relative rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl h-80 w-96 xs:w-full sm:w-full md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
@@ -365,21 +379,23 @@ const Projects = () => {
                   and zooms directly to the area, allowing you to quickly and
                   accurately address issues that could impact your design.{" "}
                 </div>
-                <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
-                  View
-                </button>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=8342440050065650514&appLang=en&os=Win64&mode=preview"}>
+                  <div className="bg-first rounded-full w-1/3 p-1 flex justify-center text-white text-lg xl:p-1 ">
+                    View
+                  </div>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 rounded-3xl"
-            >
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
@@ -403,27 +419,29 @@ const Projects = () => {
                   DimCheck scans your drawings to identify any overridden
                   dimensions, ensuring that all measurements adhere to your
                   specified standards{" "}
-                  </div>
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=4214486912770355635&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative w-96 h-80 md:w-80 lg:w-96 sm:w-full xs:w-full rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative w-96 h-80 md:w-80 lg:w-96 sm:w-full xs:w-full rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl h-80 w-96 sm:w-full xs:w-full md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
             >
               <div className="w-full p-10 flex flex-col gap-4">
@@ -439,15 +457,17 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className=" 2xl:text-lg xl:text-lg xs:text-base lg:text-base">
-                    BalloonMaster, the ultimate tool for ballooning dimensions
-                    specifically for inspection purposes in Inventor.{" "}
-                  </div>
+                  BalloonMaster, the ultimate tool for ballooning dimensions
+                  specifically for inspection purposes in Inventor.{" "}
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=630776272717761885&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
         </div>
 
@@ -457,16 +477,16 @@ const Projects = () => {
 
         <div className="xl:flex justify-around w-full lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden ">
           {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className=" bg-second w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 relative rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className=" bg-second w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 relative rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl h-80 w-96 xs:w-full sm:w-full md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
@@ -488,21 +508,23 @@ const Projects = () => {
                   and zooms directly to the area, allowing you to quickly and
                   accurately address issues that could impact your design.{" "}
                 </div>
-                <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
-                  View
-                </button>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=8342440050065650514&appLang=en&os=Win64&mode=preview"}>
+                  <div className="bg-first rounded-full w-1/3 p-1 flex justify-center text-white text-lg xl:p-1 ">
+                    View
+                  </div>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 rounded-3xl"
-            >
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
@@ -526,27 +548,29 @@ const Projects = () => {
                   DimCheck scans your drawings to identify any overridden
                   dimensions, ensuring that all measurements adhere to your
                   specified standards{" "}
-                  </div>
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=4214486912770355635&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative w-96 h-80 md:w-80 lg:w-96 sm:w-full xs:w-full rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative w-96 h-80 md:w-80 lg:w-96 sm:w-full xs:w-full rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl h-80 w-96 sm:w-full xs:w-full md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
             >
               <div className="w-full p-10 flex flex-col gap-4">
@@ -562,35 +586,37 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className=" 2xl:text-lg xl:text-lg xs:text-base lg:text-base">
-                    BalloonMaster, the ultimate tool for ballooning dimensions
-                    specifically for inspection purposes in Inventor.{" "}
-                  </div>
+                  BalloonMaster, the ultimate tool for ballooning dimensions
+                  specifically for inspection purposes in Inventor.{" "}
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=630776272717761885&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
         </div>
 
         {/* ------------------------------------xl /------------------------------------------------ */}
-         {/* --------------------------------------------------------md ---------------------------------------------------- */}
+        {/* --------------------------------------------------------md ---------------------------------------------------- */}
 
-         <div className="md:flex 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap md:gap-8 md:justify-center w-full justify-between">
+        <div className="md:flex 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap md:gap-8 md:justify-center w-full justify-between">
           {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className=" bg-second md:h-72 md:w-96 relative rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
-              className=" bg-second md:h-72 md:w-96 relative rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl md:w-96 md:h-72 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
             >
               <div className="w-full flex flex-col gap-2 md:p-6 md:gap-2 ">
@@ -607,28 +633,30 @@ const Projects = () => {
                 </div>
                 <div className="md:text-base">
                   GapHunter automatically detects any gaps in your sketches
-                    and zooms directly to the area, allowing you to quickly and
-                    accurately address issues that could impact your design.{" "}
-                  </div>
-                  <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
-                    View
-                  </button>
+                  and zooms directly to the area, allowing you to quickly and
+                  accurately address issues that could impact your design.{" "}
                 </div>
-              </motion.div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=8342440050065650514&appLang=en&os=Win64&mode=preview"}>
+                  <div className="bg-first rounded-full w-1/3 p-1  flex justify-center text-white text-lg xl:p-1 ">
+                    View
+                  </div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative md:w-96 md:h-72 rounded-3xl"
+          >
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative md:w-96 md:h-72 rounded-3xl"
-            >
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
               variants={fadeScaleIn(0.2, 0.5)}
               className="bg-white shadow-2xl md:w-96 md:h-72 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
             >
@@ -646,23 +674,25 @@ const Projects = () => {
                 </div>
                 <div className="md:text-base">
                   DimCheck scans your drawings to identify any overridden
-                    dimensions, ensuring that all measurements adhere to your
-                    specified standards{" "}
-                  </div>
+                  dimensions, ensuring that all measurements adhere to your
+                  specified standards{" "}
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=4214486912770355635&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1 ">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
           {/* <div className="h-full flex justify-center"> */}
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={fadeScaleIn(0.2, 0.5)}
-              className="bg-second relative md:w-96 md:h-72 rounded-3xl"
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.25 }}
+            variants={fadeScaleIn(0.2, 0.5)}
+            className="bg-second relative md:w-96 md:h-72 rounded-3xl"
           >
             <motion.div
               initial="hidden"
@@ -685,14 +715,16 @@ const Projects = () => {
                 </div>
                 <div className=" 2xl:text-lg xl:text-lg xs:text-base">
                   BalloonMaster, the ultimate tool for ballooning dimensions
-                    specifically for inspection purposes in Inventor.{" "}
-                  </div>
+                  specifically for inspection purposes in Inventor.{" "}
+                </div>
+                <Link href={"https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=630776272717761885&appLang=en&os=Win64&mode=preview"}>
                   <button className="bg-first rounded-full w-1/3 p-1 text-white text-lg xl:p-1">
                     View
                   </button>
-                </div>
-              </motion.div>
+                </Link>
+              </div>
             </motion.div>
+          </motion.div>
           {/* </div> */}
         </div>
 

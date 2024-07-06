@@ -10,8 +10,8 @@ const Footer = () => {
           className="xl:flex xl:flex-row xl:justify-around sm:px-0 flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-row text-second gap-4 md:py-5 px-5 lg:px-2 xs:px-2 flex items-center"
         >
           <div className='flex w-full justify-center items-center xs:flex-row sm:flex-row md:flex-row lg:flex-col gap-8'>
-            <img className='w-40 xs:w-32 md:w-52 h-12 lg:w-40 2xl:w-52 object-contain' src='https://usam.s3.ap-south-1.amazonaws.com/UsamWhite.png' alt=''/>
-            <img className='w-40 xs:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain' src='https://usam.s3.ap-south-1.amazonaws.com/AutodeskWhite.png' alt=''/>
+            <img className='w-40 xs:w-32 md:w-52 h-12 lg:w-40 2xl:w-52 object-contain' src='https://usam-services.s3.ap-south-1.amazonaws.com/UsamWhite.png' alt=''/>
+            <img className='w-40 xs:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain' src='https://usam-services.s3.ap-south-1.amazonaws.com/AutodeskWhite.png' alt=''/>
           </div>
           <ul className="flex flex-row xs:w-full sm:w-full justify-center gap-12 2xl:gap-12 xl:flex xl:gap-6 lg:gap-x-12 lg:gap-y-6 xs:gap-4 md:flex md:flex-row md:w-full xl:flex-row lg:w-full sm:flex sm:flex-row flex-wrap py-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
@@ -79,7 +79,7 @@ const Footer = () => {
                 >
                 <img
                   className="w-10 h-10"
-                  src="https://usam.s3.ap-south-1.amazonaws.com/youtube.png"
+                  src="https://usam-services.s3.ap-south-1.amazonaws.com/youtube.png"
                   alt=""
                   />
               </a>

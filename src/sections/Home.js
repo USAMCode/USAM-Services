@@ -13,21 +13,21 @@ const Home = () => {
       title: "Automation",
       content:
         "Unlock innovation and creativity and achieve outcomes faster with automation.",
-      image: "https://usam.s3.ap-south-1.amazonaws.com/Automation.png",
+      image: "https://usam-services.s3.ap-south-1.amazonaws.com/Automation.png",
       link: "services/automation",
     },
     {
       title: "Consulting",
       content:
         "Guiding Your Project Towards Success: Expert Consulting Every Step of the Way.",
-      image: "https://usam.s3.ap-south-1.amazonaws.com/Consulting.png",
+      image: "https://usam-services.s3.ap-south-1.amazonaws.com/Consulting.png",
       link: "services/consulting",
     },
     {
       title: "Data & Insights",
       content:
         "The right people get the right information at the right time with connected data.",
-      image: "https://usam.s3.ap-south-1.amazonaws.com/Data+Analysist.png",
+      image: "https://usam-services.s3.ap-south-1.amazonaws.com/Data+Analysist.png",
       link: "services/datainsights",
     },
   ];

@@ -13,15 +13,15 @@ const CarouselComponent = () => {
 
   const Projects = [
     {
-      img: "https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg",
+      img: "https://usam-services.s3.ap-south-1.amazonaws.com/Image1.jpg",
       content: "",
     },
     {
-      img: "https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg",
+      img: "https://usam-services.s3.ap-south-1.amazonaws.com/Image1.jpg",
       content: "",
     },
     {
-      img: "https://usam.s3.ap-south-1.amazonaws.com/Image1.jpg",
+      img: "https://usam-services.s3.ap-south-1.amazonaws.com/Image1.jpg",
       content: "",
     },
   ];

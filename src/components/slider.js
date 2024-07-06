@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { textVariant } from "@/utils/motion";
 import { styles } from "@/styles/styles";
 import glide from "@glidejs/glide";
+import { MultiSlider } from "./MultiSlider";
 
 const slides = [
   {
@@ -84,42 +85,15 @@ export default function Sliders() {
   return (
     <>
       <div className="flex w-full h-screen flex-col">
-        <div className="flex flex-col gap-3 xl:gap-4 sm:gap-4 w-[80%] sm:w-[90%] xs:w-[95%] h-3/4 mx-auto justify-center">
+
+        <div className=" flex-col gap-3 xl:gap-4 sm:gap-4 w-[80%] sm:w-[90%] xs:w-[95%] h-3/4 mx-auto justify-center items-center">
           <motion.div variants={textVariant()} className={`${styles.sectionSubText} flex w-full xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-2xl justify-center`}>
             We value our Client&apos;s Feedback
           </motion.div>
-          <div className="w-[75%] xs:w-full xl:w-[90%] sm:w-full lg:w-[95%] h-2/3 md:w-full bg-gray-300/60 rounded-md mx-auto">
-            <Carousel slideInterval={3000}>
-              {slides.map((slide, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col w-3/4 h-3/4 xl:h-4/5 xl:w-4/5 lg:w-3/4 lg:h-3/4 md:w-3/4 md:gap-0 xs:gap-2 xs:p-2 md:p-8 md:h-4/6 lg:p-14 justify-center items-center gap-5 rounded-md p-20 sm:p-10"
-                >
-                  {/* <img src="https://usam.s3.ap-south-1.amazonaws.com/double-quotes+(2).png" className="flex justify-end items-end"/> */}
-                  <div className="flex 2xl:hidden xl:hidden md:hidden lg:hidden flex-col justify-center text-center">
-                    <div className="text-lg font-semibold">{slide.name}</div>
-                    <div className="text-base">{slide.city}</div>
-                  </div>
-                  <div className="text-black 2xl:text-lg xl:text-lg xs:p-2 w-full text-lg sm:text-base xs:text-base md:text-base">
-                    {slide.text}
-                  </div>
-                  <div className="flex flex-row sm:hidden xs:hidden justify-between w-full">
-                    <div className="flex w-20 h-20 rounded-full">
-                      {/* <img
-                      className="flex rounded-full w-full h-full object-cover"
-                      src="https://usam.s3.ap-south-1.amazonaws.com/rating.png"
-                      alt=""
-                    /> */}
-                    </div>
-                    <div className="flex flex-col sm:hidden xs:hidden justify-center">
-                      <div className="text-xl font-semibold">{slide.name}</div>
-                      <div>{slide.city}</div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Carousel>
+          <div className="h-full w-full">
+          <MultiSlider />
           </div>
+
         </div>
         <div className="flex flex-col gap-5 w-full h-1/4 items-center justify-around">
           <div className="flex w-full font-semibold text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-2xl text-first justify-center ">
@@ -134,61 +108,61 @@ export default function Sliders() {
               <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/Andritz.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Andritz.png"
                     className="m-auto h-12 w-24 object-contain"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/BlueScope.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/BlueScope.png"
                     className="m-auto h-16 relative -top-2 w-28 object-contain"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/CRN.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/CRN.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/Danieli.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Danieli.png"
                     className="m-auto h-12 w-28 object-contain"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/Dellner.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Dellner.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/Diameler.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Diameler.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/Isro.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Isro.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/KSM.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/KSM.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/L%26T.png"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/L%26T.png"
                     className="m-auto h-24 relative -top-6 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam.s3.ap-south-1.amazonaws.com/N%26V.jpg"
+                    src="https://usam-services.s3.ap-south-1.amazonaws.com/N%26V.jpg"
                     className="m-auto h-12 w-auto"
                   />
                 </li>

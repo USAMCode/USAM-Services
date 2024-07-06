@@ -68,7 +68,7 @@ const About = () => {
             </div>
             <div className="flex flex-col lg:w-2/4 justify-center gap-2 items-center mt-5 border-slate-900 text-center">
               <div className="text-7xl xs:text-5xl sm:text-5xl text-first font-bold shadow-sm w-max p-4">
-                33
+                34
               </div>
               <div className="text-2xl lg:text-xl sm:text-lg font-semibold text-black">
                 YEARS

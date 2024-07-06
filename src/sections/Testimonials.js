@@ -3,7 +3,7 @@ import SectionWrapper from "@/section/SectionWrapper"
 
 const Testimonials = () => {
   return ( 
-    <div className="flex flex-col gap-8 w-full bg-white mx-auto">
+    <div className="flex flex-col gap-8 lg:py-8 w-full bg-white mx-auto">
       <Slider />
     </div>
   )

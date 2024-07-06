@@ -8,6 +8,7 @@ import { Carousel } from "flowbite-react";
 import Link from "next/link";
 
 const Home = () => {
+  
   const services = [
     {
       title: "Automation",

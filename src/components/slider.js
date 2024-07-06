@@ -4,32 +4,10 @@ import { motion } from "framer-motion";
 import { textVariant } from "@/utils/motion";
 import { styles } from "@/styles/styles";
 import glide from "@glidejs/glide";
-import { MultiSlider } from "./MultiSlider";
+import MultiSlider from "./MultiSlider";
 
-const slides = [
-  {
-    id: 1,
-    text: "Thank you very much for being a part of L&T BIM Academy for the long years of delivering the Autodesk product training to our employees for the following Autodesk Revit Architecture. Revit Structure, Revit MEP, AutoCAD, Civil 3D, Dynamo, Plant 3D We do hope that the L&T BIM Academy Experience was rewarding and time well spent. ",
-    name: "- L&T Constructions",
-  },
-  {
-    id: 2,
-    text: "Thank you very much for the Revit Training program. It was good. Our team learned a lot from it. Appreciate your support in arranging the training rooms and hands-on-sessions",
-    name: "- TCS",
-  },
-  {
-    id: 4,
-    text: "Training was well conducted and content was easy to understand, Trainer was very patient to respond and clarify every question throughout the sessions, Very accomodative in terms of training mode and the schedules. Thank you and your team for all your efforts to make this event engaging and impactful",
-    name: "- Capitaland",
-  },
-  {
-    id: 3,
-    text: "Overall it was a good experience. Thank you for all your support.",
-    name: "CADS India",
-  },
-];
 
-export default function Sliders() {
+const Sliders = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const glideRef = useRef(null);
 
@@ -70,24 +48,14 @@ export default function Sliders() {
     };
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (currentSlide === slides.length - 1) {
-        setCurrentSlide(0);
-      } else {
-        setCurrentSlide(currentSlide + 1);
-      }
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(interval);
-  }, [currentSlide, slides.length]);
+ 
 
   return (
     <>
-      <div className="flex w-full h-screen flex-col">
+      <div className="flex w-full h-screen flex-col lg:gap-10 2xl:gap-4">
 
-        <div className=" flex-col gap-3 xl:gap-4 sm:gap-4 w-[80%] sm:w-[90%] xs:w-[95%] h-3/4 mx-auto justify-center items-center">
-          <motion.div variants={textVariant()} className={`${styles.sectionSubText} flex w-full xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-2xl justify-center`}>
+        <div className=" flex-col gap-3 xl:gap-4  sm:gap-4 w-[80%] sm:w-[90%] xs:w-[95%] h-3/4 mx-auto justify-center items-center">
+          <motion.div variants={textVariant()} className={`${styles.sectionSubText} flex w-full xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl  xs:text-2xl justify-center`}>
             We value our Client&apos;s Feedback
           </motion.div>
           <div className="h-full w-full">
@@ -95,7 +63,7 @@ export default function Sliders() {
           </div>
 
         </div>
-        <div className="flex flex-col gap-5 w-full h-1/4 items-center justify-around">
+        <div className="flex flex-col gap-5 lg:py-5 2xl:py-0 w-full h-1/4 items-center justify-around">
           <div className="flex w-full font-semibold text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-2xl text-first justify-center ">
             Our Partners
           </div>
@@ -174,3 +142,4 @@ export default function Sliders() {
     </>
   );
 }
+export default Sliders;

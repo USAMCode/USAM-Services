@@ -89,9 +89,6 @@ const Projects = () => {
         <div className="flex 2xl:hidden xl:hidden lg:hidden md:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap sm:justify-center sm:items-center xs:gap-8 sm:gap-8 w-full justify-between">
           {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
           <motion.div
-
-
-
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}

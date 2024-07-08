@@ -50,7 +50,7 @@ const OtherConsulting = () => {
                    For example, we can optimize your Plant 3D workflows to reduce pipeline design time or streamline Civil 3D processes to accelerate road and bridge design projects.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
+                  <button onClick={() => setShow(true)} className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>

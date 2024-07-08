@@ -42,7 +42,7 @@ const WorkflowEnforcement = () => {
                   Workflow Enforcement involves setting up automated processes and controls within Autodesk tools to ensure that all tasks follow predefined sequences and standards. This service helps streamline operations, maintain quality, and enhance overall project efficiency.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
+                  <button onClick={() => setShow(true)} className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>

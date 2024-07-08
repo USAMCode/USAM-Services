@@ -42,7 +42,7 @@ const StandardisationAutomation = () => {
                   Standardization Automation leverages advanced Autodesk tools like Revit, Inventor, Civil 3D, Plant 3D, and Vault to automate and enforce design standards across all your projects. By setting up automated processes, we ensure that your designs adhere to predefined templates, rules, and guidelines, eliminating manual errors and enhancing efficiency.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
+                  <button onClick={() => setShow(true)} className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>

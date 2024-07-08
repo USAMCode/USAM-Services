@@ -47,7 +47,7 @@ const DataManagement = () => {
                   Dashboard Visualization involves creating custom dashboards that display critical data in an easy-to-understand format. These dashboards help you monitor project progress, track key performance indicators (KPIs), and make informed decisions based on real-time data.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
+                  <button onClick={() => setShow(true)} className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>

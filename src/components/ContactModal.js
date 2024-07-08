@@ -19,12 +19,11 @@ const ContactModal = ({ show, setShow }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
-
-    const handleCheckboxChange = (e) => {
-      setForm({ ...form, serviceType: e.target.value });
-    };
   };
-
+  const handleCheckboxChange = (e) => {
+    setForm({ ...form, service: e.target.value });
+  };
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -132,7 +131,7 @@ const ContactModal = ({ show, setShow }) => {
                 type="checkbox"
                 name="serviceType"
                 value="Automation"
-                checked={form.serviceType === "Automation"}
+                checked={form.service === "Automation"}
                 onChange={handleCheckboxChange}
                 className="mr-1"
               />
@@ -143,7 +142,7 @@ const ContactModal = ({ show, setShow }) => {
                 type="checkbox"
                 name="serviceType"
                 value="Consulting"
-                checked={form.serviceType === "Consulting"}
+                checked={form.service === "Consulting"}
                 onChange={handleCheckboxChange}
                 className="mr-1"
               />
@@ -154,7 +153,7 @@ const ContactModal = ({ show, setShow }) => {
                 type="checkbox"
                 name="serviceType"
                 value="Data & Insights"
-                checked={form.serviceType === "Data & Insights"}
+                checked={form.service === "Data & Insights"}
                 onChange={handleCheckboxChange}
                 className="mr-1"
               />

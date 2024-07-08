@@ -42,7 +42,7 @@ const DrawingAutomation = () => {
                   Drawing Automation involves using advanced features within Autodesk tools to automatically generate drawings from 3D models and BIM data. This service eliminates the need for repetitive manual work, reduces errors, and speeds up the design process.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
+                  <button onClick={() => setShow(true)} className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>

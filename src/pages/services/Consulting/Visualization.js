@@ -54,7 +54,7 @@ const ProductConfiguration = () => {
                   configuration.
                 </motion.div>
                 <div className="flex w-full">
-                  <button className="flex px-4 py-2 rounded-full bg-primary 2xl:text-2xl text-xl md:text-base text-white">
+                  <button onClick={() => setShow(true)} className="flex px-4 py-2 rounded-full bg-primary 2xl:text-2xl text-xl md:text-base text-white">
                     Contact Us
                   </button>
                 </div>

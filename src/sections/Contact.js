@@ -50,7 +50,7 @@ const Contact = () => {
   };
 
   const handleCheckboxChange = (e) => {
-    setForm({ ...form, serviceType: e.target.value });
+    setForm({ ...form, service: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -166,7 +166,7 @@ const Contact = () => {
                       type="checkbox"
                       name="serviceType"
                       value="Automation"
-                      checked={form.serviceType === "Automation"}
+                      checked={form.service === "Automation"}
                       onChange={handleCheckboxChange}
                       className="mr-1"
                     />
@@ -177,7 +177,7 @@ const Contact = () => {
                       type="checkbox"
                       name="serviceType"
                       value="Consulting"
-                      checked={form.serviceType === "Consulting"}
+                      checked={form.service === "Consulting"}
                       onChange={handleCheckboxChange}
                       className="mr-1"
                     />
@@ -188,7 +188,7 @@ const Contact = () => {
                       type="checkbox"
                       name="serviceType"
                       value="Data & Insights"
-                      checked={form.serviceType === "Data & Insights"}
+                      checked={form.service === "Data & Insights"}
                       onChange={handleCheckboxChange}
                       className="mr-1"
                     />

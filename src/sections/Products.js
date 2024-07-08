@@ -80,10 +80,10 @@ const Projects = () => {
     <>
       <div className="flex flex-col gap-8 w-[90%] xs:w-[95%] mx-auto">
         <motion.div variants={textVariant()}>
-          <div className={styles.sectionSubText}>Products</div>
+          <div className={styles.sectionSubText}>Our Products</div>
 
           <div className="2xl:text-3xl xl:text-3xl lg:text-2xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
-            For You.
+            For Autodesk  
           </div>
         </motion.div>
         <div className="flex 2xl:hidden xl:hidden lg:hidden md:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap sm:justify-center sm:items-center xs:gap-8 sm:gap-8 w-full justify-between">

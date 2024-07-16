@@ -9,9 +9,9 @@ const About = () => {
   return (
     <>
       <div className="justify-around flex bg-gray-200 flex-row gap-4 items-center">
-        <div className="flex xs:flex-col xl:flex-col xl:gap-8 sm:flex-col md:flex-col xs:gap-5 sm:gap-4 md:gap-4 md:w-[90%] w-[95%] mx-auto py-10">
-          <div className="flex flex-col lg:flex-row xl:flex-row xs:gap-2 sm:gap-2 md:gap-2 xl:gap-4 md:w-full sm:w-full xs:w-full xs:items-center w-1/2 h-full">
-            <div className="flex flex-col lg:w-2/4 gap-5">
+        <div className="flex xs:flex-col xl:flex-row lg:flex-row xl:gap-8 sm:flex-col md:flex-col xs:gap-5 sm:gap-4 md:gap-4 md:w-[90%] w-[95%] mx-auto py-10">
+          <div className="flex flex-col lg:flex-col xl:flex-col xs:gap-2 sm:gap-2 md:gap-2 xl:gap-4 md:w-full sm:w-full xs:w-full xs:items-center lg:w-1/2 h-full">
+            <div className="flex flex-col lg:w-full gap-5">
               <motion.div variants={textVariant()}>
                 <p className={`${styles.sectionSubText}`}>About US</p>
               </motion.div>
@@ -66,49 +66,98 @@ const About = () => {
                 </div>
               </motion.div>
             </div>
-            <div className="flex flex-col lg:w-2/4 justify-center gap-2 items-center mt-5 border-slate-900 text-center">
+            <div className="flex w-1/2 xs:w-full lg:mt-6 justify-center items-center sm:w-full md:w-full rounded-xl ">
+              <video
+                loop
+                controls
+                className="w-full h-full xl:h-1/2 lg:w-4/5 object-contain rounded-xl"
+              >
+                <source src="/img/Technical Services.mp4" type="video/mp4" />
+              </video>
+            </div>
+            {/* <div className="flex flex-col xl:hidden lg:w-2/4 justify-center gap-2 items-center mt-5 border-slate-900 text-center">
               <div className="text-7xl xs:text-5xl sm:text-5xl text-first font-bold shadow-sm w-max p-4">
                 34
               </div>
               <div className="text-2xl lg:text-xl sm:text-lg font-semibold text-black">
                 YEARS
               </div>
-              {/* <div className="text-lg sm:text-base md:text-base xs:hidden xs:text-sm text-black">OF SUCCESSFUL WORK IN THE MARKET</div> */}
-            </div>
+              <div className="text-lg sm:text-base md:text-base xs:hidden xs:text-sm text-black">OF SUCCESSFUL WORK IN THE MARKET</div>
+            </div> */}
           </div>
 
 
-
-          <div className="hidden xl:hidden lg:flex text-lg w-full font-medium xs:font-normal text-black ">
-            Our expertise and innovative services are designed to elevate your
-            design processes, ensuring you stay ahead in the CAD/BIM domain. Let
-            us help you overcome these challenges and achieve your goals with
-            greater efficiency and effectiveness.
-          </div>
-          <div className="flex w-1/2 xl:hidden xs:w-full lg:mt-6 justify-center items-center sm:w-full md:w-full rounded-xl ">
-            <video
-              loop
-              controls
-              className="w-full h-full xl:h-1/2 lg:w-4/5 object-contain rounded-xl"
-            >
-              <source src="/img/Technical Services.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div className="xl:flex hidden flex-row items-center gap-4">
-            <div className="flex w-1/2 xl:justify-center xl:items-center xs:w-full sm:w-full md:w-full rounded-xl ">
-              <video
-                loop
-                controls
-                className="w-full h-full xl:h-1/2 object-contain rounded-xl"
-              >
-                <source src="/img/Technical Services.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div className="hidden 2xl:text-xl xl:text-lg lg:flex text-lg w-full p-10 font-medium xs:font-normal text-black ">
+          <div className="flex flex-col lg:w-1/2 md:w-full justify-between">
+            {/* <div className="hidden xl:hidden lg:flex text-lg w-full font-medium xs:font-normal text-black ">
               Our expertise and innovative services are designed to elevate your
               design processes, ensuring you stay ahead in the CAD/BIM domain. Let
               us help you overcome these challenges and achieve your goals with
               greater efficiency and effectiveness.
+            </div> */}
+            {/* <div className="flex w-1/2 xl:hidden xs:w-full lg:mt-6 justify-center items-center sm:w-full md:w-full rounded-xl ">
+              <video
+                loop
+                controls
+                className="w-full h-full xl:h-1/2 lg:w-4/5 object-contain rounded-xl"
+              >
+                <source src="/img/Technical Services.mp4" type="video/mp4" />
+              </video>
+            </div> */}
+            <div className="flex flex-col lg:w-full justify-center gap-2 items-center mt-5 border-slate-900 text-center">
+              <div className="flex flex-col gap-2 w-full">
+                <div className="flex w-full justify-center">
+                  <div className="flex w-full justify-center">
+                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/autocad-logo.png" alt=""/>
+                  </div>
+                  <div className="flex w-full justify-center">
+                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/autodesk-bim-collaborate-pro-product-icon.png" alt=""/>
+                  </div>
+                  <div className="flex w-full justify-center">
+                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/autodesk_revit-logo.png" alt=""/>
+                  </div>
+                </div>
+                <div className="flex w-full justify-between">
+                  <div className="flex w-full justify-center">
+                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/civil+3D.png" alt=""/>
+                  </div>
+                  <div className="flex w-full justify-center">
+                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/fusion.png" alt=""/>
+                  </div>
+                </div>
+                <div className="text-7xl xs:text-5xl sm:text-5xl text-first font-bold w-full flex items-center justify-center">
+                  <div className="shadow-md p-4 rounded-md">34<br/><div className="text-xl">Years</div></div>
+                </div>
+                <div className="flex w-full justify-between">
+                  <div className="flex w-full justify-center">
+                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/inv.png" alt=""/>
+                  </div>
+                  {/* <div className="text-2xl flex w-full justify-center lg:text-xl sm:text-lg font-semibold text-black">
+                    YEARS
+                  </div> */}
+                  <div className="flex w-full justify-center">
+                    <img className="w-18 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/navis+work.PNG" alt=""/>
+                  </div>
+                </div>
+                <div className="flex w-full justify-between">
+                  <div className="flex w-full justify-center">
+                    <img className="w-20 h-20" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/vault+pro.png" alt=""/>
+                  </div>
+                  <div className="flex w-full justify-center">
+                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/revit_grande.webp" alt=""/>
+                  </div>
+                  <div className="flex w-full justify-center">
+                    <img className="w-20 h-20" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/vault.png" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:flex hidden flex-row items-center gap-4">
+              <div className="hidden 2xl:text-lg xl:text-lg lg:flex lg:text-base text-lg w-full p-10 font-medium xs:font-normal text-black ">
+                Our expertise and innovative services are designed to elevate your
+                design processes, ensuring you stay ahead in the CAD/BIM domain. Let
+                us help you overcome these challenges and achieve your goals with
+                greater efficiency and effectiveness.
+              </div>
             </div>
           </div>
         </div>

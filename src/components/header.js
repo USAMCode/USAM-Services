@@ -62,17 +62,17 @@ const Header= () => {
     <nav
     className={`${
       styles.paddingX
-    } w-full flex items-center py-5 fixed top-0 z-20 ${
+    } w-full flex items-center sm:px-4 xs:px-4 py-5 fixed top-0 z-20 ${
       scrolled ? "bg-white " : "bg-transparent"
     }`}
   >
-    <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+    <div className="w-full flex xs:gap-2 md:gap-4 justify-between items-center max-w-7xl mx-auto">
       {scrolled ? (
         <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://usam-services.s3.ap-south-1.amazonaws.com/usam_logo.png" alt=""/>
       ):(
         <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://usam-services.s3.ap-south-1.amazonaws.com/usam_logo.png" alt=""/>
       )}
-      <ul className="list-none flex flex-row xs:hidden sm:hidden justify-center gap-10">
+      <ul className="list-none lg:flex flex flex-row xs:hidden sm:hidden md:hidden items-center justify-center gap-10">
         {navLinks.map((nav) => (
           <li
             key={nav.id}
@@ -92,11 +92,12 @@ const Header= () => {
           </button>
       </ul>
 
-      <div className="flex">
+      <div className="flex flex-row gap-2">
         <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://usam-services.s3.ap-south-1.amazonaws.com/AutodeskBlack.png" alt=""/>
+        <img className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk-authorised-developer-logo-rgb-black.png" alt=""/>
       </div>
 
-      <div className="hidden xs:flex sm:flex flex-1 justify-end items-center">
+      <div className="lg:hidden xs:flex sm:flex md:flex flex-1 justify-end items-center">
         <img
           src={toggle ? "https://usam-services.s3.ap-south-1.amazonaws.com/close.svg" : "https://usam-services.s3.ap-south-1.amazonaws.com/menu.svg" }
           alt="menu"

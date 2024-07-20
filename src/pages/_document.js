@@ -11,11 +11,10 @@ export default function Document() {
         {/* <!-- Google tag (gtag.js) --> */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-48RWRF5QPN"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
-          gtag('config', 'G-48RWRF5QPN');
+          gtag('config', 'G-48RWRF5QPN');`}
         </script>
       </Head>
       <body className="w-screen font-poppins overflow-x-hidden">

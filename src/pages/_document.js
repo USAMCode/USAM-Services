@@ -21,6 +21,7 @@ export default function Document() {
           }}
         />
       </Head>
+      <body className="w-screen font-poppins overflow-x-hidden">
       <noscript
           dangerouslySetInnerHTML={{
             __html: `
@@ -29,7 +30,6 @@ export default function Document() {
             `,
           }}
         />
-      <body className="w-screen font-poppins overflow-x-hidden">
         <Main />
         <NextScript />
       </body>

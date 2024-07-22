@@ -75,34 +75,10 @@ const About = () => {
                 <source src="/img/Technical Services.mp4" type="video/mp4" />
               </video>
             </div>
-            {/* <div className="flex flex-col xl:hidden lg:w-2/4 justify-center gap-2 items-center mt-5 border-slate-900 text-center">
-              <div className="text-7xl xs:text-5xl sm:text-5xl text-first font-bold shadow-sm w-max p-4">
-                34
-              </div>
-              <div className="text-2xl lg:text-xl sm:text-lg font-semibold text-black">
-                YEARS
-              </div>
-              <div className="text-lg sm:text-base md:text-base xs:hidden xs:text-sm text-black">OF SUCCESSFUL WORK IN THE MARKET</div>
-            </div> */}
           </div>
 
 
           <div className="flex flex-col lg:w-1/2 md:w-full justify-between">
-            {/* <div className="hidden xl:hidden lg:flex text-lg w-full font-medium xs:font-normal text-black ">
-              Our expertise and innovative services are designed to elevate your
-              design processes, ensuring you stay ahead in the CAD/BIM domain. Let
-              us help you overcome these challenges and achieve your goals with
-              greater efficiency and effectiveness.
-            </div> */}
-            {/* <div className="flex w-1/2 xl:hidden xs:w-full lg:mt-6 justify-center items-center sm:w-full md:w-full rounded-xl ">
-              <video
-                loop
-                controls
-                className="w-full h-full xl:h-1/2 lg:w-4/5 object-contain rounded-xl"
-              >
-                <source src="/img/Technical Services.mp4" type="video/mp4" />
-              </video>
-            </div> */}
             <div className="flex flex-col lg:w-full justify-center gap-2 items-center mt-5 border-slate-900 text-center">
               <div className="flex flex-col gap-2 w-full">
                 <div className="flex w-full justify-center">
@@ -131,9 +107,6 @@ const About = () => {
                   <div className="flex w-full justify-center">
                     <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/inv.png" alt=""/>
                   </div>
-                  {/* <div className="text-2xl flex w-full justify-center lg:text-xl sm:text-lg font-semibold text-black">
-                    YEARS
-                  </div> */}
                   <div className="flex w-full justify-center">
                     <img className="w-18 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/navis+work.PNG" alt=""/>
                   </div>

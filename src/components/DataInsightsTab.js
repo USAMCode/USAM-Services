@@ -3,12 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Dashboard from "@/pages/services/DataInsights/Dashboard";
 import DataIntegration from "@/pages/services/DataInsights/DataIntegration";
 import DataManagement from "@/pages/services/DataInsights/DataManagement";
-import IoTandSensorIntegration from "@/pages/services/DataInsights/IoTandSensorIntegration";
 import Footer from "./footer";
 
 const DataInsightsTab = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const indicatorRef = useRef(null);
   const tabRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const tabContentRef = useRef(null);
   useEffect(() => {

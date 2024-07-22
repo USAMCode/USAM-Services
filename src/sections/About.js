@@ -80,9 +80,11 @@ const About = () => {
 
           <div className="flex flex-col lg:w-1/2 md:w-full justify-between">
             <div className="flex flex-col lg:w-full justify-center gap-2 items-center mt-5 border-slate-900 text-center">
-              <video loop autoPlay>
-                <source src="https://d1nw187rmwcpt3.cloudfront.net/logo-animation.mp4" type="video/mp4"/>
-              </video>
+              <div className="flex w-full object-contain">
+                <video loop autoPlay muted width="100%" height="100%">
+                  <source src="https://d1nw187rmwcpt3.cloudfront.net/logo-animation.mp4" type="video/mp4"/>
+                </video>
+              </div>
             </div>
             <div className="lg:flex hidden flex-row items-center gap-4">
               <div className="hidden 2xl:text-lg xl:text-lg lg:flex lg:text-base text-lg w-full p-10 font-medium xs:font-normal text-black ">

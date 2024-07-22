@@ -50,7 +50,6 @@ export default function Document() {
             />
           </>
         )}
-        <title>USAM Technologies</title>
       </Head>
       <body className="w-screen font-poppins overflow-x-hidden">
         {isProduction && (

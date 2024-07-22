@@ -107,21 +107,21 @@ const About = () => {
               <div className="flex flex-col gap-2 w-full">
                 <div className="flex w-full justify-center">
                   <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/autocad-logo.png" alt=""/>
+                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/autocad-logo.png" alt=""/>
                   </div>
                   <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/autodesk-bim-collaborate-pro-product-icon.png" alt=""/>
+                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/autodesk-bim-collaborate-pro-product-icon.png" alt=""/>
                   </div>
                   <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/autodesk_revit-logo.png" alt=""/>
+                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/autodesk_revit-logo.png" alt=""/>
                   </div>
                 </div>
                 <div className="flex w-full justify-between">
                   <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/civil+3D.png" alt=""/>
+                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/civil+3D.png" alt=""/>
                   </div>
                   <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/fusion.png" alt=""/>
+                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/fusion.png" alt=""/>
                   </div>
                 </div>
                 <div className="text-7xl xs:text-5xl sm:text-5xl text-first font-bold w-full flex items-center justify-center">
@@ -129,24 +129,24 @@ const About = () => {
                 </div>
                 <div className="flex w-full justify-between">
                   <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/inv.png" alt=""/>
+                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/inv.png" alt=""/>
                   </div>
                   {/* <div className="text-2xl flex w-full justify-center lg:text-xl sm:text-lg font-semibold text-black">
                     YEARS
                   </div> */}
                   <div className="flex w-full justify-center">
-                    <img className="w-18 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/navis+work.PNG" alt=""/>
+                    <img className="w-18 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/navis+work.PNG" alt=""/>
                   </div>
                 </div>
                 <div className="flex w-full justify-between">
                   <div className="flex w-full justify-center">
-                    <img className="w-20 h-20" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/vault+pro.png" alt=""/>
+                    <img className="w-20 h-20" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/vault+pro.png" alt=""/>
                   </div>
                   <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/revit_grande.webp" alt=""/>
+                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/revit_grande.webp" alt=""/>
                   </div>
                   <div className="flex w-full justify-center">
-                    <img className="w-20 h-20" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk+product+logos/vault.png" alt=""/>
+                    <img className="w-20 h-20" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/vault.png" alt=""/>
                   </div>
                 </div>
               </div>

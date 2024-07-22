@@ -159,3 +159,21 @@ export const textVariant = (delay) => {
       },
     };
   };
+  export const fadeInBlur = (delay, duration) => {
+    return {
+      hidden: {
+        filter: 'blur(10px)',
+        opacity: 0,
+      },
+      show: {
+        filter: 'blur(0px)',
+        opacity: 1,
+        transition: {
+          type: "tween",
+          delay: delay,
+          duration: duration,
+          ease: "easeOut",
+        },
+      },
+    };
+  };

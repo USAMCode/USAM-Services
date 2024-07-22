@@ -62,42 +62,6 @@ const ProjectHandhold = () => {
           <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
           {/* ============================================================================================================================================ */}
 
-          {/* <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-first">
-            <div className="flex flex-row sm:flex-col-reverse sm:gap-6 md:gap-4 justify-around lg:justify-between items-center">
-              <div className="h-full flex flex-col gap-6 w-full lg:w-4/6 xl:w-2/4">
-                <div className="font-semibold text-3xl sm:text-2xl md:text-xl md:w-full lg:text-2xl font-serif sm:w-full lg:w-[90%] w-[80%] m-auto ">
-                  Optimize Your Design Process with Advanced Product
-                  Configuration
-                </div>
-                <motion.div
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, amount: 0.25 }}
-                  variants={textVariant(0.5)}
-                  className="text-xl md:text-base sm:text-base lg:text-lg font-sans sm:w-full w-[80%] md:w-full lg:w-[90%] m-auto"
-                >
-                  Configuring products to meet specific client needs can be complex and time-consuming, especially in industries like AEC and manufacturing. Our Product Configuration services simplify this process, using Autodesk tools like Inventor, Revit, Civil 3D, and Plant 3D to create flexible and efficient configurations that meet your exact requirements.
-                </motion.div>
-              </div>
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                variants={fadeInBlur(0.25, 0.5)}
-                className="w-full lg:w-3/6 xl:w-2/4 h-full flex justify-center items-center "
-              >
-                <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/Consulting.png"
-                  alt="Drawing Automation"
-                  className="rounded-md object-cover w-full h-full"
-                />
-              </motion.div>
-            </div>
-          </div> */}
-
-          {/* <div className="flex w-full border-2 border-first rounded-tl-md"></div> */}
-          {/* =========================================================================================================================================== */}
-
           <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="flex flex-col h-[70%] my-auto gap-10 py-16">
               <div className="flex w-full text-center justify-center font-bold text-3xl sm:text-2xl md:text-2xl font-serif ">

@@ -1,10 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { styles } from "../styles/styles";
 import SectionWrapper from "@/section/SectionWrapper";
 import { slideIn } from "../utils/motion";
 import emailjs from "@emailjs/browser";
-import dynamic from "next/dynamic";
 import * as THREE from 'three';
 import GLOBE from 'vanta/dist/vanta.globe.min'
 
@@ -217,9 +215,6 @@ const Contact = () => {
             </form>
           </motion.div>
         </div>
-        {/* <div className="flex w-2/4 h-3/4">
-          <div ref={vantaRef} className="w-full h-full"></div>
-        </div> */}
       </div>
     </>
   );

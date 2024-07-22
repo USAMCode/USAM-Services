@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { styles } from "@/styles/styles";
-import { fadeIn, fadeScaleIn, textVariant } from "@/utils/motion";
+import { fadeScaleIn, textVariant } from "@/utils/motion";
 import SectionWrapper from "@/section/SectionWrapper";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
@@ -65,16 +64,6 @@ const CarouselComponent = () => {
 };
 
 const Projects = () => {
-  const [index, setIndex] = useState(0);
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    adaptiveHeight: true,
-  };
 
   return (
     <>
@@ -87,7 +76,6 @@ const Projects = () => {
           </div>
         </motion.div>
         <div className="flex 2xl:hidden xl:hidden lg:hidden md:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap sm:justify-center sm:items-center xs:gap-8 sm:gap-8 w-full justify-between">
-          {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -127,8 +115,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -169,8 +155,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -209,13 +193,11 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
         </div>
 
         {/* -------------------------------------------------------- lg ---------------------------------------------------- */}
 
         <div className="lg:flex lg:justify-between lg:flex-row lg:flex-nowrap w-full 2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
-          {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -255,8 +237,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -296,8 +276,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -336,7 +314,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
         </div>
 
         {/* ------------------------------------lg /------------------------------------------------ */}
@@ -344,7 +321,6 @@ const Projects = () => {
         {/* --------------------------------------------------------2xl ---------------------------------------------------- */}
 
         <div className="2xl:flex justify-around w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
-          {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -384,8 +360,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -425,8 +399,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -465,7 +437,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
         </div>
 
         {/* ------------------------------------2xl /------------------------------------------------ */}
@@ -513,8 +484,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -554,8 +523,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -594,14 +561,12 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
         </div>
 
         {/* ------------------------------------xl /------------------------------------------------ */}
         {/* --------------------------------------------------------md ---------------------------------------------------- */}
 
         <div className="md:flex 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap md:gap-8 md:justify-center w-full justify-between">
-          {/* <div className="h-full flex lg:w-[90%] justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -641,8 +606,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -682,8 +645,6 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
-          {/* <div className="h-full flex justify-center"> */}
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -722,13 +683,8 @@ const Projects = () => {
               </div>
             </motion.div>
           </motion.div>
-          {/* </div> */}
         </div>
-
-
         {/* ------------------------------------md /------------------------------------------------ */}
-
-
       </div>
     </>
   );

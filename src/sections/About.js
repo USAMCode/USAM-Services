@@ -80,48 +80,10 @@ const About = () => {
 
           <div className="flex flex-col lg:w-1/2 md:w-full justify-between">
             <div className="flex flex-col lg:w-full justify-center gap-2 items-center mt-5 border-slate-900 text-center">
-              <div className="flex flex-col gap-2 w-full">
-                <div className="flex w-full justify-center">
-                  <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/autocad-logo.png" alt=""/>
-                  </div>
-                  <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/autodesk-bim-collaborate-pro-product-icon.png" alt=""/>
-                  </div>
-                  <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/autodesk_revit-logo.png" alt=""/>
-                  </div>
-                </div>
-                <div className="flex w-full justify-between">
-                  <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/civil+3D.png" alt=""/>
-                  </div>
-                  <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/fusion.png" alt=""/>
-                  </div>
-                </div>
-                <div className="text-7xl xs:text-5xl sm:text-5xl text-first font-bold w-full flex items-center justify-center">
-                  <div className="shadow-md p-4 rounded-md">34<br/><div className="text-xl">Years</div></div>
-                </div>
-                <div className="flex w-full justify-between">
-                  <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/inv.png" alt=""/>
-                  </div>
-                  <div className="flex w-full justify-center">
-                    <img className="w-18 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/navis+work.PNG" alt=""/>
-                  </div>
-                </div>
-                <div className="flex w-full justify-between">
-                  <div className="flex w-full justify-center">
-                    <img className="w-20 h-20" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/vault+pro.png" alt=""/>
-                  </div>
-                  <div className="flex w-full justify-center">
-                    <img className="w-16 h-16" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/revit_grande.webp" alt=""/>
-                  </div>
-                  <div className="flex w-full justify-center">
-                    <img className="w-20 h-20" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk+product+logos/vault.png" alt=""/>
-                  </div>
-                </div>
+              <div className="flex w-full object-contain">
+                <video loop autoPlay muted width="100%" height="100%">
+                  <source src="https://d1nw187rmwcpt3.cloudfront.net/logo-animation.mp4" type="video/mp4"/>
+                </video>
               </div>
             </div>
             <div className="lg:flex hidden flex-row items-center gap-4">

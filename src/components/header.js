@@ -68,9 +68,9 @@ const Header= () => {
   >
     <div className="w-full flex xs:gap-2 md:gap-4 justify-between items-center max-w-7xl mx-auto">
       {scrolled ? (
-        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://usam-services.s3.ap-south-1.amazonaws.com/usam_logo.png" alt=""/>
+        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.png" alt=""/>
       ):(
-        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://usam-services.s3.ap-south-1.amazonaws.com/usam_logo.png" alt=""/>
+        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.png" alt=""/>
       )}
       <ul className="list-none lg:flex flex flex-row xs:hidden sm:hidden md:hidden items-center justify-center gap-10">
         {navLinks.map((nav) => (
@@ -93,13 +93,13 @@ const Header= () => {
       </ul>
 
       <div className="flex flex-row gap-2">
-        <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://usam-services.s3.ap-south-1.amazonaws.com/AutodeskBlack.png" alt=""/>
-        <img className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain" src="https://usam-services.s3.ap-south-1.amazonaws.com/autodesk-authorised-developer-logo-rgb-black.png" alt=""/>
+        <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.png" alt=""/>
+        <img className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.png" alt=""/>
       </div>
 
       <div className="lg:hidden xs:flex sm:flex md:flex flex-1 justify-end items-center">
         <img
-          src={toggle ? "https://usam-services.s3.ap-south-1.amazonaws.com/close.svg" : "https://usam-services.s3.ap-south-1.amazonaws.com/menu.svg" }
+          src={toggle ? "https://d1nw187rmwcpt3.cloudfront.net/close.svg" : "https://d1nw187rmwcpt3.cloudfront.net/menu.svg" }
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}

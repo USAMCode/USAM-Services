@@ -76,61 +76,61 @@ const Sliders = () => {
               <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Andritz.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/Andritz.png"
                     className="m-auto h-12 w-24 object-contain"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/BlueScope.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/BlueScope.png"
                     className="m-auto h-16 relative -top-2 w-28 object-contain"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/CRN.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/CRN.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Danieli.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/Danieli.png"
                     className="m-auto h-12 w-28 object-contain"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Dellner.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/Dellner.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Diameler.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/Diameler.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/Isro.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/Isro.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/KSM.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/KSM.png"
                     className="m-auto h-12 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/L%26T.png"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/L%26T.png"
                     className="m-auto h-24 relative -top-6 w-auto"
                   />
                 </li>
                 <li>
                   <img
-                    src="https://usam-services.s3.ap-south-1.amazonaws.com/N%26V.jpg"
+                    src="https://d1nw187rmwcpt3.cloudfront.net/N%26V.jpg"
                     className="m-auto h-12 w-auto"
                   />
                 </li>

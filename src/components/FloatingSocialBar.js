@@ -17,9 +17,9 @@ const FloatingSocialMediaBar = () => {
       {icons.map((item, index) => (
         <div
           key={index}
-          className={`bg-black text-white uppercase tracking-wider py-2 px-2 w-40 fixed right-[-8rem] transition-all duration-200 ease-in-out hover:right-0 ${item.style}`}
+          className={`bg-black text-white flex uppercase tracking-wider py-2 px-2 w-40 fixed right-[-8rem] transition-all duration-200 ease-in-out hover:right-0 ${item.style}`}
         >
-          <FontAwesomeIcon icon={item.icon} className="text-xl mr-2" />
+          <FontAwesomeIcon icon={item.icon} className="text-xl mr-2 w-5 h-5" />
           <a href={item.link} target="_blank" rel="noopener noreferrer" className="no-underline text-white">
             {item.text}
           </a>

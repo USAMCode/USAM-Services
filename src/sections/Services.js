@@ -85,7 +85,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:flex-row xs:items-center p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
               >
                 <img
-                  src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+                  src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
@@ -107,7 +107,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:items-center xs:flex-row p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
               >
                 <img
-                  src="https://usam-services.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
+                  src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
@@ -131,7 +131,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:flex-row p-5 xs:px-5 xs:py-2 xs:items-center 2xl:w-80 xl:w-64 xs:w-full rounded-lg bg-gradient-to-br from-third via-second to-first"
               >
                 <img
-                  src="https://usam-services.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
+                  src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
@@ -156,7 +156,7 @@ const Services = () => {
               className="shadow-lg flex flex-col sm:p-5 sm:gap-0 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
                 alt=""
                 className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
               />
@@ -177,7 +177,7 @@ const Services = () => {
               className="shadow-lg flex flex-col w-full sm:p-5 sm:gap-0 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
                 alt=""
                 className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
               />
@@ -198,7 +198,7 @@ const Services = () => {
               className="shadow-lg flex flex-col sm:p-5 sm:gap-0 rounded-lg bg-gradient-to-br from-third via-second to-first"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
                 alt=""
                 className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
               />
@@ -222,7 +222,7 @@ const Services = () => {
               className="shadow-lg flex flex-col p-5 gap-5 md:gap-0 md:p-7 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
                 alt=""
                 className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
               />
@@ -243,7 +243,7 @@ const Services = () => {
               className="shadow-lg flex flex-col w-full p-5 md:gap-0 md:p-7 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
                 alt=""
                 className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
               />
@@ -264,7 +264,7 @@ const Services = () => {
               className="shadow-lg flex flex-col gap-5 p-5 md:gap-0 md:p-7 rounded-lg bg-gradient-to-br from-third via-second to-first"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
                 alt=""
                 className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
               />
@@ -288,7 +288,7 @@ const Services = () => {
               className="shadow-lg flex flex-col p-6 gap-0 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
                 alt=""
                 className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
               />
@@ -309,7 +309,7 @@ const Services = () => {
               className="shadow-lg flex flex-col w-full p-6 gap-0 bg-gradient-to-br from-third via-second to-first rounded-lg"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
                 alt=""
                 className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
               />
@@ -330,7 +330,7 @@ const Services = () => {
               className="shadow-lg flex flex-col p-6 gap-0 rounded-lg bg-gradient-to-br from-third via-second to-first"
             >
               <img
-                src="https://usam-services.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
+                src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
                 alt=""
                 className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
               />
@@ -398,7 +398,7 @@ const Services = () => {
     //               className="shadow-lg flex flex-col p-5 sm:p-3 gap-5 xl:gap-3 bg-gradient-to-br from-third via-second to-first sm:gap-1 sm:w-72 w-80 xl:w-72 lg:w-72 md:w-64 rounded-lg"
     //             >
     //               <img
-    //                 src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+    //                 src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
     //                 alt=""
     //                 className="w-full object-contain h-32 sm:h-36 xl:h-40 2xl:h-64"
     //               />
@@ -420,7 +420,7 @@ const Services = () => {
     //               className="shadow-lg flex flex-col p-5 sm:p-3 xl:gap-3 bg-gradient-to-br from-third via-second to-first gap-5 sm:gap-1 sm:w-72 w-80 xl:w-72 lg:w-72 md:w-64 rounded-lg"
     //             >
     //               <img
-    //                 src="https://usam-services.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
+    //                 src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
     //                 alt=""
     //                 className="w-full object-contain h-32 sm:h-36 xl:h-40 2xl:h-64"
     //               />
@@ -444,7 +444,7 @@ const Services = () => {
     //               className="shadow-lg flex flex-col p-5 sm:p-3 gap-5 sm:gap-1 w-80 xl:gap-3 sm:w-72 xl:w-72 lg:w-72 md:w-64 rounded-lg bg-gradient-to-br from-third via-second to-first"
     //             >
     //               <img
-    //                 src="https://usam-services.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
+    //                 src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
     //                 alt=""
     //                 className="w-full object-contain h-32 sm:h-36 xl:h-40 2xl:h-64"
     //               />
@@ -469,7 +469,7 @@ const Services = () => {
     //             className="shadow-lg flex flex-col p-5 gap-3 bg-gradient-to-br from-third via-second to-first w-80 rounded-lg"
     //           >
     //             <img
-    //               src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+    //               src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
     //               alt=""
     //               className="w-full object-contain h-64"
     //             />
@@ -490,7 +490,7 @@ const Services = () => {
     //             className="shadow-lg flex flex-col p-5 bg-gradient-to-br from-third via-second to-first gap-3 sm:w-full w-80 rounded-lg"
     //           >
     //             <img
-    //               src="https://usam-services.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
+    //               src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
     //               alt=""
     //               className="w-full object-contain h-64"
     //             />
@@ -511,7 +511,7 @@ const Services = () => {
     //             className="shadow-lg flex flex-col p-5 gap-3 w-80 rounded-lg bg-gradient-to-br from-third via-second to-first"
     //           >
     //             <img
-    //               src="https://usam-services.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
+    //               src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
     //               alt=""
     //               className="w-full object-contain h-64"
     //             />
@@ -534,7 +534,7 @@ const Services = () => {
     //           className="shadow-lg flex flex-col px-4 py-4 gap-5 w-full h-max bg-gradient-to-br from-third via-second to-first rounded-lg"
     //         >
     //           <img
-    //             src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+    //             src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
     //             alt="Drawing Automation"
     //             className="w-full object-contain h-60"
     //           />
@@ -553,7 +553,7 @@ const Services = () => {
     //           className="shadow-lg flex flex-col px-4 py-4 w-full bg-gradient-to-br h-max from-third via-second to-first gap-5 rounded-lg"
     //         >
     //           <img
-    //             src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+    //             src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
     //             alt="Drawing Automation"
     //             className="w-full object-contain h-60"
     //           />
@@ -572,7 +572,7 @@ const Services = () => {
     //           className="shadow-lg flex flex-col px-4 py-4 gap-5 w-full rounded-lg h-max bg-gradient-to-br from-third via-second to-first"
     //         >
     //           <img
-    //             src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+    //             src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
     //             alt="Drawing Automation"
     //             className="w-full object-contain h-60"
     //           />
@@ -596,7 +596,7 @@ const Services = () => {
     //           >
     //             <div className="flex w-1/6">
     //               <img
-    //                 src="https://usam-services.s3.ap-south-1.amazonaws.com/Automation_Icon.png"
+    //                 src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
     //                 alt="Drawing Automation"
     //                 className="rounded-md object-cover w-full"
     //               />
@@ -619,7 +619,7 @@ const Services = () => {
     //           >
     //             <div className="flex w-1/6">
     //               <img
-    //                 src="https://usam-services.s3.ap-south-1.amazonaws.com/Consulting_Icon.png"
+    //                 src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
     //                 alt="Drawing Automation"
     //                 className="rounded-md object-cover w-full"
     //               />
@@ -642,7 +642,7 @@ const Services = () => {
     //           >
     //             <div className="flex w-1/6">
     //               <img
-    //                 src="https://usam-services.s3.ap-south-1.amazonaws.com/DataInsights_Icon.png"
+    //                 src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
     //                 alt="Drawing Automation"
     //                 className="rounded-md object-cover w-full"
     //               />

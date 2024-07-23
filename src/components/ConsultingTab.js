@@ -6,7 +6,6 @@ import Footer from "./footer";
 
 const ConsultingTab = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const indicatorRef = useRef(null);
   const tabRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const tabContentRef = useRef(null);
   useEffect(() => {

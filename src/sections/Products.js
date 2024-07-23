@@ -1,67 +1,10 @@
 // src/components/Projects.js
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "@/styles/styles";
 import { fadeScaleIn, textVariant } from "@/utils/motion";
 import SectionWrapper from "@/section/SectionWrapper";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
-
-const CarouselComponent = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const Projects = [
-    {
-      img: "https://d1nw187rmwcpt3.cloudfront.net/Image1.jpg",
-      content: "",
-    },
-    {
-      img: "https://d1nw187rmwcpt3.cloudfront.net/Image1.jpg",
-      content: "",
-    },
-    {
-      img: "https://d1nw187rmwcpt3.cloudfront.net/Image1.jpg",
-      content: "",
-    },
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const isLastSlide = currentIndex === Projects.length - 1;
-      const newIndex = isLastSlide ? 0 : currentIndex + 1;
-      setCurrentIndex(newIndex);
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-  return (
-    <div className="w-full relative ">
-      <div className="relative overflow-hidden">
-        <div
-          className="flex transition-transform duration-500 ease-out "
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {Projects.map((project, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 focus:outline-none gap-4  justify-center items-center w-full"
-            >
-              <div className="flex flex-col gap-4 h-full w-full justify-center items-center">
-                <img
-                  src={project.img}
-                  alt="Welcome to USAM"
-                  className="w-full bg-white h-2/4"
-                />
-                <div className="text-black">Welcome to USAM</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const Projects = () => {
 

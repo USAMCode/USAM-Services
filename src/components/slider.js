@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef } from "react";
-import { Carousel } from "flowbite-react";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { textVariant } from "@/utils/motion";
 import { styles } from "@/styles/styles";
@@ -8,7 +7,6 @@ import MultiSlider from "./MultiSlider";
 
 
 const Sliders = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const glideRef = useRef(null);
 
   useEffect(() => {

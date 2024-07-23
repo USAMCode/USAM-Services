@@ -37,25 +37,6 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const zoomIn = (delay, duration) => {
-    return {
-      hidden: {
-        scale: 0,
-        opacity: 0,
-      },
-      show: {
-        scale: 1,
-        opacity: 1,
-        transition: {
-          type: "tween",
-          delay: delay,
-          duration: duration,
-          ease: "easeOut",
-        },
-      },
-    };
-  };
-  
   export const slideIn = (direction, type, delay, duration) => {
     return {
       hidden: {
@@ -86,24 +67,6 @@ export const textVariant = (delay) => {
       },
     };
   };
-  export const rotateIn = (delay, duration) => {
-    return {
-      hidden: {
-        rotate: 90,
-        opacity: 0,
-      },
-      show: {
-        rotate: 0,
-        opacity: 1,
-        transition: {
-          type: "tween",
-          delay: delay,
-          duration: duration,
-          ease: "easeOut",
-        },
-      },
-    };
-  };
   
   export const bounceIn = (delay, duration) => {
     return {
@@ -124,24 +87,6 @@ export const textVariant = (delay) => {
     };
   };
   
-  export const flipIn = (delay, duration) => {
-    return {
-      hidden: {
-        rotateY: 90,
-        opacity: 0,
-      },
-      show: {
-        rotateY: 0,
-        opacity: 1,
-        transition: {
-          type: "tween",
-          delay: delay,
-          duration: duration,
-          ease: "easeOut",
-        },
-      },
-    };
-  };
   export const fadeScaleIn = (delay, duration) => {
     return {
       hidden: {

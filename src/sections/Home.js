@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Carousel } from "flowbite-react";
 import Link from "next/link";
 
@@ -37,7 +38,16 @@ const Home = () => {
         <Carousel className="w-full rounded-none" slideInterval={5000}>           
           {services.map((service, index) => (
             <div key={index} className="flex w-full h-full xs:rounded-none justify-center">
-              <img className="w-full object-cover rounded-none xs:rounded-none" style={{borderRadius:"0px"}} src={service.image} alt=""/>
+              {/* <img className="w-full object-cover rounded-none xs:rounded-none" style={{borderRadius:"0px"}} src={service.image} alt=""/> */}
+              <Image
+                style={{objectFit:"cover", borderRadius:"0px"}}
+                src={service.image}
+                alt={service.title}
+                fill
+                loading="lazy"
+                className="rounded-none xs:rounded-none"
+                priority={index === 0} // Optionally preload the first image
+              />
               <div className="absolute inset-0 bg-black opacity-25"></div>
               <div className="flex flex-col gap-4 absolute w-full xs:w-[80%] xs:mx-auto h-full justify-center items-center text-center">
                 <div className="text-5xl md:text-5xl xs:text-4xl text-white font-bold mb-4">{service.title}</div>

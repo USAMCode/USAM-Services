@@ -8,7 +8,6 @@ import Footer from './footer';
 
 const AutomationTab = () => {
   const [activeTab, setActiveTab] = useState(0);
-  const indicatorRef = useRef(null);
   const tabRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const tabContentRef = useRef(null)
 

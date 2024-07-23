@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { slideIn } from '@/utils/motion';
 
@@ -10,23 +11,43 @@ const Footer = () => {
           className="xl:flex xl:flex-row xl:justify-around sm:px-0 flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-row text-second gap-4 md:py-5 px-5 lg:px-2 xs:px-2 flex items-center"
         >
           <div className='flex w-full lg:w-1/4 xl:w-1/3 2xl:w-2/4 justify-center items-center xs:flex-row sm:flex-row md:flex-row lg:flex-col gap-8'>
-            <img className='w-40 xs:w-28 sm:w-32 md:w-52 h-12 lg:w-40 2xl:w-52 object-contain' src='https://d1nw187rmwcpt3.cloudfront.net/UsamWhite.png' alt=''/>
-            <img className='w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain' src='https://d1nw187rmwcpt3.cloudfront.net/AutodeskWhite.png' alt=''/>
-            <img className='w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain' src='https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-white.png' alt=''/>
+          <Image
+              className='w-40 xs:w-28 sm:w-32 md:w-52 h-12 lg:w-40 2xl:w-52 object-contain'
+              src='https://d1nw187rmwcpt3.cloudfront.net/UsamWhite.png'
+              alt='UsamWhite'
+              width={160}
+              height={48}
+            />
+            <Image
+              className='w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain'
+              src='https://d1nw187rmwcpt3.cloudfront.net/AutodeskWhite.png'
+              alt='AutodeskWhite'
+              width={160}
+              height={48}
+            />
+            <Image
+              className='w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain'
+              src='https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-white.png'
+              alt='Autodesk Authorised Developer'
+              width={160}
+              height={48}
+            />
           </div>
           <ul className="flex flex-row xs:w-full sm:w-full 2xl:w-3/4 xl:w-2/4 lg:w-1/3 justify-center gap-12 2xl:gap-12 xl:flex xl:gap-6 lg:gap-x-8 lg:gap-y-6 xs:gap-4 md:flex md:flex-row md:w-full xl:flex-row sm:flex sm:flex-row flex-wrap py-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-            <li>
+          <li>
               <a
                 className="flex flex-row gap-5 items-center"
                 href="https://www.linkedin.com/company/usam-technoloy-solutions-p-ltd/about/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <img
+                <Image
                   className="w-10 h-10"
                   src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Linkedin.png"
-                  alt=""
-                  />
+                  alt="LinkedIn"
+                  width={40}
+                  height={40}
+                />
               </a>
             </li>
             <li>
@@ -36,11 +57,13 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <img
+                <Image
                   className="w-10 h-10"
                   src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Twitter.png"
-                  alt=""
-                  />
+                  alt="Twitter"
+                  width={40}
+                  height={40}
+                />
               </a>
             </li>
             <li>
@@ -50,11 +73,13 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <Image
                   className="w-10 h-10"
                   src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Instagram.png"
-                  alt=""
-                  />
+                  alt="Instagram"
+                  width={40}
+                  height={40}
+                />
               </a>
             </li>
             <li>
@@ -64,11 +89,13 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <img
+                <Image
                   className="w-10 h-10"
                   src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Facebook.png"
-                  alt=""
-                  />
+                  alt="Facebook"
+                  width={40}
+                  height={40}
+                />
               </a>
             </li>
             <li>
@@ -78,11 +105,13 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                <img
+                <Image
                   className="w-10 h-10"
                   src="https://d1nw187rmwcpt3.cloudfront.net/youtube.png"
-                  alt=""
-                  />
+                  alt="YouTube"
+                  width={40}
+                  height={40}
+                />
               </a>
             </li>
           </ul>

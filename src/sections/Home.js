@@ -44,9 +44,8 @@ const Home = () => {
                 src={service.image}
                 alt={service.title}
                 fill
-                loading="lazy"
                 className="rounded-none xs:rounded-none"
-                priority={index === 0} // Optionally preload the first image
+                priority={index === 0}
               />
               <div className="absolute inset-0 bg-black opacity-25"></div>
               <div className="flex flex-col gap-4 absolute w-full xs:w-[80%] xs:mx-auto h-full justify-center items-center text-center">

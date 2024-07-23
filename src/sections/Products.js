@@ -1,5 +1,5 @@
-// src/components/Projects.js
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { styles } from "@/styles/styles";
 import { fadeScaleIn, textVariant } from "@/utils/motion";
@@ -36,9 +36,13 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col gap-2 lg:p-5 lg:gap-2 md:gap-2">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/1.png"
-                      className=" h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      alt="Gap Hunter"
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
                     />
                   </div>
                   <div className="text-2xl font-semibold lg:text-xl md:text-lg xl:text-2xl sm:ml-5 xs:ml-5 sm:text-xl">
@@ -75,8 +79,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col gap-3 md:gap-2">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/2.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      alt="Dim Check"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="h-10 w-10 object-cover lg:h-14 lg:w-14 md:h-11 md:w-11 xl:h-12 xl:w-12"
                     />
                   </div>
@@ -94,7 +102,6 @@ const Projects = () => {
                     View
                   </button>
                 </Link>
-
               </div>
             </motion.div>
           </motion.div>
@@ -115,8 +122,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col gap-3">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/3.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      alt="Balloon Master"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="w-10 h-10 object-cover lg:h-14 lg:w-14 xl:h-12 xl:w-12"
                     />
                   </div>
@@ -158,9 +169,13 @@ const Projects = () => {
               <div className="w-full lg:px-7 flex flex-col lg:gap-4 ">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/1.png"
-                      className=" h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      alt="Gap Hunter"
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
                     />
                   </div>
                   <div className="text-2xl font-semibold lg:text-2xl md:text-lg xl:text-2xl ml-2">
@@ -197,8 +212,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col lg:gap-4 md:gap-2">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/2.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      alt="Dim Check"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="h-10 w-10 object-cover lg:h-14 lg:w-14 md:h-11 md:w-11 xl:h-12 xl:w-12"
                     />
                   </div>
@@ -236,9 +255,13 @@ const Projects = () => {
               <div className="w-full lg:p-10 flex flex-col gap-4">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/3.png"
-                      className="w-10 h-10 object-cover lg:h-14 lg:w-14 "
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      alt="Balloon Master"
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      className="w-10 h-10 object-cover lg:h-14 lg:w-14"
                     />
                   </div>
                   <div className="text-2xl font-semibold lg:text-2xl xl:text-2xl ml-2">
@@ -281,9 +304,13 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col lg:gap-4 ">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/1.png"
-                      className=" h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      alt="Gap Hunter"
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
                     />
                   </div>
                   <div className="2xl:text-2xl font-semibold lg:text-2xl md:text-lg xl:text-2xl ml-5">
@@ -320,8 +347,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col lg:gap-4 ">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/2.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      alt="Dim Check"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="h-10 w-10 object-cover lg:h-14 lg:w-14 md:h-11 md:w-11 xl:h-12 xl:w-12"
                     />
                   </div>
@@ -359,8 +390,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col gap-4">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/3.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      alt="Balloon Master"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="w-10 h-10 object-cover lg:h-14 lg:w-14 xl:h-12 xl:w-12"
                     />
                   </div>
@@ -405,9 +440,13 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col lg:gap-4 ">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/1.png"
-                      className=" h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      alt="Gap Hunter"
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
                     />
                   </div>
                   <div className="2xl:text-2xl font-semibold lg:text-2xl md:text-lg xl:text-2xl ml-5">
@@ -444,8 +483,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col lg:gap-4 ">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/2.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      alt="Dim Check"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="h-10 w-10 object-cover lg:h-14 lg:w-14 md:h-11 md:w-11 xl:h-12 xl:w-12"
                     />
                   </div>
@@ -483,8 +526,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col gap-4">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/3.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      alt="Balloon Master"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="w-10 h-10 object-cover lg:h-14 lg:w-14 xl:h-12 xl:w-12"
                     />
                   </div>
@@ -527,9 +574,13 @@ const Projects = () => {
               <div className="w-full flex flex-col gap-2 md:p-6 md:gap-2 ">
                 <div className="flex items-center">
                   <div className="">
-                    <img
-                      src="/img/1.png"
-                      className=" h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      alt="Gap Hunter"
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
                     />
                   </div>
                   <div className="md:text-xl ml-4 font-semibold ">
@@ -566,8 +617,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col gap-3 md:gap-2">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/2.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      alt="Dim Check"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="h-10 w-10 object-cover lg:h-14 lg:w-14 md:h-11 md:w-11 xl:h-12 xl:w-12"
                     />
                   </div>
@@ -605,8 +660,12 @@ const Projects = () => {
               <div className="w-full p-10 flex flex-col gap-3">
                 <div className="flex items-center">
                   <div>
-                    <img
-                      src="/img/3.png"
+                    <Image
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      alt="Balloon Master"
+                      width={40}
+                      height={40}
+                      loading="lazy"
                       className="w-10 h-10 object-cover lg:h-14 lg:w-14 xl:h-12 xl:w-12"
                     />
                   </div>

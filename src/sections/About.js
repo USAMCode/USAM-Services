@@ -1,4 +1,5 @@
 import SectionWrapper from "@/section/SectionWrapper";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { styles } from "@/styles/styles";
 import {
@@ -25,9 +26,13 @@ const About = () => {
                   </div>
                   <div className="flex flex-col gap-3 ">
                     <div className="flex flex-row xs:justify-center xs:items-center">
-                      <img
-                        src="/img/next.png"
-                        className="h-6 w-6 xs:h-4 xs:w-4 "
+                      <Image
+                        src="https://d1nw187rmwcpt3.cloudfront.net/next.png"
+                        width={24}
+                        height={24}
+                        className="h-6 w-6 xs:h-4 xs:w-4"
+                        alt="Next logo"
+                        loading="lazy"
                       />
                       <div className="pl-2 text-lg lg:text-base md:text-base text-gray-900">
                         Help you fully leverage your existing Autodesk software,
@@ -35,9 +40,13 @@ const About = () => {
                       </div>
                     </div>
                     <div className="flex flex-row xs:justify-center xs:items-center ">
-                      <img
-                        src="/img/next.png"
+                      <Image
+                        src="https://d1nw187rmwcpt3.cloudfront.net/next.png"
+                        width={24}
+                        height={24}
                         className="h-6 w-6 xs:h-4 xs:w-4"
+                        alt="Next logo"
+                        loading="lazy"
                       />
                       <div className="pl-2 text-lg lg:text-base md:text-base sm:text-base text-gray-800">
                         Automate repetitive tasks to enhance efficiency,
@@ -45,9 +54,13 @@ const About = () => {
                       </div>
                     </div>
                     <div className="flex flex-row xs:justify-center xs:items-center ">
-                      <img
-                        src="/img/next.png"
-                        className="h-6 w-6 xs:h-4 xs:w-4 "
+                      <Image
+                        src="https://d1nw187rmwcpt3.cloudfront.net/next.png"
+                        width={24}
+                        height={24}
+                        className="h-6 w-6 xs:h-4 xs:w-4"
+                        alt="Next logo"
+                        loading="lazy"
                       />
                       <div className="pl-2 text-lg lg:text-base md:text-base sm:text-base text-gray-800">
                         Implement robust data management and integration
@@ -72,7 +85,7 @@ const About = () => {
                 controls
                 className="w-full h-full xl:h-1/2 lg:w-4/5 object-contain rounded-xl"
               >
-                <source src="/img/Technical Services.mp4" type="video/mp4" />
+                <source src="https://d1nw187rmwcpt3.cloudfront.net/Technical+Services.mp4" type="video/mp4" />
               </video>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { styles } from "@/styles/styles";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -67,11 +68,18 @@ const Header= () => {
     }`}
   >
     <div className="w-full flex xs:gap-2 md:gap-4 justify-between items-center max-w-7xl mx-auto">
-      {scrolled ? (
+      {/* {scrolled ? (
         <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp" alt=""/>
       ):(
         <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp" alt=""/>
-      )}
+      )} */}
+      <Image
+          className="w-40 xs:w-32 md:w-52 h-10 object-contain"
+          src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp"
+          alt=""
+          width={208}
+          height={40}
+        />
       <ul className="list-none lg:flex flex flex-row xs:hidden sm:hidden md:hidden items-center justify-center gap-10">
         {navLinks.map((nav) => (
           <li
@@ -93,17 +101,44 @@ const Header= () => {
       </ul>
 
       <div className="flex flex-row gap-2">
-        <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.webp" alt=""/>
-        <img className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.webp" alt=""/>
+        {/* <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.webp" alt=""/>
+        <img className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.webp" alt=""/> */}
+        <Image
+            className="w-40 xs:w-32 md:w-52 h-12 object-contain"
+            src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.webp"
+            alt=""
+            width={208}
+            height={48}
+          />
+          <Image
+            className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain"
+            src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.webp"
+            alt=""
+            width={208}
+            height={48}
+          />
       </div>
 
       <div className="lg:hidden xs:flex sm:flex md:flex flex-1 justify-end items-center">
-        <img
+        {/* <img
           src={toggle ? "https://d1nw187rmwcpt3.cloudfront.net/close.svg" : "https://d1nw187rmwcpt3.cloudfront.net/menu.svg" }
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
-        />
+        /> */}
+        <Image
+            src={
+              toggle
+                ? "https://d1nw187rmwcpt3.cloudfront.net/close.svg"
+                : "https://d1nw187rmwcpt3.cloudfront.net/menu.svg"
+            }
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
+            width={28}
+            height={28}
+            onClick={() => setToggle(!toggle)}
+          />
+
 
         <div
           className={`${

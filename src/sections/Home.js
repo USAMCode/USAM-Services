@@ -38,13 +38,11 @@ const Home = () => {
         <Carousel className="w-full rounded-none" slideInterval={5000}>           
           {services.map((service, index) => (
             <div key={index} className="flex w-full h-full xs:rounded-none justify-center">
-              {/* <img className="w-full object-cover rounded-none xs:rounded-none" style={{borderRadius:"0px"}} src={service.image} alt=""/> */}
               <Image
                 style={{objectFit:"cover", borderRadius:"0px"}}
                 src={service.image}
                 alt={service.title}
                 fill
-                className="rounded-none xs:rounded-none"
                 priority={index === 0}
               />
               <div className="absolute inset-0 bg-black opacity-25"></div>

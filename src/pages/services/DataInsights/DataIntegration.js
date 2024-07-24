@@ -20,7 +20,6 @@ const DataIntegration = () => {
             alt=""
             className="w-full h-[650px] xs:h-[300px] md:h-[450px] sm:h-[400px] lg:h-[500px] object-cover"
           />
-          {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
         </div>
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
           {/* ============================================================================================================================================ */}
@@ -36,7 +35,8 @@ const DataIntegration = () => {
               </div>
               <div className="w-full lg:w-1/2 h-full flex flex-col gap-6 md:gap-2 lg:gap-4 ">
                 <div className="font-semibold text-3xl sm:text-2xl md:text-xl lg:text-2xl font-serif">
-                  What are Data Integration Services?                </div>
+                  What are Data Integration Services?{" "}
+                </div>
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -44,16 +44,21 @@ const DataIntegration = () => {
                   variants={textVariant(0.5)}
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans"
                 >
-                  Data Integration involves connecting and synchronizing data across different software platforms to create a unified and cohesive data environment.
-                  This service helps eliminate data silos, enhance collaboration, and provide a holistic view of your projects and operations.
+                  Data Integration involves connecting and synchronizing data
+                  across different software platforms to create a unified and
+                  cohesive data environment. This service helps eliminate data
+                  silos, enhance collaboration, and provide a holistic view of
+                  your projects and operations.
                 </motion.div>
                 <div className="flex w-full">
-                  <button onClick={() => setShow(true)} className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white">
+                  <button
+                    onClick={() => setShow(true)}
+                    className="flex px-4 py-2 rounded-full bg-first 2xl:text-2xl text-xl md:text-base text-white"
+                  >
                     Contact Us
                   </button>
                 </div>
               </div>
-              {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
             </div>
           </div>
           <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
@@ -63,7 +68,8 @@ const DataIntegration = () => {
             <div className="flex flex-row sm:flex-col-reverse sm:gap-6 md:gap-4 justify-around lg:justify-between items-center">
               <div className="h-full flex flex-col gap-6 w-full lg:w-4/6 xl:w-2/4">
                 <div className="font-semibold text-3xl sm:text-2xl md:text-xl md:w-full lg:text-2xl font-serif sm:w-full lg:w-[90%] w-[80%] m-auto ">
-                  Seamlessly Connect Your Data with Data Integration Services                </div>
+                  Seamlessly Connect Your Data with Data Integration Services{" "}
+                </div>
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -71,11 +77,14 @@ const DataIntegration = () => {
                   variants={textVariant(0.5)}
                   className="text-xl md:text-base sm:text-base lg:text-lg font-sans sm:w-full w-[80%] md:w-full lg:w-[90%] m-auto"
                 >
-                 Once your data is optimally managed, the next step is to ensure it flows seamlessly across all your tools and platforms. 
-                 Our Data Integration services are designed to connect your Autodesk tools with ERP, Project Management, Accounts software, Reality Capture, Site Management, and Data & Analytics systems.
+                  Once your data is optimally managed, the next step is to
+                  ensure it flows seamlessly across all your tools and
+                  platforms. Our Data Integration services are designed to
+                  connect your Autodesk tools with ERP, Project Management,
+                  Accounts software, Reality Capture, Site Management, and Data
+                  & Analytics systems.
                 </motion.div>
               </div>
-              {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
               <motion.div
                 initial="hidden"
                 whileInView="show"
@@ -98,7 +107,7 @@ const DataIntegration = () => {
           <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="flex flex-col h-[70%] my-auto gap-10 py-16">
               <div className="flex w-full text-center justify-center font-bold text-3xl sm:text-2xl md:text-2xl font-serif ">
-Why Choose Our Data Integration Services?
+                Why Choose Our Data Integration Services?
               </div>
               <div className="flex flex-row justify-center gap-6 lg:flex lg:flex-col md:flex md:flex-col xl:flex xl:flex-col sm:flex sm:flex-col w-[90%] m-auto ">
                 <div className="flex flex-row gap-6 xl:items-center xl:justify-center ">
@@ -129,7 +138,9 @@ Why Choose Our Data Integration Services?
                       Unified Data Environment
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                     Ensure that data flows seamlessly between your Autodesk tools and other business systems, creating a single source of truth.
+                      Ensure that data flows seamlessly between your Autodesk
+                      tools and other business systems, creating a single source
+                      of truth.
                     </div>
                   </motion.div>
 
@@ -157,10 +168,11 @@ Why Choose Our Data Integration Services?
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-serif font-semibold ">
-                    Enhanced Collaboration
+                      Enhanced Collaboration
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                    Facilitate better communication and collaboration across different departments and teams by integrating data.
+                      Facilitate better communication and collaboration across
+                      different departments and teams by integrating data.
                     </div>
                   </motion.div>
                 </div>
@@ -190,10 +202,11 @@ Why Choose Our Data Integration Services?
                       </svg>
                     </div>
                     <div className="text-center text-2xl md:text-xl font-serif font-semibold">
-                    Improved Decision-Making
+                      Improved Decision-Making
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                    Gain valuable insights and make informed decisions with real-time data access and analytics.
+                      Gain valuable insights and make informed decisions with
+                      real-time data access and analytics.
                     </div>
                   </motion.div>
 
@@ -221,10 +234,11 @@ Why Choose Our Data Integration Services?
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif md:text-xl font-semibold">
-                    Increased Efficiency
+                      Increased Efficiency
                     </div>
                     <div className="text-lg md:text-base font-sans text-center w-full">
-                    Automate data transfer and synchronization, reducing manual data entry and minimizing errors.
+                      Automate data transfer and synchronization, reducing
+                      manual data entry and minimizing errors.
                     </div>
                   </motion.div>
                 </div>
@@ -240,9 +254,9 @@ Why Choose Our Data Integration Services?
 
           <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="font-semibold text-3xl sm:text-2xl md:text-2xl text-center font-serif h-[70%] my-auto">
-              How We Implement Data Integration Services            </div>
+              How We Implement Data Integration Services{" "}
+            </div>
             <div className="flex flex-row gap-10 xl:gap-0 sm:gap-4 md:gap-4 justify-around items-center xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col">
-              {/* <div className="bg-white shadow-xl rounded-md xl:justify-center xl:items-center lg:justify-center lg:items-center">PICTURE</div> */}
               <motion.div
                 initial="hidden"
                 whileInView="show"
@@ -266,9 +280,11 @@ Why Choose Our Data Integration Services?
                     className="w-3/4 p-8 xl:p-4 lg:p-4 flex flex-col gap-5 lg:gap-2 rounded-md shadow-lg xl:w-full lg:w-full md:w-full sm:w-full "
                   >
                     <div className="text-xl font-semibold font-serif">
-                      System Assessment                    </div>
+                      System Assessment{" "}
+                    </div>
                     <div className="text-[17px] font-sans">
-                      Evaluate your current systems and identify integration points for Autodesk tools and other software platforms.
+                      Evaluate your current systems and identify integration
+                      points for Autodesk tools and other software platforms.
                     </div>
                   </motion.div>
                   <motion.div
@@ -279,9 +295,11 @@ Why Choose Our Data Integration Services?
                     className="w-3/4 p-8 xl:p-4 lg:p-4 flex flex-col gap-5 lg:gap-2 rounded-md shadow-lg xl:w-full lg:w-full md:w-full sm:w-full "
                   >
                     <div className="text-xl font-semibold font-serif">
-                      Integration Setup                    </div>
+                      Integration Setup{" "}
+                    </div>
                     <div className="text-[17px] font-sans">
-                      Implement data connectors and APIs to facilitate seamless data transfer between systems.
+                      Implement data connectors and APIs to facilitate seamless
+                      data transfer between systems.
                     </div>
                   </motion.div>
                   <motion.div
@@ -295,7 +313,10 @@ Why Choose Our Data Integration Services?
                       Real-Time Synchronization
                     </div>
                     <div className="text-[17px] font-sans">
-                      Ensure that data is updated in real-time across all integrated platforms, providing accurate and up-to-date information.                    </div>
+                      Ensure that data is updated in real-time across all
+                      integrated platforms, providing accurate and up-to-date
+                      information.{" "}
+                    </div>
                   </motion.div>
                   <motion.div
                     initial="hidden"
@@ -305,9 +326,12 @@ Why Choose Our Data Integration Services?
                     className="w-3/4 p-8 xl:p-4 lg:p-4 rounded-md flex flex-col gap-5 lg:gap-2 shadow-lg xl:w-full lg:w-full md:w-full sm:w-full"
                   >
                     <div className="text-xl font-semibold font-serif">
-                    Monitoring and Support                    </div>
+                      Monitoring and Support{" "}
+                    </div>
                     <div className="text-[17px] font-sans">
-                      Continuously monitor the integration process and provide support to address any issues or improvements.                    </div>
+                      Continuously monitor the integration process and provide
+                      support to address any issues or improvements.{" "}
+                    </div>
                   </motion.div>
                 </div>
               </div>
@@ -320,16 +344,19 @@ Why Choose Our Data Integration Services?
               viewport={{ once: true, amount: 0.25 }}
               variants={textVariant(0.5)}
               className="flex text-black text-2xl sm:text-lg md:text-xl"
-            > 
-
-              By integrating Data Management, Data Integration, and Dashboard Visualization services, we provide a comprehensive solution that ensures your data is secure, connected, and effectively visualized, driving efficiency, accuracy, and innovation across your projects.
+            >
+              By integrating Data Management, Data Integration, and Dashboard
+              Visualization services, we provide a comprehensive solution that
+              ensures your data is secure, connected, and effectively
+              visualized, driving efficiency, accuracy, and innovation across
+              your projects.
             </motion.div>
           </div>
           <div className="flex flex-row w-full justify-between">
             <div className="flex w-2/5 h-0 border-2  border-first"></div>
             <button
               className="flex w-1/6 px-4 sm:px-2 py-2 bg-first text-white relative text-center justify-center items-center text-3xl xl:text-3xl sm:text-base lg:text-2xl md:text-base sm:-top-5 lg:-top-6 md:-top-5 -top-7 rounded-full"
-            onClick={() => setShow(true)}
+              onClick={() => setShow(true)}
             >
               Contact Us
             </button>
@@ -349,7 +376,8 @@ Why Choose Our Data Integration Services?
               />
               <div className=" w-full">
                 <div className="font-semibold text-2xl font-serif">
-                  What are Data Integration Services?                </div>
+                  What are Data Integration Services?{" "}
+                </div>
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -357,8 +385,11 @@ Why Choose Our Data Integration Services?
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  Data Integration involves connecting and synchronizing data across different software platforms to create a unified and cohesive data environment.
-                  This service helps eliminate data silos, enhance collaboration, and provide a holistic view of your projects and operations.
+                  Data Integration involves connecting and synchronizing data
+                  across different software platforms to create a unified and
+                  cohesive data environment. This service helps eliminate data
+                  silos, enhance collaboration, and provide a holistic view of
+                  your projects and operations.
                 </motion.div>
               </div>
             </div>
@@ -370,7 +401,8 @@ Why Choose Our Data Integration Services?
             <div className="flex flex-row xs:gap-8 xs:flex-col-reverse justify-around items-center">
               <div className="px-20 w-2/3 xs:px-0 xs:w-full space-y-6 ">
                 <div className="font-semibold xs:text-2xl font-serif">
-                  Seamlessly Connect Your Data with Data Integration Services                </div>
+                  Seamlessly Connect Your Data with Data Integration Services{" "}
+                </div>
                 <motion.div
                   initial="hidden"
                   whileInView="show"
@@ -378,9 +410,11 @@ Why Choose Our Data Integration Services?
                   variants={textVariant(0.5)}
                   className="text-[15px] font-sans"
                 >
-                  With your data managed and integrated, the final step is to visualize it effectively.
-                  Our Dashboard Visualization services enable you to transform complex data sets into actionable insights, providing a
-                  clear and comprehensive view of your projects and operations.
+                  With your data managed and integrated, the final step is to
+                  visualize it effectively. Our Dashboard Visualization services
+                  enable you to transform complex data sets into actionable
+                  insights, providing a clear and comprehensive view of your
+                  projects and operations.
                 </motion.div>
               </div>
               <img
@@ -395,7 +429,7 @@ Why Choose Our Data Integration Services?
           <div className="bg-gray-100 w-[90%] mx-auto xs:p-5">
             <div className="p-4 xs:p-0">
               <div className="flex justify-center font-bold text-3xl font-serif p-6 xs:text-2xl xs:text-center ">
-Why Choose Our Data Integration Services?
+                Why Choose Our Data Integration Services?
               </div>
               <div className="flex flex-row justify-center gap-6 xs:flex xs:flex-col ">
                 <div className="flex flex-row gap-6 xs:flex xs:flex-col ">
@@ -426,7 +460,9 @@ Why Choose Our Data Integration Services?
                       Unified Data Environment
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                     Ensure that data flows seamlessly between your Autodesk tools and other business systems, creating a single source of truth.
+                      Ensure that data flows seamlessly between your Autodesk
+                      tools and other business systems, creating a single source
+                      of truth.
                     </div>
                   </motion.div>
 
@@ -454,9 +490,11 @@ Why Choose Our Data Integration Services?
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                      Enhanced Collaboration                    </div>
+                      Enhanced Collaboration{" "}
+                    </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                    Facilitate better communication and collaboration across different departments and teams by integrating data.
+                      Facilitate better communication and collaboration across
+                      different departments and teams by integrating data.
                     </div>
                   </motion.div>
                 </div>
@@ -486,10 +524,11 @@ Why Choose Our Data Integration Services?
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                    Improved Decision-Making
+                      Improved Decision-Making
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                    Gain valuable insights and make informed decisions with real-time data access and analytics.
+                      Gain valuable insights and make informed decisions with
+                      real-time data access and analytics.
                     </div>
                   </motion.div>
 
@@ -517,10 +556,11 @@ Why Choose Our Data Integration Services?
                       </svg>
                     </div>
                     <div className="text-center text-2xl font-serif font-semibold p-4 xs:text-xl">
-                    Increased Efficiency
+                      Increased Efficiency
                     </div>
                     <div className="text-[17px] font-sans text-center w-full xs:text-base">
-                    Automate data transfer and synchronization, reducing manual data entry and minimizing errors.
+                      Automate data transfer and synchronization, reducing
+                      manual data entry and minimizing errors.
                     </div>
                   </motion.div>
                 </div>
@@ -532,7 +572,8 @@ Why Choose Our Data Integration Services?
 
           <div className="bg-white text-black p-20 xs:p-0">
             <div className="font-semibold text-2xl text-center p-8 font-serif xs:p-3">
-              How We Implement Data Integration Services            </div>
+              How We Implement Data Integration Services{" "}
+            </div>
             <div className="flex flex-row gap-4 p-5 justify-around items-center xs:flex xs:flex-col ">
               <img
                 src="https://d1nw187rmwcpt3.cloudfront.net/Data+Analysist.webp"
@@ -543,8 +584,8 @@ Why Choose Our Data Integration Services?
                 <div className="text-[17px] flex flex-col gap-8 ">
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full">
                     <div className="text-xl font-semibold font-serif">
-                      System Assessment                    
-                      </div>
+                      System Assessment
+                    </div>
                     <motion.div
                       initial="hidden"
                       whileInView="show"
@@ -552,12 +593,14 @@ Why Choose Our Data Integration Services?
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Evaluate your current systems and identify integration points for Autodesk tools and other software platforms.
+                      Evaluate your current systems and identify integration
+                      points for Autodesk tools and other software platforms.
                     </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
                     <div className="text-xl font-semibold font-serif">
-                      Integration Setup                    </div>
+                      Integration Setup{" "}
+                    </div>
                     <motion.div
                       initial="hidden"
                       whileInView="show"
@@ -565,7 +608,8 @@ Why Choose Our Data Integration Services?
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Implement data connectors and APIs to facilitate seamless data transfer between systems.
+                      Implement data connectors and APIs to facilitate seamless
+                      data transfer between systems.
                     </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
@@ -579,11 +623,15 @@ Why Choose Our Data Integration Services?
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Ensure that data is updated in real-time across all integrated platforms, providing accurate and up-to-date information.                    </motion.div>
+                      Ensure that data is updated in real-time across all
+                      integrated platforms, providing accurate and up-to-date
+                      information.{" "}
+                    </motion.div>
                   </div>
                   <div className="w-2/3 p-5 rounded-md shadow-lg space-y-3 xs:w-full ">
                     <div className="text-xl font-semibold font-serif">
-                    Monitoring and Support                    </div>
+                      Monitoring and Support{" "}
+                    </div>
                     <motion.div
                       initial="hidden"
                       whileInView="show"
@@ -591,7 +639,9 @@ Why Choose Our Data Integration Services?
                       variants={textVariant(0.5)}
                       className="text-[17px] font-sans"
                     >
-                      Continuously monitor the integration process and provide support to address any issues or improvements.                    </motion.div>
+                      Continuously monitor the integration process and provide
+                      support to address any issues or improvements.{" "}
+                    </motion.div>
                   </div>
                 </div>
               </div>
@@ -605,10 +655,11 @@ Why Choose Our Data Integration Services?
               variants={textVariant(0.5)}
               className="flex text-black text-lg text-start"
             >
-              By integrating Data Management, Data Integration, and Dashboard Visualization services,
-              we provide a comprehensive solution that ensures your data is secure,
-              connected, and effectively visualized, driving efficiency, accuracy,
-              and innovation across your projects.
+              By integrating Data Management, Data Integration, and Dashboard
+              Visualization services, we provide a comprehensive solution that
+              ensures your data is secure, connected, and effectively
+              visualized, driving efficiency, accuracy, and innovation across
+              your projects.
             </motion.div>
             <button
               className="flex px-4 py-2 bg-first text-white relative text-center justify-center items-center text-2xl rounded-full"

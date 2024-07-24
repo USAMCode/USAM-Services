@@ -13,24 +13,27 @@ const Footer = () => {
           <div className='flex w-full lg:w-1/4 xl:w-1/3 2xl:w-2/4 justify-center items-center xs:flex-row sm:flex-row md:flex-row lg:flex-col gap-8'>
           <Image
               className='w-40 xs:w-28 sm:w-32 md:w-52 h-12 lg:w-40 2xl:w-52 object-contain'
-              src='https://d1nw187rmwcpt3.cloudfront.net/UsamWhite.png'
+              src='https://d1nw187rmwcpt3.cloudfront.net/UsamWhite.webp'
               alt='UsamWhite'
               width={160}
               height={48}
+              loading='lazy'
             />
             <Image
               className='w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain'
-              src='https://d1nw187rmwcpt3.cloudfront.net/AutodeskWhite.png'
+              src='https://d1nw187rmwcpt3.cloudfront.net/AutodeskWhite.webp'
               alt='AutodeskWhite'
               width={160}
               height={48}
+              loading='lazy'
             />
             <Image
               className='w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain'
-              src='https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-white.png'
+              src='https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-white.webp'
               alt='Autodesk Authorised Developer'
               width={160}
               height={48}
+              loading='lazy'
             />
           </div>
           <ul className="flex flex-row xs:w-full sm:w-full 2xl:w-3/4 xl:w-2/4 lg:w-1/3 justify-center gap-12 2xl:gap-12 xl:flex xl:gap-6 lg:gap-x-8 lg:gap-y-6 xs:gap-4 md:flex md:flex-row md:w-full xl:flex-row sm:flex sm:flex-row flex-wrap py-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
@@ -47,6 +50,7 @@ const Footer = () => {
                   alt="LinkedIn"
                   width={40}
                   height={40}
+                  loading='lazy'
                 />
               </a>
             </li>
@@ -63,6 +67,7 @@ const Footer = () => {
                   alt="Twitter"
                   width={40}
                   height={40}
+                  loading='lazy'
                 />
               </a>
             </li>
@@ -79,6 +84,7 @@ const Footer = () => {
                   alt="Instagram"
                   width={40}
                   height={40}
+                  loading='lazy'
                 />
               </a>
             </li>
@@ -95,6 +101,7 @@ const Footer = () => {
                   alt="Facebook"
                   width={40}
                   height={40}
+                  loading='lazy'
                 />
               </a>
             </li>
@@ -107,10 +114,11 @@ const Footer = () => {
                 >
                 <Image
                   className="w-10 h-10"
-                  src="https://d1nw187rmwcpt3.cloudfront.net/youtube.png"
+                  src="https://d1nw187rmwcpt3.cloudfront.net/youtube.webp"
                   alt="YouTube"
                   width={40}
                   height={40}
+                  loading='lazy'
                 />
               </a>
             </li>

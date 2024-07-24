@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import ContactModal from "@/components/ContactModal";
 import { motion } from "framer-motion";
@@ -7,8 +8,8 @@ const DrawingAutomation = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className="flex flex-col gap-8 relative w-full">
-        <div className="w-full relative">
+      <div className="flex flex-col gap-8 relative w-full h-full">
+        <div className="w-full h-full relative">
           <img
             src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
             alt=""
@@ -21,9 +22,17 @@ const DrawingAutomation = () => {
           <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-first">
             <div className="flex flex-row gap-8 md:gap-4 lg:gap-6 sm:flex-col sm:gap-6 justify-around items-center">
               <div className="w-full lg:w-1/2 h-full flex justify-center items-center ">
-                <img
+                {/* <img
                     src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                   alt="Drawing Automation"
+                  className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
+                /> */}
+                <Image
+                  src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
+                  alt="Drawing Automation"
+                  layout="responsive"
+                  width={800} // Adjust width as needed
+                  height={600} // Adjust height as needed
                   className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
               </div>
@@ -74,9 +83,17 @@ const DrawingAutomation = () => {
                 variants={fadeInBlur(0.25, 0.5)}
                 className="w-full lg:w-3/6 xl:w-2/4 h-full flex justify-center items-center "
               >
-                <img
+                {/* <img
                   src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
                   alt="Drawing Automation"
+                  className="rounded-md object-cover w-full h-full"
+                /> */}
+                 <Image
+                  src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
+                  alt="Drawing Automation"
+                  layout="responsive"
+                  width={800} // Adjust width as needed
+                  height={600} // Adjust height as needed
                   className="rounded-md object-cover w-full h-full"
                 />
               </motion.div>
@@ -241,10 +258,18 @@ const DrawingAutomation = () => {
                 variants={fadeIn("right", "spring", 0.5, 0.5)}
                 className=" flex w-2/4 h-full lg:w-2/4 sm:w-full md:w-full justify-center items-center "
               >
-                <img
+                {/* <img
                   src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                   alt="Drawing Automation"
                   className="rounded-md object-cover w-full xl:w-full lg:w-full lg:h-full sm:w-full h-full"
+                /> */}
+                <Image
+                  src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
+                  alt="Drawing Automation"
+                  layout="responsive"
+                  width={800} // Adjust width as needed
+                  height={600} // Adjust height as needed
+                  className="rounded-md object-cover"
                 />
               </motion.div>
               <div className=" w-2/4 xl:w-2/3 lg:w-2/4 xl:justify-center xl:items-center xl:px-12 lg:justify-center lg:items-center md:w-full md:justify-center md:items-center md:p-8 md:px-8 sm:w-full sm:justify-center sm:items-center sm:p-0">
@@ -324,9 +349,17 @@ const DrawingAutomation = () => {
         <div className="bg-white flex flex-col gap-10 xs:gap-4 w-full h-full 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden ">
           <div className="bg-white text-black w-full p-20 xs:p-5">
             <div className="flex flex-row xs:gap-4 justify-around items-center xs:w-full xs:flex xs:flex-col xs:p-0 xs:space-y-9  ">
-              <img
+              {/* <img
                 src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                 alt=""
+                className="w-full bg-white shadow-xl rounded-md"
+              /> */}
+              <Image
+                src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
+                alt="Drawing Automation"
+                layout="responsive"
+                width={800} // Adjust width as needed
+                height={600} // Adjust height as needed
                 className="w-full bg-white shadow-xl rounded-md"
               />
               <div className=" w-full">
@@ -364,9 +397,17 @@ const DrawingAutomation = () => {
                   Creating accurate and detailed drawings is a critical component of any AEC or manufacturing project. However, manual drawing processes can be time-consuming and prone to errors. Our Drawing Automation services, leveraging Autodesk tools like AutoCAD, Revit, Civil 3D, and Plant 3D, automate the creation of drawings, ensuring precision and efficiency in every project.
                 </motion.div>
               </div>
-              <img
+              {/* <img
                 src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
                 alt=""
+                className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
+              /> */}
+              <Image
+                src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
+                alt="Drawing Automation"
+                layout="responsive"
+                width={800} // Adjust width as needed
+                height={600} // Adjust height as needed
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />
             </div>
@@ -517,10 +558,18 @@ const DrawingAutomation = () => {
             How We Implement Drawing Automation
             </div>
             <div className="flex flex-row gap-4 p-5 justify-around items-center xs:flex xs:flex-col ">
-              <img
+              {/* <img
                 src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                 alt=""
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
+              /> */}
+              <Image
+                src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
+                alt="Drawing Automation"
+                layout="responsive"
+                width={800} // Adjust width as needed
+                height={600} // Adjust height as needed
+                className="bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />
               <div className="px-20 w-2/3 xs:px-0 xs:w-full">
                 <div className="text-[17px] flex flex-col gap-8 ">

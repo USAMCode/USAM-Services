@@ -168,7 +168,7 @@ const Services = () => {
         {/* -----------------------------------------sm------------------------------------- */}
         <div className="hidden sm:flex flex-row gap-2 w-full justify-around">
           {services.map((service, index) => (
-            <div className="flex flex-col w-full rounded-lg ">
+            <div className="flex flex-col w-full rounded-lg " key={index}>
               <motion.div
                 initial="hidden"
                 whileInView="show"
@@ -194,7 +194,7 @@ const Services = () => {
         {/* -----------------------------------------------md------------------------------------- */}
         <div className="hidden xl:hidden lg:hidden md:flex flex-row gap-5 w-full justify-around">
           {services.map((service, index) => (
-            <div className="flex flex-col w-full rounded-lg ">
+            <div className="flex flex-col w-full rounded-lg " key={index}>
               <motion.div
                 initial="hidden"
                 whileInView="show"
@@ -220,7 +220,7 @@ const Services = () => {
         {/* ------------------------------------------------lg---------------------------------------------- */}
         <div className="hidden xl:hidden lg:flex flex-col gap-5 w-full items-center justify-center">
           {services.map((service, index) => (
-            <div className="flex flex-col w-2/3 rounded-lg ">
+            <div className="flex flex-col w-2/3 rounded-lg " key={index}>
               <motion.div
                 initial="hidden"
                 whileInView="show"

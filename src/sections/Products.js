@@ -195,6 +195,7 @@ const Projects = () => {
         <div className="xl:flex justify-around w-full lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden ">
           {projects.map((project, index) => (
             <motion.div
+              key={index}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}
@@ -244,6 +245,7 @@ const Projects = () => {
         <div className="md:flex 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap md:gap-8 md:justify-center w-full justify-between">
           {projects.map((project, index) => (
             <motion.div
+              key={index}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }}

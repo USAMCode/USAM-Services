@@ -8,6 +8,26 @@ import { fadeIn } from "@/utils/motion";
 import Link from "next/link";
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 const Services = () => {
+  const services = [
+    {
+      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.webp",
+      title: "Automation",
+      link: "/services/automation",
+      alt: "Automation",
+    },
+    {
+      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.webp",
+      title: "Consulting",
+      link: "/services/consulting",
+      alt: "Consulting",
+    },
+    {
+      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.webp",
+      title: "Data & Insights",
+      link: "/services/datainsights",
+      alt: "Data & Insights",
+    },
+  ];
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -21,7 +41,7 @@ const Services = () => {
       <div className="flex xs:w-[95%] sm:w-[95%] md:w-[90%] md:mx-auto sm:mx-auto xs:mx-auto h-auto 2xl:flex-row xl:w-[95%] 2xl:w-[90%] xl:mx-auto xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col lg:p-4 xs:gap-2 md:gap-4 sm:gap-4 w-full justify-center">
         <div className="flex flex-col gap-4 xl:gap-4 lg:gap-2 md:gap-3 sm:gap-2">
           <motion.div variants={textVariant()}>
-            <div className={styles.sectionSubText} >Services</div>
+            <div className={styles.sectionSubText}>Services</div>
             <div className="2xl:text-3xl xl:text-3xl lg:text-2xl md:text-2xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
               For You.
             </div>
@@ -85,7 +105,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:flex-row xs:items-center p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
               >
                 <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
+                  src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.webp"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
@@ -107,7 +127,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:items-center xs:flex-row p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
               >
                 <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
+                  src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.webp"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
@@ -131,7 +151,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:flex-row p-5 xs:px-5 xs:py-2 xs:items-center 2xl:w-80 xl:w-64 xs:w-full rounded-lg bg-gradient-to-br from-third via-second to-first"
               >
                 <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
+                  src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.webp"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
@@ -147,201 +167,81 @@ const Services = () => {
         </div>
         {/* -----------------------------------------sm------------------------------------- */}
         <div className="hidden sm:flex flex-row gap-2 w-full justify-around">
-          <div className="flex flex-col w-full rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.35, 0.5)}
-              className="shadow-lg flex flex-col sm:p-5 sm:gap-0 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
-                alt=""
-                className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/automation"}
-                className="2xl:text-3xl xl:text-2xl flex sm:text-xl w-full sm:justify-center font-semibold text-black"
+          {services.map((service, index) => (
+            <div className="flex flex-col w-full rounded-lg ">
+              <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                variants={bounceIn(0.35, 0.5)}
+                className="shadow-lg flex flex-col sm:p-5 sm:gap-0 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
               >
-                Automation
-              </Link>
-            </motion.div>
-          </div>
-          <div className="flex flex-col w-full gap-5 rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.65, 0.5)}
-              className="shadow-lg flex flex-col w-full sm:p-5 sm:gap-0 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
-                alt=""
-                className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/consulting"}
-                className="2xl:text-3xl xl:text-2xl sm:text-xl w-full flex sm:justify-center font-semibold text-black"
-              >
-                Consulting
-              </Link>
-            </motion.div>
-          </div>
-          <div className="flex flex-col w-full rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.5, 0.5)}
-              className="shadow-lg flex flex-col sm:p-5 sm:gap-0 rounded-lg bg-gradient-to-br from-third via-second to-first"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
-                alt=""
-                className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/datainsights"}
-                className="2xl:text-3xl xl:text-2xl sm:text-xl flex w-full sm:justify-center font-semibold text-black"
-              >
-                Data & Insights
-              </Link>
-            </motion.div>
-          </div>
+                <img
+                  src={service.imgSrc}
+                  alt={service.alt}
+                  className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
+                />
+                <Link
+                  href={service.link}
+                  className="2xl:text-3xl xl:text-2xl flex sm:text-xl w-full sm:justify-center font-semibold text-black"
+                >
+                  {service.title}
+                </Link>
+              </motion.div>
+            </div>
+          ))}
         </div>
         {/* -----------------------------------------------md------------------------------------- */}
         <div className="hidden xl:hidden lg:hidden md:flex flex-row gap-5 w-full justify-around">
-          <div className="flex flex-col w-full rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.35, 0.5)}
-              className="shadow-lg flex flex-col p-5 gap-5 md:gap-0 md:p-7 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
-                alt=""
-                className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/automation"}
-                className="2xl:text-3xl xl:text-2xl md:text-xl flex w-full justify-center font-semibold text-black"
+          {services.map((service, index) => (
+            <div className="flex flex-col w-full rounded-lg ">
+              <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                variants={bounceIn(0.35, 0.5)}
+                className="shadow-lg flex flex-col p-5 gap-5 md:gap-0 md:p-7 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
               >
-                Automation
-              </Link>
-            </motion.div>
-          </div>
-          <div className="flex flex-col w-full gap-5 rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.65, 0.5)}
-              className="shadow-lg flex flex-col w-full p-5 md:gap-0 md:p-7 bg-gradient-to-br from-third via-second to-first gap-5 rounded-lg"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
-                alt=""
-                className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/consulting"}
-                className="2xl:text-3xl xl:text-2xl md:text-xl w-full flex justify-center font-semibold text-black"
-              >
-                Consulting
-              </Link>
-            </motion.div>
-          </div>
-          <div className="flex flex-col w-full rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.5, 0.5)}
-              className="shadow-lg flex flex-col gap-5 p-5 md:gap-0 md:p-7 rounded-lg bg-gradient-to-br from-third via-second to-first"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
-                alt=""
-                className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/datainsights"}
-                className="2xl:text-3xl xl:text-2xl md:text-xl flex w-full justify-center font-semibold text-black"
-              >
-                Data & Insights
-              </Link>
-            </motion.div>
-          </div>
+                <img
+                  src={service.imgSrc}
+                  alt={service.alt}
+                  className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
+                />
+                <Link
+                  href={service.link}
+                  className="2xl:text-3xl xl:text-2xl md:text-xl flex w-full justify-center font-semibold text-black"
+                >
+                  {service.title}
+                </Link>
+              </motion.div>
+            </div>
+          ))}
         </div>
         {/* ------------------------------------------------lg---------------------------------------------- */}
         <div className="hidden xl:hidden lg:flex flex-col gap-5 w-full items-center justify-center">
-          <div className="flex flex-col w-2/3 rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.35, 0.5)}
-              className="shadow-lg flex flex-col p-6 gap-0 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.png"
-                alt=""
-                className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/automation"}
-                className="2xl:text-3xl xl:text-2xl  lg:text-xl flex w-full justify-center font-semibold text-black"
+          {services.map((service, index) => (
+            <div className="flex flex-col w-2/3 rounded-lg ">
+              <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                variants={bounceIn(0.35, 0.5)}
+                className="shadow-lg flex flex-col p-6 gap-0 w-full bg-gradient-to-br from-third via-second to-first rounded-lg"
               >
-                Automation
-              </Link>
-            </motion.div>
-          </div>
-          <div className="flex flex-col w-2/3 gap-5 rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.65, 0.5)}
-              className="shadow-lg flex flex-col w-full p-6 gap-0 bg-gradient-to-br from-third via-second to-first rounded-lg"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.png"
-                alt=""
-                className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/consulting"}
-                className="2xl:text-3xl xl:text-2xl lg:text-xl w-full flex justify-center font-semibold text-black"
-              >
-                Consulting
-              </Link>
-            </motion.div>
-          </div>
-          <div className="flex flex-col w-2/3 rounded-lg ">
-            <motion.div
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.25 }}
-              variants={bounceIn(0.5, 0.5)}
-              className="shadow-lg flex flex-col p-6 gap-0 rounded-lg bg-gradient-to-br from-third via-second to-first"
-            >
-              <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.png"
-                alt=""
-                className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
-              />
-              <Link
-                href={"/services/datainsights"}
-                className="2xl:text-3xl xl:text-2xl lg:text-xl flex w-full justify-center font-semibold text-black"
-              >
-                Data & Insights
-              </Link>
-            </motion.div>
-          </div>
+                <img
+                  src={service.imgSrc}
+                  alt={service.alt}
+                  className="object-contain h-24 md:h-32 xl:h-40 2xl:h-64"
+                />
+                <Link
+                  href={service.link}
+                  className="2xl:text-3xl xl:text-2xl  lg:text-xl flex w-full justify-center font-semibold text-black"
+                >
+                  {service.title}
+                </Link>
+              </motion.div>
+            </div>
+          ))}
         </div>
       </div>
     </>

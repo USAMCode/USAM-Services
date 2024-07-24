@@ -27,7 +27,7 @@ const About = () => {
                   <div className="flex flex-col gap-3 ">
                     <div className="flex flex-row xs:justify-center xs:items-center">
                       <Image
-                        src="https://d1nw187rmwcpt3.cloudfront.net/next.png"
+                        src="https://d1nw187rmwcpt3.cloudfront.net/next.webp"
                         width={24}
                         height={24}
                         className="h-6 w-6 xs:h-4 xs:w-4"
@@ -41,7 +41,7 @@ const About = () => {
                     </div>
                     <div className="flex flex-row xs:justify-center xs:items-center ">
                       <Image
-                        src="https://d1nw187rmwcpt3.cloudfront.net/next.png"
+                        src="https://d1nw187rmwcpt3.cloudfront.net/next.webp"
                         width={24}
                         height={24}
                         className="h-6 w-6 xs:h-4 xs:w-4"
@@ -55,7 +55,7 @@ const About = () => {
                     </div>
                     <div className="flex flex-row xs:justify-center xs:items-center ">
                       <Image
-                        src="https://d1nw187rmwcpt3.cloudfront.net/next.png"
+                        src="https://d1nw187rmwcpt3.cloudfront.net/next.webp"
                         width={24}
                         height={24}
                         className="h-6 w-6 xs:h-4 xs:w-4"

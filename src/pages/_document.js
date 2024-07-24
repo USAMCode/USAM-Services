@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         <link
           rel="icon"
-          href="https://d1nw187rmwcpt3.cloudfront.net/usam-logo.png"
+          href="https://d1nw187rmwcpt3.cloudfront.net/usam-logo.webp"
         ></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -29,7 +29,7 @@ export default function Document() {
         />
         <link
           rel="apple-touch-icon"
-          href="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.png"
+          href="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp"
         />
         {isProduction && (
           <>

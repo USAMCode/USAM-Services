@@ -4,19 +4,19 @@ const MultiSlider = () => {
     const testimonials = [
         {
             id: 1,
-            image: "https://d1nw187rmwcpt3.cloudfront.net/Testimonial+Templates/Digitalism+Testimonial+2.png"
+            image: "https://d1nw187rmwcpt3.cloudfront.net/Testimonial+Templates/Digitalism+Testimonial+2.webp"
         },
         {
             id: 2,
-            image: "https://d1nw187rmwcpt3.cloudfront.net/Testimonial+Templates/Digitalism+Testimonial+3.png"
+            image: "https://d1nw187rmwcpt3.cloudfront.net/Testimonial+Templates/Digitalism+Testimonial+3.webp"
         },
         {
             id: 3,
-            image: "https://d1nw187rmwcpt3.cloudfront.net/Testimonial+Templates/Digitalism+Testimonial+4.png"
+            image: "https://d1nw187rmwcpt3.cloudfront.net/Testimonial+Templates/Digitalism+Testimonial+4.webp"
         },
         {
             id: 4,
-            image: "https://d1nw187rmwcpt3.cloudfront.net/Testimonial+Templates/Digitalism+Testimonial+1.png"
+            image: "https://d1nw187rmwcpt3.cloudfront.net/Testimonial+Templates/Digitalism+Testimonial+1.webp"
         },
     ];
 

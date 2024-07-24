@@ -68,9 +68,9 @@ const Header= () => {
   >
     <div className="w-full flex xs:gap-2 md:gap-4 justify-between items-center max-w-7xl mx-auto">
       {scrolled ? (
-        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.png" alt=""/>
+        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp" alt=""/>
       ):(
-        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.png" alt=""/>
+        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp" alt=""/>
       )}
       <ul className="list-none lg:flex flex flex-row xs:hidden sm:hidden md:hidden items-center justify-center gap-10">
         {navLinks.map((nav) => (
@@ -93,8 +93,8 @@ const Header= () => {
       </ul>
 
       <div className="flex flex-row gap-2">
-        <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.png" alt=""/>
-        <img className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.png" alt=""/>
+        <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.webp" alt=""/>
+        <img className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.webp" alt=""/>
       </div>
 
       <div className="lg:hidden xs:flex sm:flex md:flex flex-1 justify-end items-center">

@@ -14,8 +14,6 @@ const AutomationTab = () => {
   useEffect(() => {
     const handleIndicator = () => {
       const currentTab = tabRefs[activeTab].current;
-      // indicatorRef.current.style.width = `${currentTab.offsetWidth}px`;
-      // indicatorRef.current.style.left = `${currentTab.offsetLeft}px`;
     };
 
     handleIndicator();
@@ -40,7 +38,6 @@ const AutomationTab = () => {
               aria-label="tabs"
               className="relative w-[80%] h-full mx-auto md:w-[80%] lg:flex sm:w-[90%] xs:w-full xs:grid-cols-2 xs:rounded-md sm:rounded-md xs:gap-2 sm: sm:grid-cols-2 xs:py-2 sm:p-2 md:p-2 md:rounded-md grid grid-cols-4 md:grid-cols-2 items-center px-[3px] overflow-hidden transition lg:px-0 lg:mx-auto lg:w-max lg:relative"
             >
-              {/* <div ref={indicatorRef} className="absolute indicator h-11 my-auto top-0 bottom-0 left-0 rounded-full shadow-md"></div> */}
               {['Product Configuration', 'Standardisation Automation', 'Workflow Enforcement', 'Drawing Automation'].map((tab, index) => (
                 <button
                   key={index}

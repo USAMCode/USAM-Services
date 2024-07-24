@@ -37,7 +37,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
                       alt="Gap Hunter"
                       width={40}
                       height={40}
@@ -80,7 +80,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.webp"
                       alt="Dim Check"
                       width={40}
                       height={40}
@@ -123,7 +123,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.webp"
                       alt="Balloon Master"
                       width={40}
                       height={40}
@@ -170,7 +170,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
                       alt="Gap Hunter"
                       width={40}
                       height={40}
@@ -213,7 +213,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.webp"
                       alt="Dim Check"
                       width={40}
                       height={40}
@@ -256,7 +256,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.webp"
                       alt="Balloon Master"
                       width={40}
                       height={40}
@@ -305,7 +305,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
                       alt="Gap Hunter"
                       width={40}
                       height={40}
@@ -348,7 +348,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.webp"
                       alt="Dim Check"
                       width={40}
                       height={40}
@@ -391,7 +391,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.webp"
                       alt="Balloon Master"
                       width={40}
                       height={40}
@@ -441,7 +441,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
                       alt="Gap Hunter"
                       width={40}
                       height={40}
@@ -484,7 +484,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.webp"
                       alt="Dim Check"
                       width={40}
                       height={40}
@@ -527,7 +527,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.webp"
                       alt="Balloon Master"
                       width={40}
                       height={40}
@@ -575,7 +575,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div className="">
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/1.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
                       alt="Gap Hunter"
                       width={40}
                       height={40}
@@ -618,7 +618,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/2.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/2.webp"
                       alt="Dim Check"
                       width={40}
                       height={40}
@@ -661,7 +661,7 @@ const Projects = () => {
                 <div className="flex items-center">
                   <div>
                     <Image
-                      src="https://d1nw187rmwcpt3.cloudfront.net/3.png"
+                      src="https://d1nw187rmwcpt3.cloudfront.net/3.webp"
                       alt="Balloon Master"
                       width={40}
                       height={40}

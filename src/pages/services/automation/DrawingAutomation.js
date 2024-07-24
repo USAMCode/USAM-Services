@@ -14,7 +14,6 @@ const DrawingAutomation = () => {
             alt=""
             className="w-full h-[650px] xs:h-[300px] md:h-[450px] sm:h-[400px] lg:h-[500px] object-cover"
           />
-          {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
         </div>
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
           {/* ============================================================================================================================================ */}
@@ -47,7 +46,6 @@ const DrawingAutomation = () => {
                   </button>
                 </div>
               </div>
-              {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
             </div>
           </div>
           <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
@@ -69,7 +67,6 @@ const DrawingAutomation = () => {
                   Creating accurate and detailed drawings is a critical component of any AEC or manufacturing project. However, manual drawing processes can be time-consuming and prone to errors. Our Drawing Automation services, leveraging Autodesk tools like AutoCAD, Revit, Civil 3D, and Plant 3D, automate the creation of drawings, ensuring precision and efficiency in every project.
                 </motion.div>
               </div>
-              {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
               <motion.div
                 initial="hidden"
                 whileInView="show"
@@ -237,7 +234,6 @@ const DrawingAutomation = () => {
             How We Implement Drawing Automation
             </div>
             <div className="flex flex-row gap-10 xl:gap-0 sm:gap-4 md:gap-4 justify-around items-center xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col">
-              {/* <div className="bg-white shadow-xl rounded-md xl:justify-center xl:items-center lg:justify-center lg:items-center">PICTURE</div> */}
               <motion.div
                 initial="hidden"
                 whileInView="show"

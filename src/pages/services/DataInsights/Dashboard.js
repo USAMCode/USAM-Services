@@ -20,7 +20,6 @@ const Dashboard = () => {
             alt=""
             className="w-full h-[650px] xs:h-[300px] md:h-[450px] sm:h-[400px] lg:h-[500px] object-cover"
           />
-          {/* <div className="absolute inset-0 bg-black opacity-40"></div> */}
         </div>
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
           {/* ============================================================================================================================================ */}
@@ -53,7 +52,6 @@ const Dashboard = () => {
                   </button>
                 </div>
               </div>
-              {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
             </div>
           </div>
           <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
@@ -75,7 +73,6 @@ const Dashboard = () => {
                   With your data managed and integrated, the final step is to visualize it effectively. Our Dashboard Visualization services enable you to transform complex data sets into actionable insights, providing a clear and comprehensive view of your projects and operations.
                 </motion.div>
               </div>
-              {/* <div className="p-28 lg:p-16 bg-white shadow-xl rounded-md md:p-16 sm:p-12">PICTURE</div> */}
               <motion.div
                 initial="hidden"
                 whileInView="show"
@@ -243,7 +240,6 @@ const Dashboard = () => {
               How We Implement Dashboard Visualization Services
             </div>
             <div className="flex flex-row gap-10 xl:gap-0 sm:gap-4 md:gap-4 justify-around items-center xl:flex xl:flex-row lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col">
-              {/* <div className="bg-white shadow-xl rounded-md xl:justify-center xl:items-center lg:justify-center lg:items-center">PICTURE</div> */}
               <motion.div
                 initial="hidden"
                 whileInView="show"

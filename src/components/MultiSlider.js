@@ -1,4 +1,5 @@
 import { Carousel } from "flowbite-react";
+import Image from "next/image";
 
 const MultiSlider = () => {
     const testimonials = [
@@ -39,7 +40,7 @@ const MultiSlider = () => {
                             {testimonialChunk.map((testimonial) => (
                                 <div key={testimonial.id} className="2xl:w-1/3 xl:w-96 lg:w-96 rounded-3xl">
                                     <div className="mb-3 w-full h-full flex justify-center">
-                                        <img className="w-full h-full rounded-3xl" src={testimonial.image} alt={`Testimonial ${testimonial.id}`} />
+                                        <Image width={600} height={600} loading="lazy" className="w-full h-full rounded-3xl" src={testimonial.image} alt={`Testimonial ${testimonial.id}`} />
                                     </div>
                                 </div>
                             ))}
@@ -50,11 +51,11 @@ const MultiSlider = () => {
 
             {/* ----------------------------------------------- md sm xs ----------------------------------------------------------------------- */}
             
-            <div className="h-full w-full p-10 2xl:h-full md:flex sm:flex xs:flex 2xl:hidden xl:hidden lg:hidden">
+            <div className="w-full h-3/4 px-5 py-10 2xl:h-full md:flex sm:flex xs:flex 2xl:hidden xl:hidden lg:hidden">
                 <Carousel slideInterval={2000}>
                     {testimonials.map((testimonial) => (
                         <div key={testimonial.id} className="flex flex-col items-center">
-                            <img className="w-3/4 h-full rounded-3xl object-cover" src={testimonial.image} alt={`Testimonial ${testimonial.id}`} />
+                            <Image width={500} height={500} loading="lazy" className="w-3/4 h-full rounded-3xl object-cover" src={testimonial.image} alt={`Testimonial ${testimonial.id}`} />
                         </div>
                     ))}
                 </Carousel>

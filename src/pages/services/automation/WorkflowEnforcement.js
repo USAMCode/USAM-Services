@@ -18,20 +18,14 @@ const WorkflowEnforcement = () => {
         </div>
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
           {/* ============================================================================================================================================ */}
-
           <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-first">
             <div className="flex flex-row gap-8 md:gap-4 lg:gap-6 sm:flex-col sm:gap-6 justify-around items-center">
               <div className="w-full lg:w-1/2 h-full flex justify-center items-center ">
-                {/* <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
-                  alt="Drawing Automation"
-                  className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
-                /> */}
                 <Image
                   src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                   alt="Drawing Automation"
-                  width={800} // Adjust width as needed
-                  height={600} // Adjust height as needed
+                  width={800}
+                  height={600}
                   className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
               </div>
@@ -58,7 +52,6 @@ const WorkflowEnforcement = () => {
           </div>
           <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
           {/* ============================================================================================================================================ */}
-
           <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-first">
             <div className="flex flex-row sm:flex-col-reverse sm:gap-6 md:gap-4 justify-around lg:justify-between items-center">
               <div className="h-full flex flex-col gap-6 w-full lg:w-4/6 xl:w-2/4">
@@ -82,25 +75,18 @@ const WorkflowEnforcement = () => {
                 variants={fadeInBlur(0.25, 0.5)}
                 className="w-full lg:w-3/6 xl:w-2/4 h-full flex justify-center items-center "
               >
-                {/* <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
-                  alt="Drawing Automation"
-                  className="rounded-md object-cover w-full h-full"
-                /> */}
                 <Image
                   src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                   alt="Drawing Automation"
-                  width={800} // Adjust width as needed
-                  height={600} // Adjust height as needed
+                  width={800}
+                  height={600}
                   className="rounded-md object-cover w-full h-full"
                 />
               </motion.div>
             </div>
           </div>
-
           <div className="flex w-full border-2 border-first"></div>
           {/* =========================================================================================================================================== */}
-
           <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="flex flex-col h-[70%] my-auto gap-10 py-16">
               <div className="flex w-full text-center justify-center font-bold text-3xl sm:text-2xl md:text-2xl font-serif ">
@@ -138,7 +124,6 @@ const WorkflowEnforcement = () => {
                       Ensure that all tasks are completed in the correct order, reducing bottlenecks and improving overall project flow.
                     </div>
                   </motion.div>
-
                   <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -170,7 +155,6 @@ const WorkflowEnforcement = () => {
                     </div>
                   </motion.div>
                 </div>
-
                 <div className="flex flex-row gap-6 xl:justify-center">
                   <motion.div
                     initial="hidden"
@@ -202,7 +186,6 @@ const WorkflowEnforcement = () => {
                       Automate repetitive tasks and minimize manual intervention, allowing your team to focus on high-value activities.
                     </div>
                   </motion.div>
-
                   <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -243,7 +226,6 @@ const WorkflowEnforcement = () => {
             <div className="flex w-2/5 border-2 border-first rounded-l-full"></div>
           </div>
           {/* ========================================================================================================================================= */}
-
           <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="font-semibold text-3xl sm:text-2xl md:text-2xl text-center font-serif h-[70%] my-auto">
               How We Implement Workflow Enforcement
@@ -256,16 +238,11 @@ const WorkflowEnforcement = () => {
                 variants={fadeIn("right", "spring", 0.5, 0.5)}
                 className=" flex w-2/4 h-full lg:w-2/4 sm:w-full md:w-full justify-center items-center "
               >
-                {/* <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
-                  alt="Drawing Automation"
-                  className="rounded-md object-cover w-full xl:w-full lg:w-full lg:h-full sm:w-full h-full"
-                /> */}
                 <Image
                   src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                   alt="Drawing Automation"
-                  width={800} // Adjust width as needed
-                  height={600} // Adjust height as needed
+                  width={800} 
+                  height={600}
                   className="rounded-md object-cover w-full xl:w-full lg:w-full lg:h-full sm:w-full h-full"
                 />
               </motion.div>
@@ -340,22 +317,15 @@ const WorkflowEnforcement = () => {
             <div className="flex w-2/5 border-2 h-0 border-first"></div>
           </div>
         </div>
-
         {/*  ==========================================DUPLICATe ==========================================*/}
-
         <div className="bg-white flex flex-col gap-10 xs:gap-4 w-full h-full 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden ">
           <div className="bg-white text-black w-full p-20 xs:p-5">
             <div className="flex flex-row xs:gap-4 justify-around items-center xs:w-full xs:flex xs:flex-col xs:p-0 xs:space-y-9  ">
-              {/* <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
-                alt=""
-                className="w-full bg-white shadow-xl rounded-md"
-              /> */}
               <Image
                 src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                 alt="Workflow Enforcement"
-                width={800} // Adjust width as needed
-                height={600} // Adjust height as needed
+                width={800}
+                height={600}
                 className="w-full bg-white shadow-xl rounded-md"
               />
               <div className=" w-full">
@@ -374,9 +344,7 @@ const WorkflowEnforcement = () => {
               </div>
             </div>
           </div>
-
           {/* ==================================================================================================== */}
-
           <div className="bg-white text-black p-20  xs:p-5">
             <div className="flex flex-row xs:gap-8 xs:flex-col-reverse justify-around items-center">
               <div className="px-20 w-2/3 xs:px-0 xs:w-full space-y-6 ">
@@ -393,22 +361,16 @@ const WorkflowEnforcement = () => {
                   Managing complex workflows in AEC and manufacturing projects can be challenging. Ensuring that every task follows the correct sequence and meets quality standards requires robust systems and oversight. Our Workflow Enforcement services, utilizing Autodesk tools like Revit, Inventor, Civil 3D, and Plant 3D, are designed to optimize and enforce efficient workflows throughout your projects.
                 </motion.div>
               </div>
-              {/* <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/1.webp"
-                alt=""
-                className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
-              /> */}
               <Image
                 src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                 alt="Workflow Efficiency"
-                width={800} // Adjust width as needed
-                height={600} // Adjust height as needed
+                width={800}
+                height={600}
                 className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
               />
             </div>
           </div>
           {/* =========================================================================================================================================== */}
-
           <div className="bg-gray-100 w-[90%] mx-auto xs:p-5">
             <div className="p-4 xs:p-0">
               <div className="flex justify-center font-bold text-3xl font-serif p-6 xs:text-2xl xs:text-center ">
@@ -446,7 +408,6 @@ const WorkflowEnforcement = () => {
                       Ensure that all tasks are completed in the correct order, reducing bottlenecks and improving overall project flow.
                     </div>
                   </motion.div>
-
                   <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -478,7 +439,6 @@ const WorkflowEnforcement = () => {
                     </div>
                   </motion.div>
                 </div>
-
                 <div className="flex flex-row gap-6 xl:justify-center xs:flex xs:flex-col">
                   <motion.div
                     initial="hidden"
@@ -510,7 +470,6 @@ const WorkflowEnforcement = () => {
                       Automate repetitive tasks and minimize manual intervention, allowing your team to focus on high-value activities.
                     </div>
                   </motion.div>
-
                   <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -545,24 +504,17 @@ const WorkflowEnforcement = () => {
               </div>
             </div>
           </div>
-
           {/* ========================================================================================================================================= */}
-
           <div className="bg-white text-black p-20 xs:p-0">
             <div className="font-semibold text-2xl text-center p-8 font-serif xs:p-3">
               How We Implement Workflow Enforcement
             </div>
             <div className="flex flex-row gap-4 p-5 justify-around items-center xs:flex xs:flex-col ">
-              {/* <img
-                src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
-                alt=""
-                className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
-              /> */}
                <Image
                   src="https://d1nw187rmwcpt3.cloudfront.net/Automation.webp"
                   alt="Workflow Enforcement"
-                  width={800} // Adjust width as needed
-                  height={600} // Adjust height as needed
+                  width={800} 
+                  height={600}
                   className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
                 />
               <div className="px-20 w-2/3 xs:px-0 xs:w-full">

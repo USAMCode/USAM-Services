@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import ContactModal from "@/components/ContactModal";
 import { motion } from "framer-motion";
 import {
@@ -23,13 +24,15 @@ const DataManagement = () => {
         </div>
         <div className="bg-white h-full xs:hidden w-[90%] mx-auto flex flex-col">
           {/* ============================================================================================================================================ */}
-
           <div className="bg-white text-black border-l-4 p-20 md:px-5 md:py-10 lg:p-0 sm:p-10 lg:px-5 lg:py-10 xl:p-10 border-l-first">
             <div className="flex flex-row gap-8 md:gap-4 lg:gap-6 sm:flex-col sm:gap-6 justify-around items-center">
               <div className="w-full lg:w-1/2 h-full flex justify-center items-center ">
-                <img
+                <Image
                   src="https://d1nw187rmwcpt3.cloudfront.net/Data+Analysist.webp"
                   alt="Drawing Automation"
+                  layout="responsive"
+                  width={800} 
+                  height={600}
                   className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
               </div>
@@ -63,7 +66,6 @@ const DataManagement = () => {
           </div>
           <div className="flex w-full border-2 border-first rounded-bl-md rounded-tr-md"></div>
           {/* ============================================================================================================================================ */}
-
           <div className="bg-white text-black p-20 sm:p-10 md:px-2 md:p-10 lg:py-10 lg:px-5 xl:p-10  border-r-4 border-r-first">
             <div className="flex flex-row sm:flex-col-reverse sm:gap-6 md:gap-4 justify-around lg:justify-between items-center">
               <div className="h-full flex flex-col gap-6 w-full lg:w-4/6 xl:w-2/4">
@@ -92,18 +94,19 @@ const DataManagement = () => {
                 variants={fadeInBlur(0.25, 0.5)}
                 className="w-full lg:w-3/6 xl:w-2/4 h-full flex justify-center items-center "
               >
-                <img
+                <Image
                   src="https://d1nw187rmwcpt3.cloudfront.net/Data+Analysist.webp"
                   alt="Drawing Automation"
-                  className="rounded-md object-cover w-full h-full"
+                  layout="responsive"
+                  width={800} 
+                  height={600}
+                  className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
               </motion.div>
             </div>
           </div>
-
           <div className="flex w-full border-2 border-first rounded-tl-md"></div>
           {/* =========================================================================================================================================== */}
-
           <div className="bg-gray-100 p-10 sm:p-5 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="flex flex-col h-[70%] my-auto gap-10 py-16">
               <div className="flex w-full text-center justify-center font-bold text-3xl sm:text-2xl md:text-2xl font-serif ">
@@ -142,7 +145,6 @@ const DataManagement = () => {
                       whether stored in the cloud or on physical servers.
                     </div>
                   </motion.div>
-
                   <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -176,7 +178,6 @@ const DataManagement = () => {
                     </div>
                   </motion.div>
                 </div>
-
                 <div className="flex flex-row gap-6 xl:justify-center">
                   <motion.div
                     initial="hidden"
@@ -209,7 +210,6 @@ const DataManagement = () => {
                       to match the growth and complexity of your projects.
                     </div>
                   </motion.div>
-
                   <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -252,7 +252,6 @@ const DataManagement = () => {
             <div className="flex w-2/5 border-2 border-first rounded-l-full"></div>
           </div>
           {/* ========================================================================================================================================= */}
-
           <div className="bg-white text-black py-20 px-10 flex flex-col gap-12 border-l-4 border-l-first border-r-4 border-r-first">
             <div className="font-semibold text-3xl sm:text-2xl md:text-2xl text-center font-serif h-[70%] my-auto">
               How We Implement Data Management Services
@@ -265,10 +264,13 @@ const DataManagement = () => {
                 variants={fadeIn("right", "spring", 0.5, 0.5)}
                 className=" flex w-2/4 h-full lg:w-2/4 sm:w-full md:w-full justify-center items-center "
               >
-                <img
+                <Image
                   src="https://d1nw187rmwcpt3.cloudfront.net/Data+Analysist.webp"
                   alt="Drawing Automation"
-                  className="rounded-md object-cover w-full xl:w-full lg:w-full lg:h-full sm:w-full h-full"
+                  layout="responsive"
+                  width={800} 
+                  height={600}
+                  className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
                 />
               </motion.div>
               <div className=" w-2/4 xl:w-2/3 lg:w-2/4 xl:justify-center xl:items-center xl:px-12 lg:justify-center lg:items-center md:w-full md:justify-center md:items-center md:p-8 md:px-8 sm:w-full sm:justify-center sm:items-center sm:p-0">
@@ -364,16 +366,17 @@ const DataManagement = () => {
             <div className="flex w-2/5 border-2 h-0 border-first"></div>
           </div>
         </div>
-
         {/*  ==========================================DUPLICATe ==========================================*/}
-
         <div className="bg-white flex flex-col gap-10 xs:gap-4 w-full h-full 2xl:hidden xl:hidden lg:hidden md:hidden sm:hidden ">
           <div className="bg-white text-black w-full p-20 xs:p-5">
             <div className="flex flex-row xs:gap-4 justify-around items-center xs:w-full xs:flex xs:flex-col xs:p-0 xs:space-y-9  ">
-              <img
+            < Image
                 src="https://d1nw187rmwcpt3.cloudfront.net/Data+Analysist.webp"
-                alt=""
-                className="w-full bg-white shadow-xl rounded-md"
+                alt="Drawing Automation"
+                layout="responsive"
+                width={800} 
+                height={600}
+                className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
               />
               <div className=" w-full">
                 <div className="font-semibold text-2xl font-serif">
@@ -395,9 +398,7 @@ const DataManagement = () => {
               </div>
             </div>
           </div>
-
           {/* ==================================================================================================== */}
-
           <div className="bg-white text-black p-20  xs:p-5">
             <div className="flex flex-row xs:gap-8 xs:flex-col-reverse justify-around items-center">
               <div className="px-20 w-2/3 xs:px-0 xs:w-full space-y-6 ">
@@ -418,15 +419,17 @@ const DataManagement = () => {
                   projects and operations.
                 </motion.div>
               </div>
-              <img
+              <Image
                 src="https://d1nw187rmwcpt3.cloudfront.net/Data+Analysist.webp"
-                alt=""
-                className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
+                alt="Drawing Automation"
+                layout="responsive"
+                width={800} 
+                height={600}
+                className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
               />
             </div>
           </div>
           {/* =========================================================================================================================================== */}
-
           <div className="bg-gray-100 w-[90%] mx-auto xs:p-5">
             <div className="p-4 xs:p-0">
               <div className="flex justify-center font-bold text-3xl font-serif p-6 xs:text-2xl xs:text-center ">
@@ -465,7 +468,6 @@ const DataManagement = () => {
                       whether stored in the cloud or on physical servers.
                     </div>
                   </motion.div>
-
                   <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -499,7 +501,6 @@ const DataManagement = () => {
                     </div>
                   </motion.div>
                 </div>
-
                 <div className="flex flex-row gap-6 xl:justify-center xs:flex xs:flex-col">
                   <motion.div
                     initial="hidden"
@@ -532,7 +533,6 @@ const DataManagement = () => {
                       to match the growth and complexity of your projects.
                     </div>
                   </motion.div>
-
                   <motion.div
                     initial="hidden"
                     whileInView="show"
@@ -569,18 +569,19 @@ const DataManagement = () => {
               </div>
             </div>
           </div>
-
           {/* ========================================================================================================================================= */}
-
           <div className="bg-white text-black p-20 xs:p-0">
             <div className="font-semibold text-2xl text-center p-8 font-serif xs:p-3">
               How We Implement Data Management Services{" "}
             </div>
             <div className="flex flex-row gap-4 p-5 justify-around items-center xs:flex xs:flex-col ">
-              <img
+              <Image
                 src="https://d1nw187rmwcpt3.cloudfront.net/Data+Analysist.webp"
-                alt=""
-                className="w-full bg-white shadow-xl rounded-md md:p-16 sm:p-12"
+                alt="Drawing Automation"
+                layout="responsive"
+                width={800} 
+                height={600}
+                className="rounded-md object-cover w-full lg:w-full md:w-full sm:w-full h-full"
               />
               <div className="px-20 w-2/3 xs:px-0 xs:w-full">
                 <div className="text-[17px] flex flex-col gap-8 ">

@@ -110,7 +110,7 @@ const Services = () => {
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
                 <Link
-                  href={"/services/automation"}
+                  href={services[0].link}
                   className="2xl:text-3xl xl:text-2xl xs:text-xl flex w-full justify-center font-semibold text-black"
                 >
                   Automation
@@ -132,7 +132,7 @@ const Services = () => {
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
                 <Link
-                  href={"/services/consulting"}
+                  href={services[1].link}
                   className="2xl:text-3xl xl:text-2xl xs:text-xl w-full flex justify-center font-semibold text-black"
                 >
                   Consulting
@@ -156,7 +156,7 @@ const Services = () => {
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
                 <Link
-                  href={"/services/datainsights"}
+                  href={services[2].link}
                   className="2xl:text-3xl xl:text-2xl xs:text-xl flex w-full justify-center font-semibold text-black"
                 >
                   Data & Insights

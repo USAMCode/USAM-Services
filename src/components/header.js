@@ -67,20 +67,15 @@ const Header= () => {
       scrolled ? "bg-white " : "bg-transparent"
     }`}
   >
-    <div className="w-full flex xs:gap-2 md:gap-4 justify-between items-center max-w-7xl mx-auto">
-      {/* {scrolled ? (
-        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp" alt=""/>
-      ):(
-        <img className="w-40 xs:w-32 md:w-52 h-10 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp" alt=""/>
-      )} */}
+    <div className="w-full flex xs:gap-4 sm:gap-4 md:gap-4 justify-between items-center max-w-7xl mx-auto">
       <Image
-          className="w-40 xs:w-32 md:w-52 h-10 object-contain"
+          className="w-40 xs:w-28 sm:w-32 md:w-52 h-10 object-contain"
           src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp"
           alt=""
           width={208}
           height={40}
         />
-      <ul className="list-none lg:flex flex flex-row xs:hidden sm:hidden md:hidden items-center justify-center gap-10">
+      <ul className="list-none xl:flex flex-row xs:hidden sm:hidden md:hidden lg:hidden items-center justify-center gap-10">
         {navLinks.map((nav) => (
           <li
             key={nav.id}
@@ -96,22 +91,19 @@ const Header= () => {
             <span className="ease absolute right-0 top-0 h-0 w-0 transition-all duration-200 group-hover:h-full"></span>
             <span className="ease absolute bottom-0 right-0 h-0 w-0 transition-all duration-200 group-hover:w-full"></span>
             <span className="ease absolute bottom-0 left-0 h-0 w-0 transition-all duration-200 group-hover:h-full"></span>
-            {/* <div onClick={() => {handleDownload('https://portfolio20072023.s3.ap-south-1.amazonaws.com/Resume.pdf','Resume.pdf')}}>Resume</div> */}
           </button>
       </ul>
 
-      <div className="flex flex-row gap-2">
-        {/* <img className="w-40 xs:w-32 md:w-52 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.webp" alt=""/>
-        <img className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain" src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.webp" alt=""/> */}
+      <div className="flex flex-row gap-2 xs:gap-4">
         <Image
-            className="w-40 xs:w-32 md:w-52 h-12 object-contain"
+            className="w-40 xs:w-28 sm:w-32 md:w-52 h-12 object-contain"
             src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.webp"
             alt=""
             width={208}
             height={48}
           />
           <Image
-            className="w-40 sm:w-36 xs:w-28 md:w-36 h-12 object-contain"
+            className="w-40 sm:w-32 xs:w-28 md:w-36 h-12 object-contain"
             src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.webp"
             alt=""
             width={208}
@@ -119,13 +111,7 @@ const Header= () => {
           />
       </div>
 
-      <div className="lg:hidden xs:flex sm:flex md:flex flex-1 justify-end items-center">
-        {/* <img
-          src={toggle ? "https://d1nw187rmwcpt3.cloudfront.net/close.svg" : "https://d1nw187rmwcpt3.cloudfront.net/menu.svg" }
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
-        /> */}
+      <div className="xl:hidden xs:flex sm:flex md:flex flex-1 justify-end items-center">
         <Image
             src={
               toggle

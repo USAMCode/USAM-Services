@@ -77,7 +77,7 @@ const Sliders = () => {
         </div>
         <div className="flex flex-col gap-5 lg:py-5 2xl:py-0 w-full h-1/4 items-center justify-around">
           <div className="flex w-full font-semibold text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl xs:text-2xl text-first justify-center ">
-            Our Partners
+            Our Customers
           </div>
           <div
             className="glide-09 w-full"

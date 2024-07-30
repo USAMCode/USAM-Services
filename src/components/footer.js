@@ -2,144 +2,194 @@ import React from 'react'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { slideIn } from '@/utils/motion';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className='flex flex-col gap-4 bg-neutral-900 relative xs:py-4 md:py-4 sm:py-5'>
+    <div className="flex flex-col gap-4 bg-neutral-900 relative xs:py-4 md:py-4 sm:py-5">
       <motion.div
-          variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex xl:flex-row xl:justify-around sm:px-0 flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-row text-second gap-4 md:py-5 px-5 lg:px-2 xs:px-2 flex items-center"
-        >
-          <div className='flex w-full lg:w-1/4 xl:w-1/3 2xl:w-2/4 justify-center items-center xs:flex-row sm:flex-row md:flex-row lg:flex-col gap-8'>
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex xl:flex-row xl:justify-around sm:px-0 flex-row xs:flex-col sm:flex-col xl:h-auto w-full md:flex md:flex-col lg:flex lg:flex-row text-second gap-4 md:py-5 px-5 lg:px-2 xs:px-2 flex items-center"
+      >
+        <div className="flex w-full lg:w-1/4 xl:w-1/3 2xl:w-2/4 justify-center items-center xs:flex-row sm:flex-row md:flex-row lg:flex-col gap-8">
           <Image
-              className='w-40 xs:w-28 sm:w-32 md:w-52 h-12 lg:w-40 2xl:w-52 object-contain'
-              src='https://d1nw187rmwcpt3.cloudfront.net/UsamWhite.webp'
-              alt='UsamWhite'
-              width={160}
-              height={48}
-              loading='lazy'
-            />
-            <Image
-              className='w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain'
-              src='https://d1nw187rmwcpt3.cloudfront.net/AutodeskWhite.webp'
-              alt='AutodeskWhite'
-              width={160}
-              height={48}
-              loading='lazy'
-            />
-            <Image
-              className='w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain'
-              src='https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-white.webp'
-              alt='Autodesk Authorised Developer'
-              width={160}
-              height={48}
-              loading='lazy'
-            />
-          </div>
-          <ul className="flex flex-row xs:w-full sm:w-full 2xl:w-3/4 xl:w-2/4 lg:w-1/3 justify-center gap-12 2xl:gap-12 xl:flex xl:gap-6 lg:gap-x-8 lg:gap-y-6 xs:gap-4 md:flex md:flex-row md:w-full xl:flex-row sm:flex sm:flex-row flex-wrap py-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            className="w-40 xs:w-28 sm:w-32 md:w-52 h-12 lg:w-40 2xl:w-52 object-contain"
+            src="https://d1nw187rmwcpt3.cloudfront.net/UsamWhite.webp"
+            alt="UsamWhite"
+            width={160}
+            height={48}
+            loading="lazy"
+          />
+          <Image
+            className="w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain"
+            src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskWhite.webp"
+            alt="AutodeskWhite"
+            width={160}
+            height={48}
+            loading="lazy"
+          />
+          <Image
+            className="w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain"
+            src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-white.webp"
+            alt="Autodesk Authorised Developer"
+            width={160}
+            height={48}
+            loading="lazy"
+          />
+        </div>
+        <ul className="flex flex-row xs:w-full sm:w-full 2xl:w-3/4 xl:w-2/4 lg:w-1/3 justify-center gap-12 2xl:gap-12 xl:flex xl:gap-6 lg:gap-x-8 lg:gap-y-6 xs:gap-4 md:flex md:flex-row md:w-full xl:flex-row sm:flex sm:flex-row flex-wrap py-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>
-              <a
-                className="flex flex-row gap-5 items-center"
-                href="https://www.linkedin.com/company/usam-technoloy-solutions-p-ltd/about/?viewAsMember=true"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <Image
-                  className="w-10 h-10"
-                  src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Linkedin.png"
-                  alt="LinkedIn"
-                  width={40}
-                  height={40}
-                  loading='lazy'
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                className="flex flex-row gap-5 items-center"
-                href="https://x.com/UsamTech"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <Image
-                  className="w-10 h-10"
-                  src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Twitter.png"
-                  alt="Twitter"
-                  width={40}
-                  height={40}
-                  loading='lazy'
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                className="flex flex-row gap-5 items-center"
-                href="https://www.instagram.com/usam_since_1990/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  className="w-10 h-10"
-                  src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Instagram.png"
-                  alt="Instagram"
-                  width={40}
-                  height={40}
-                  loading='lazy'
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                className="flex flex-row gap-5 items-center"
-                href="https://www.facebook.com/usam.technology/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <Image
-                  className="w-10 h-10"
-                  src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Facebook.png"
-                  alt="Facebook"
-                  width={40}
-                  height={40}
-                  loading='lazy'
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                className="flex flex-row gap-5 items-center"
-                href="https://www.youtube.com/@usamlearning"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                <Image
-                  className="w-10 h-10"
-                  src="https://d1nw187rmwcpt3.cloudfront.net/youtube.webp"
-                  alt="YouTube"
-                  width={40}
-                  height={40}
-                  loading='lazy'
-                />
-              </a>
-            </li>
-          </ul>
-          <div className="lg:hidden xl:hidden flex text-lg flex-row xs:flex-col xs:gap-4 sm:w-full md:w-full lg:flex-row lg:w-full xl:flex-row xs:w-full justify-around">
-            {/* <div className="flex flex-col xs:flex-row gap-2 w-full text-center justify-around">
+            <a
+              className="flex flex-row gap-5 items-center"
+              href="https://www.linkedin.com/company/usam-technoloy-solutions-p-ltd/about/?viewAsMember=true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="w-10 h-10"
+                src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Linkedin.png"
+                alt="LinkedIn"
+                width={40}
+                height={40}
+                loading="lazy"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex flex-row gap-5 items-center"
+              href="https://x.com/UsamTech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="w-10 h-10"
+                src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Twitter.png"
+                alt="Twitter"
+                width={40}
+                height={40}
+                loading="lazy"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex flex-row gap-5 items-center"
+              href="https://www.instagram.com/usam_since_1990/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="w-10 h-10"
+                src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Instagram.png"
+                alt="Instagram"
+                width={40}
+                height={40}
+                loading="lazy"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex flex-row gap-5 items-center"
+              href="https://www.facebook.com/usam.technology/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="w-10 h-10"
+                src="https://portfolio20072023.s3.ap-south-1.amazonaws.com/Facebook.png"
+                alt="Facebook"
+                width={40}
+                height={40}
+                loading="lazy"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              className="flex flex-row gap-5 items-center"
+              href="https://www.youtube.com/@usamlearning"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className="w-10 h-10"
+                src="https://d1nw187rmwcpt3.cloudfront.net/youtube.webp"
+                alt="YouTube"
+                width={40}
+                height={40}
+                loading="lazy"
+              />
+            </a>
+          </li>
+        </ul>
+        <div className="lg:hidden xl:hidden flex text-lg sm:flex-col sm:gap-4 md:gap-4 md:flex-col flex-row xs:flex-col xs:gap-4 sm:w-full md:w-full lg:flex-row lg:w-full xl:flex-row xs:w-full justify-around">
+          {/* <div className="flex flex-col xs:flex-row gap-2 w-full text-center justify-around">
               <div>Privacy Policy</div>
               <div>Terms & Conditions</div>
             </div> */}
-            <div className="flex lg:flex-col md:text-lg lg:text-lg xl:text-xl xs:flex-col md:flex-row gap-2 w-full justify-around text-center">
-              <div className='flex w-full justify-center'>+(91)-9344375567</div>
-              <div className='flex w-full justify-center'>mahesh.m@usam.in</div>
-              <div className='flex w-full justify-center'>www.usam.in</div>
+            
+          <Link className="flex w-full justify xs:justify-center sm:justify-around md:justify-around" href={"/PrivacyPolicy"}>
+            <div>Privacy Policy</div>
+          </Link>
+          <div className="flex sm:flex-col lg:flex-col md:text-lg lg:text-lg xl:text-xl xs:flex-col md:flex-row gap-2 sm:gap-0 w-full justify-around text-center">
+            <div className="flex w-full justify-center">+(91)-9344375567</div>
+            <div className="flex w-full justify-center">mahesh.m@usam.in</div>
+            <div className="flex w-full justify-center">www.usam.in</div>
+          </div>
+          
+        </div>
+        <div className=" lg:hidden xl:hidden flex flex-col lg:w-full md:w-[85%] sm:w-[90%] xl:text-xl mx-auto w-full xs:gap-2 xs:p-4 sm:gap-2 xs:w-full xs:items-center">
+          <div className="flex w-full text-lg tracking-wide text-second underline">
+            Corporate Office
+          </div>
+          <div className="flex w-full sm:w-full md:w-full lg:w-full xs:w-full tracking-wide text-second">
+            <b>Chennai&nbsp;:</b>&nbsp;No 4, 1st Cross Street, CIT Colony,
+            Mylapore, Chennai – 600004.
+          </div>
+          <div className="flex flex-col">
+            <div className="flex underline text-lg">Our Branches&nbsp;:</div>
+            <div className="flex flex-row xs:flex-1 xs:flex-wrap sm:flex-wrap lg:flex-wrap gap-2 lg:gap-0 xs:gap-0 w-full xs:w-[100%] justify-start">
+              <div>Coimbatore</div>&nbsp;|&nbsp;
+              <div>Trichy</div>&nbsp;|&nbsp;
+              <div>Bangalore</div>&nbsp;|&nbsp;
+              <div>Hyderabad</div>&nbsp;|&nbsp;
+              <div>Kochi</div>&nbsp;|&nbsp;
+              <div>Bhubaneswar</div>
             </div>
           </div>
-          <div className=' lg:hidden xl:hidden flex flex-col lg:w-full md:w-[85%] sm:w-[90%] xl:text-xl mx-auto w-full xs:gap-2 xs:p-4 sm:gap-2 xs:w-full xs:items-center'>
-            <div className="flex w-full text-lg tracking-wide text-second underline">Corporate Office</div>
-            <div className="flex w-full sm:w-full md:w-full lg:w-full xs:w-full tracking-wide text-second"><b>Chennai&nbsp;:</b>&nbsp;No 4, 1st Cross Street, CIT Colony, Mylapore, Chennai – 600004.</div>
-            <div className='flex flex-col'>
-              <div className='flex underline text-lg'>Our Branches&nbsp;:</div>
-              <div className='flex flex-row xs:flex-1 xs:flex-wrap sm:flex-wrap lg:flex-wrap gap-2 lg:gap-0 xs:gap-0 w-full xs:w-[100%] justify-start'>
+        </div>
+
+        {/* ---------------------------------------2xl---------------------------------------- */}
+        <div className="hidden lg:flex xl:flex xl:w-3/4 2xl:w-full lg:w-2/4 flex-col gap-4">
+          <div className="flex text-lg flex-row xs:flex-col xs:gap-4 sm:w-full md:w-full lg:flex items-center lg:flex-row lg:w-full xl:flex xl:flex-row xs:w-full justify-around">
+            {/* <div className="flex flex-col xs:flex-row gap-2 w-full text-center justify-around">
+                <div>Privacy Policy</div>
+                <div>Terms & Conditions</div>
+              </div> */}
+            <div className="flex flex-row  2xl:gap-8 xl:gap-4 lg:gap-4 w-full justify-start items-center">
+              <div className="flex xl:w-max">9344375567</div>
+              <div className="flex xl:w-max">mahesh.m@usam.in</div>
+              <div className="flex xl:w-max">www.usam.in</div>
+            </div>
+          </div>
+          <Link className='text-lg' href={"/PrivacyPolicy"}>
+            <div className="flex xl:w-max">Privacy Policy</div>
+          </Link>
+          <div className="flex flex-col lg:w-full md:w-[85%] sm:w-[90%] xl:text-xl gap-1 mx-auto w-full xs:gap-2 xs:p-4 sm:gap-2 xs:w-full xs:items-center">
+            <div className="flex w-full text-lg tracking-wide text-second underline">
+              Corporate Office
+            </div>
+            <div className="flex w-full sm:w-full md:w-full lg:w-full xs:w-full tracking-wide text-second text-base">
+              <b>Chennai&nbsp;:</b>&nbsp;No 4, 1st Cross Street, CIT Colony,
+              Mylapore, Chennai – 600004.
+            </div>
+            <div className="flex flex-col gap-1">
+              <div className="flex underline text-base">
+                Our Branches&nbsp;:
+              </div>
+              <div className="flex text-base flex-row xs:flex-1 xs:flex-wrap sm:flex-wrap lg:flex-wrap gap-2 w-full xs:w-[100%] justify-start">
                 <div>Coimbatore</div>&nbsp;|&nbsp;
                 <div>Trichy</div>&nbsp;|&nbsp;
                 <div>Bangalore</div>&nbsp;|&nbsp;
@@ -149,43 +199,14 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          {/* ---------------------------------------2xl---------------------------------------- */}
-          <div className='hidden lg:flex xl:flex xl:w-3/4 2xl:w-full lg:w-2/4 flex-col gap-4'>
-            <div className="flex text-lg flex-row xs:flex-col xs:gap-4 sm:w-full md:w-full lg:flex items-center lg:flex-row lg:w-full xl:flex xl:flex-row xs:w-full justify-around">
-              {/* <div className="flex flex-col xs:flex-row gap-2 w-full text-center justify-around">
-                <div>Privacy Policy</div>
-                <div>Terms & Conditions</div>
-              </div> */}
-              <div className="flex flex-row  2xl:gap-8 xl:gap-4 lg:gap-4 w-full justify-start items-center">
-                <div className='flex xl:w-max'>9344375567</div>
-                <div className='flex xl:w-max'>mahesh.m@usam.in</div>
-                <div className='flex xl:w-max'>www.usam.in</div>
-              </div>
-            </div>
-            <div className='flex flex-col lg:w-full md:w-[85%] sm:w-[90%] xl:text-xl gap-1 mx-auto w-full xs:gap-2 xs:p-4 sm:gap-2 xs:w-full xs:items-center'>
-              <div className="flex w-full text-lg tracking-wide text-second underline">Corporate Office</div>
-              <div className="flex w-full sm:w-full md:w-full lg:w-full xs:w-full tracking-wide text-second text-base"><b>Chennai&nbsp;:</b>&nbsp;No 4, 1st Cross Street, CIT Colony, Mylapore, Chennai – 600004.</div>
-              <div className='flex flex-col gap-1'>
-                <div className='flex underline text-base'>Our Branches&nbsp;:</div>
-                <div className='flex text-base flex-row xs:flex-1 xs:flex-wrap sm:flex-wrap lg:flex-wrap gap-2 w-full xs:w-[100%] justify-start'>
-                  <div>Coimbatore</div>&nbsp;|&nbsp;
-                  <div>Trichy</div>&nbsp;|&nbsp;
-                  <div>Bangalore</div>&nbsp;|&nbsp;
-                  <div>Hyderabad</div>&nbsp;|&nbsp;
-                  <div>Kochi</div>&nbsp;|&nbsp;
-                  <div>Bhubaneswar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-        <div className='flex flex-row xs:flex-col sm:flex-col sm:justify-center sm:text-center text-second w-[90%] sm:w-[95%] xs:w-full xs:text-sm md:text-base xs:p-4 xs:items-center mx-auto justify-around'>
-          <div>Copyright © 2021 USAM Technology Solutions Pvt Ltd.</div>
-          <div>All rights reserved</div>
         </div>
+      </motion.div>
+      <div className="flex flex-row xs:flex-col sm:flex-col sm:justify-center sm:text-center text-second w-[90%] sm:w-[95%] xs:w-full xs:text-sm md:text-base xs:p-4 xs:items-center mx-auto justify-around">
+        <div>Copyright © 2021 USAM Technology Solutions Pvt Ltd.</div>
+        <div>All rights reserved</div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Footer

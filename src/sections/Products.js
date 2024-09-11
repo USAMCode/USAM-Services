@@ -35,7 +35,7 @@ const Projects = () => {
   ];
   const revit = [
     {
-      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/1.webp",
+      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/elbow.ico",
       alt: "Elbow Rotate",
       title: "Elbow Rotate",
       description:
@@ -298,7 +298,7 @@ const Projects = () => {
         </div>
 
         {/* ========= */}
-        <div className="2xl:flex justify-around w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden 2xl:text-3xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
+        <div className="2xl:flex w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden 2xl:text-3xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
           For Autodesk Revit®
         </div>
         <div className="2xl:flex w-[90%] mx-auto lg:hidden xl:hidden md:hidden sm:hidden xs:hidden ">

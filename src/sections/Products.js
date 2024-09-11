@@ -33,6 +33,16 @@ const Projects = () => {
       link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=630776272717761885&appLang=en&os=Win64&mode=preview",
     },
   ];
+  const revit = [
+    {
+      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/elbow.ico",
+      alt: "Elbow Rotate",
+      title: "Elbow Rotate",
+      description:
+        "'Elbow Rotate'  is a Revit® add-in that allows precise, adjustable rotation of pipe-fitting elbows beyond the default 90-degree increments for enhanced flexibility.",
+      link: "https://apps.autodesk.com/RVT/en/Detail/Index?id=1819107434539299929&appLang=en&os=Win64",
+    },
+  ];
   return (
     <>
       <div className="flex flex-col gap-8 w-[90%] xs:w-[95%] mx-auto">
@@ -89,11 +99,112 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+        {/* ========================== */}
+        <div className="flex 2xl:hidden xl:hidden lg:hidden md:hidden font-semibold sm:text-2xl xs:text-xl text-gray-700">
+            For Autodesk Revit®
+          </div>
+        <div className="flex 2xl:hidden xl:hidden lg:hidden md:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap sm:justify-center sm:items-center xs:gap-8 sm:gap-8 w-full justify-between">
+          {revit.map((project, index) => (
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+              variants={fadeScaleIn(0.2, 0.5)}
+              className=" bg-second sm:h-75 sm:w-[80%] xs:w-full xs:h-72 relative rounded-3xl"
+            >
+              <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                variants={fadeScaleIn(0.2, 0.5)}
+                className="bg-white shadow-2xl sm:h-75 sm:w-full xs:w-full xs:h-72  md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
+              >
+                <div className="w-full p-10 flex flex-col gap-2 lg:p-5 lg:gap-2 md:gap-2">
+                  <div className="flex items-center">
+                    <div>
+                      <Image
+                        src={project.imgSrc}
+                        alt={project.alt}
+                        width={40}
+                        height={40}
+                        loading="lazy"
+                        className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                      />
+                    </div>
+                    <div className="text-2xl font-semibold lg:text-xl md:text-lg xl:text-2xl sm:ml-5 xs:ml-5 sm:text-xl">
+                      {project.title}
+                    </div>
+                  </div>
+                  <div className="2xl:text-lg xl:text-xl sm:text-base xs:text-lg">
+                    {project.description}{" "}
+                  </div>
+                  <Link href={project.link}>
+                    <div className="bg-first rounded-full w-1/3 p-1 flex justify-center text-white text-lg xl:p-1 ">
+                      View
+                    </div>
+                  </Link>
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
 
         {/* -------------------------------------------------------- lg ---------------------------------------------------- */}
-
+        
         <div className="lg:flex lg:justify-between lg:flex-row lg:flex-nowrap w-full 2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
           {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+              variants={fadeScaleIn(0.2, 0.5)}
+              className=" bg-second lg:w-80 h-75 relative rounded-3xl"
+            >
+              <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                variants={fadeScaleIn(0.2, 0.5)}
+                className="bg-white shadow-2xl lg:h-75 lg:w-80 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
+              >
+                <div className="w-full lg:px-7 flex flex-col lg:gap-4 ">
+                  <div className="flex items-center">
+                    <div>
+                      <Image
+                        src={project.imgSrc}
+                        alt={project.alt}
+                        width={40}
+                        height={40}
+                        loading="lazy"
+                        className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                      />
+                    </div>
+                    <div className="text-2xl font-semibold lg:text-2xl md:text-lg xl:text-2xl ml-2">
+                      {project.title}
+                    </div>
+                  </div>
+                  <div className="2xl:text-lg xl:text-xl lg:text-base xs:text-base">
+                    {project.description}{" "}
+                  </div>
+                  <Link href={project.link}>
+                    <div className="bg-first rounded-full w-1/3 p-1 flex justify-center text-white text-lg xl:p-1 ">
+                      View
+                    </div>
+                  </Link>
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* ================= */}
+        <div className="lg:flex  2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden lg:text-2xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
+            For Autodesk Revit®
+          </div>
+        <div className="lg:flex lg:justify-between lg:flex-row lg:flex-nowrap w-full 2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
+          {revit.map((project, index) => (
             <motion.div
               key={index}
               initial="hidden"
@@ -186,10 +297,109 @@ const Projects = () => {
           ))}
         </div>
 
+        {/* ========= */}
+        <div className="2xl:flex w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden 2xl:text-3xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
+          For Autodesk Revit®
+        </div>
+        <div className="2xl:flex w-[90%] mx-auto lg:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
+          {revit.map((project, index) => (
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+              variants={fadeScaleIn(0.2, 0.5)}
+              className=" bg-second w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 relative rounded-3xl"
+            >
+              <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                variants={fadeScaleIn(0.2, 0.5)}
+                className="bg-white shadow-2xl h-80 w-96 xs:w-full sm:w-full md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
+              >
+                <div className="w-full p-10 flex flex-col lg:gap-4 ">
+                  <div className="flex items-center">
+                    <div>
+                      <Image
+                        src={project.imgSrc}
+                        alt={project.alt}
+                        width={40}
+                        height={40}
+                        loading="lazy"
+                        className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                      />
+                    </div>
+                    <div className="2xl:text-2xl font-semibold lg:text-2xl md:text-lg xl:text-2xl ml-5">
+                      {project.title}
+                    </div>
+                  </div>
+                  <div className="2xl:text-lg ">{project.description} </div>
+                  <Link href={project.link}>
+                    <div className="bg-first rounded-full w-1/3 p-1 flex justify-center text-white text-lg xl:p-1 ">
+                      View
+                    </div>
+                  </Link>
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+
         {/* --------------------------------------------------------xl ---------------------------------------------------- */}
 
         <div className="xl:flex justify-around w-full lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden ">
           {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+              variants={fadeScaleIn(0.2, 0.5)}
+              className=" bg-second w-96 sm:w-full xs:w-full md:w-80 lg:w-96 h-80 relative rounded-3xl"
+            >
+              <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                variants={fadeScaleIn(0.2, 0.5)}
+                className="bg-white shadow-2xl h-80 w-96 xs:w-full sm:w-full md:w-80 lg:w-96 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
+              >
+                <div className="w-full p-10 flex flex-col lg:gap-4 ">
+                  <div className="flex items-center">
+                    <div>
+                      <Image
+                        src={project.imgSrc}
+                        alt={project.alt}
+                        width={40}
+                        height={40}
+                        loading="lazy"
+                        className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                      />
+                    </div>
+                    <div className="2xl:text-2xl font-semibold lg:text-2xl md:text-lg xl:text-2xl ml-5">
+                      {project.title}
+                    </div>
+                  </div>
+                  <div className="2xl:text-lg xl:text-lg lg:text-base xs:text-base">
+                    {project.description}{" "}
+                  </div>
+                  <Link href={project.link}>
+                    <div className="bg-first rounded-full w-1/3 p-1 flex justify-center text-white text-lg xl:p-1 ">
+                      View
+                    </div>
+                  </Link>
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+        {/* ========================== */}
+        <div className="xl:flex lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden  xl:text-3xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
+          For Autodesk Revit®
+        </div>
+        <div className="xl:flex w-[96%] mx-auto lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden ">
+          {revit.map((project, index) => (
             <motion.div
               key={index}
               initial="hidden"
@@ -281,6 +491,58 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+        {/* ============= */}
+        <div className="md:flex 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden font-semibold sm:text-2xl xs:text-xl text-gray-700">
+          For Autodesk Revit®
+        </div>
+        <div className="md:flex 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap md:gap-8 md:justify-center w-full justify-between">
+          {revit.map((project, index) => (
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.25 }}
+              variants={fadeScaleIn(0.2, 0.5)}
+              className=" bg-second md:h-72 md:w-96 relative rounded-3xl"
+            >
+              <motion.div
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.25 }}
+                variants={fadeScaleIn(0.2, 0.5)}
+                className="bg-white shadow-2xl md:w-96 md:h-72 flex rounded-3xl justify-center items-center absolute top-[-10px] left-2 z-10"
+              >
+                <div className="w-full flex flex-col gap-2 md:p-6 md:gap-2 ">
+                  <div className="flex items-center">
+                    <div className="">
+                      <Image
+                        src={project.imgSrc}
+                        alt={project.alt}
+                        width={40}
+                        height={40}
+                        loading="lazy"
+                        className="h-10 w-10 object-cover lg:h-12 lg:w-12 md:h-10 md:w-10"
+                      />
+                    </div>
+                    <div className="md:text-xl ml-4 font-semibold ">
+                      {project.title}
+                    </div>
+                  </div>
+                  <div className="md:text-base">{project.description} </div>
+                  <Link href={project.link}>
+                    <div className="bg-first rounded-full w-1/3 p-1  flex justify-center text-white text-lg xl:p-1 ">
+                      View
+                    </div>
+                  </Link>
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* ==============================================sm=============================== */}
+
+
       </div>
     </>
   );

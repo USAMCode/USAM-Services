@@ -10,19 +10,19 @@ const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 const Services = () => {
   const services = [
     {
-      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.webp",
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/Automation_Icon.webp",
       title: "Automation",
       link: "/services/automation",
       alt: "Automation",
     },
     {
-      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.webp",
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/Consulting_Icon.webp",
       title: "Consulting",
       link: "/services/consulting",
       alt: "Consulting",
     },
     {
-      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.webp",
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/DataInsights_Icon.webp",
       title: "Data & Insights",
       link: "/services/datainsights",
       alt: "Data & Insights",
@@ -105,7 +105,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:flex-row xs:items-center p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
               >
                 <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/Automation_Icon.webp"
+                  src="https://d3e25fyg0500ti.cloudfront.net/Automation_Icon.webp"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
@@ -127,7 +127,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:items-center xs:flex-row p-5 xs:px-5 xs:py-2 bg-gradient-to-br from-third via-second to-first 2xl:w-80 xl:w-64 rounded-lg"
               >
                 <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/Consulting_Icon.webp"
+                  src="https://d3e25fyg0500ti.cloudfront.net/Consulting_Icon.webp"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />
@@ -151,7 +151,7 @@ const Services = () => {
                 className="shadow-lg flex flex-col xs:flex-row p-5 xs:px-5 xs:py-2 xs:items-center 2xl:w-80 xl:w-64 xs:w-full rounded-lg bg-gradient-to-br from-third via-second to-first"
               >
                 <img
-                  src="https://d1nw187rmwcpt3.cloudfront.net/DataInsights_Icon.webp"
+                  src="https://d3e25fyg0500ti.cloudfront.net/DataInsights_Icon.webp"
                   alt=""
                   className="object-contain h-24 sm:h-36 xl:h-40 2xl:h-64"
                 />

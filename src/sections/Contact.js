@@ -80,7 +80,7 @@ const Contact = () => {
             to_email: form.email,
             service: form.service,
             message: "Thanks for Reaching out. Our Team will get in touch with you shortly.",
-            image:"https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.webp"
+            image:"https://d3e25fyg0500ti.cloudfront.net/AutodeskBlack.webp"
           },
           `${process.env.NEXT_PUBLIC_EMAILJS_KEY}`
         );

@@ -9,7 +9,7 @@ import Link from "next/link";
 const Projects = () => {
   const projects = [
     {
-      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/1.webp",
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/1.webp",
       alt: "Gap Hunter",
       title: "Gap Hunter",
       description:
@@ -17,7 +17,7 @@ const Projects = () => {
       link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=8342440050065650514&appLang=en&os=Win64&mode=preview",
     },
     {
-      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/2.webp",
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/2.webp",
       alt: "Dim Check",
       title: "Dim Check",
       description:
@@ -25,7 +25,7 @@ const Projects = () => {
       link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=4214486912770355635&appLang=en&os=Win64&mode=preview",
     },
     {
-      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/3.webp",
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/3.webp",
       alt: "Balloon Master",
       title: "Balloon Master",
       description:
@@ -35,7 +35,7 @@ const Projects = () => {
   ];
   const revit = [
     {
-      imgSrc: "https://d1nw187rmwcpt3.cloudfront.net/elbow.ico",
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/elbow.ico",
       alt: "Elbow Rotate",
       title: "Elbow Rotate",
       description:

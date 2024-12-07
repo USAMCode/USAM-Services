@@ -27,7 +27,7 @@ const About = () => {
                   <div className="flex flex-col gap-3 ">
                     <div className="flex flex-row xs:justify-center xs:items-center">
                       <Image
-                        src="https://d1nw187rmwcpt3.cloudfront.net/next.webp"
+                        src="https://d3e25fyg0500ti.cloudfront.net/next.webp"
                         width={24}
                         height={24}
                         className="h-6 w-6 xs:h-4 xs:w-4"
@@ -41,7 +41,7 @@ const About = () => {
                     </div>
                     <div className="flex flex-row xs:justify-center xs:items-center ">
                       <Image
-                        src="https://d1nw187rmwcpt3.cloudfront.net/next.webp"
+                        src="https://d3e25fyg0500ti.cloudfront.net/next.webp"
                         width={24}
                         height={24}
                         className="h-6 w-6 xs:h-4 xs:w-4"
@@ -55,7 +55,7 @@ const About = () => {
                     </div>
                     <div className="flex flex-row xs:justify-center xs:items-center ">
                       <Image
-                        src="https://d1nw187rmwcpt3.cloudfront.net/next.webp"
+                        src="https://d3e25fyg0500ti.cloudfront.net/next.webp"
                         width={24}
                         height={24}
                         className="h-6 w-6 xs:h-4 xs:w-4"
@@ -85,7 +85,7 @@ const About = () => {
                 controls
                 className="w-full h-full xl:h-1/2 lg:w-4/5 object-contain rounded-xl"
               >
-                <source src="https://d1nw187rmwcpt3.cloudfront.net/Technical+Services.mp4" type="video/mp4" />
+                <source src="https://d3e25fyg0500ti.cloudfront.net/Technical+Services.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -95,7 +95,7 @@ const About = () => {
             <div className="flex flex-col lg:w-full justify-center gap-2 items-center mt-5 border-slate-900 text-center">
               <div className="flex w-full object-contain">
                 <video loop autoPlay muted width="100%" height="100%">
-                  <source src="https://d1nw187rmwcpt3.cloudfront.net/logo-animation.mp4" type="video/mp4"/>
+                  <source src="https://d3e25fyg0500ti.cloudfront.net/logo-animation.mp4" type="video/mp4"/>
                 </video>
               </div>
             </div>

@@ -10,21 +10,21 @@ const Home = () => {
       title: "Automation",
       content:
         "Unlock innovation and creativity and achieve outcomes faster with automation.",
-      image: "https://d1nw187rmwcpt3.cloudfront.net/Automation.webp",
+      image: "https://d3e25fyg0500ti.cloudfront.net/Automation.webp",
       link: "services/automation",
     },
     {
       title: "Consulting",
       content:
         "Guiding Your Project Towards Success: Expert Consulting Every Step of the Way.",
-      image: "https://d1nw187rmwcpt3.cloudfront.net/Consulting.webp",
+      image: "https://d3e25fyg0500ti.cloudfront.net/Consulting.webp",
       link: "services/consulting",
     },
     {
       title: "Data & Insights",
       content:
         "The right people get the right information at the right time with connected data.",
-      image: "https://d1nw187rmwcpt3.cloudfront.net/Data+Analysist.webp",
+      image: "https://d3e25fyg0500ti.cloudfront.net/Data+Analysist.webp",
       link: "services/datainsights",
     },
   ];

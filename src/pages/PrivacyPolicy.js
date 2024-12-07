@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
           <div className="w-full flex xs:gap-4 sm:gap-4 md:gap-4 justify-between items-center max-w-7xl mx-auto">
             <Image
               className="w-40 xs:w-28 sm:w-32 md:w-52 h-10 object-contain"
-              src="https://d1nw187rmwcpt3.cloudfront.net/usam_logo.webp"
+              src="https://d3e25fyg0500ti.cloudfront.net/usam_logo.webp"
               alt=""
               width={208}
               height={40}
@@ -21,14 +21,14 @@ const PrivacyPolicy = () => {
             <div className="flex flex-row gap-2 xs:gap-4">
               <Image
                 className="w-40 xs:w-28 sm:w-32 md:w-52 h-12 object-contain"
-                src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskBlack.webp"
+                src="https://d3e25fyg0500ti.cloudfront.net/AutodeskBlack.webp"
                 alt=""
                 width={208}
                 height={48}
               />
               <Image
                 className="w-40 sm:w-32 xs:w-28 md:w-36 h-12 object-contain"
-                src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.webp"
+                src="https://d3e25fyg0500ti.cloudfront.net/autodesk-authorised-developer-logo-rgb-black.webp"
                 alt=""
                 width={208}
                 height={48}

@@ -11,16 +11,16 @@ const Sliders = () => {
   const glideRef = useRef(null);
 
   const images = [
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/Andritz.webp", alt: "Andritz", width: 96, height: 48, className: "m-auto h-12 w-24 object-contain" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/BlueScope.webp", alt: "BlueScope", width: 112, height: 64, className: "m-auto h-16 relative -top-2 w-28 object-contain" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/CRN.webp", alt: "CRN", width: 96, height: 48, className: "m-auto h-12 w-auto" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/Danieli.webp", alt: "Danieli", width: 112, height: 48, className: "m-auto h-12 w-28 object-contain" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/Dellner.webp", alt: "Dellner", width: 96, height: 48, className: "m-auto h-12 w-auto" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/Diameler.webp", alt: "Diameler", width: 96, height: 48, className: "m-auto h-12 w-auto" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/Isro.webp", alt: "Isro", width: 96, height: 48, className: "m-auto h-12 w-auto" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/KSM.webp", alt: "KSM", width: 96, height: 48, className: "m-auto h-12 w-auto" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/L%26T.webp", alt: "L&T", width: 96, height: 192, className: "m-auto h-24 relative -top-6 w-auto" },
-    { src: "https://d1nw187rmwcpt3.cloudfront.net/N%26V.webp", alt: "N&V", width: 96, height: 48, className: "m-auto h-12 w-auto" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/Andritz.webp", alt: "Andritz", width: 96, height: 48, className: "m-auto h-12 w-24 object-contain" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/BlueScope.webp", alt: "BlueScope", width: 112, height: 64, className: "m-auto h-16 relative -top-2 w-28 object-contain" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/CRN.webp", alt: "CRN", width: 96, height: 48, className: "m-auto h-12 w-auto" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/Danieli.webp", alt: "Danieli", width: 112, height: 48, className: "m-auto h-12 w-28 object-contain" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/Dellner.webp", alt: "Dellner", width: 96, height: 48, className: "m-auto h-12 w-auto" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/Diameler.webp", alt: "Diameler", width: 96, height: 48, className: "m-auto h-12 w-auto" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/Isro.webp", alt: "Isro", width: 96, height: 48, className: "m-auto h-12 w-auto" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/KSM.webp", alt: "KSM", width: 96, height: 48, className: "m-auto h-12 w-auto" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/L%26T.webp", alt: "L&T", width: 96, height: 192, className: "m-auto h-24 relative -top-6 w-auto" },
+    { src: "https://d3e25fyg0500ti.cloudfront.net/N%26V.webp", alt: "N&V", width: 96, height: 48, className: "m-auto h-12 w-auto" },
   ];
 
   useEffect(() => {

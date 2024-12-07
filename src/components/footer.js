@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex w-full lg:w-1/4 xl:w-1/3 2xl:w-2/4 justify-center items-center xs:flex-row sm:flex-row md:flex-row lg:flex-col gap-8">
           <Image
             className="w-40 xs:w-28 sm:w-32 md:w-52 h-12 lg:w-40 2xl:w-52 object-contain"
-            src="https://d1nw187rmwcpt3.cloudfront.net/UsamWhite.webp"
+            src="https://d3e25fyg0500ti.cloudfront.net/UsamWhite.webp"
             alt="UsamWhite"
             width={160}
             height={48}
@@ -22,7 +22,7 @@ const Footer = () => {
           />
           <Image
             className="w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain"
-            src="https://d1nw187rmwcpt3.cloudfront.net/AutodeskWhite.webp"
+            src="https://d3e25fyg0500ti.cloudfront.net/AutodeskWhite.webp"
             alt="AutodeskWhite"
             width={160}
             height={48}
@@ -30,7 +30,7 @@ const Footer = () => {
           />
           <Image
             className="w-40 xs:w-28 sm:w-32 md:w-52 lg:w-40 h-12 2xl:w-52 object-contain"
-            src="https://d1nw187rmwcpt3.cloudfront.net/autodesk-authorised-developer-logo-rgb-white.webp"
+            src="https://d3e25fyg0500ti.cloudfront.net/autodesk-authorised-developer-logo-rgb-white.webp"
             alt="Autodesk Authorised Developer"
             width={160}
             height={48}
@@ -115,7 +115,7 @@ const Footer = () => {
             >
               <Image
                 className="w-10 h-10"
-                src="https://d1nw187rmwcpt3.cloudfront.net/youtube.webp"
+                src="https://d3e25fyg0500ti.cloudfront.net/youtube.webp"
                 alt="YouTube"
                 width={40}
                 height={40}

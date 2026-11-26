@@ -6,6 +6,7 @@ import { fadeScaleIn, textVariant } from "@/utils/motion";
 import SectionWrapper from "@/section/SectionWrapper";
 import Link from "next/link";
 
+
 const Projects = () => {
   const projects = [
     {
@@ -14,7 +15,8 @@ const Projects = () => {
       title: "Gap Hunter",
       description:
         "GapHunter automatically detects any gaps in your sketches and zooms directly to the area, allowing you to quickly and accurately address issues that could impact your design.",
-      link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=8342440050065650514&appLang=en&os=Win64&mode=preview",
+      // link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=8342440050065650514&appLang=en&os=Win64&mode=preview",
+      link: "https://marketplace.autodesk.com/apps/608bf6ea-adbf-409b-8365-abb4eec0008c?priceId=23743976-ff73-4afe-955a-2c94f234a05a",
     },
     {
       imgSrc: "https://d3e25fyg0500ti.cloudfront.net/2.webp",
@@ -22,7 +24,8 @@ const Projects = () => {
       title: "Dim Check",
       description:
         "DimCheck scans your drawings to identify any overridden dimensions, ensuring that all measurements adhere to your specified standards",
-      link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=4214486912770355635&appLang=en&os=Win64&mode=preview",
+      // link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=4214486912770355635&appLang=en&os=Win64&mode=preview",
+      link: "https://marketplace.autodesk.com/apps/62693f07-e665-474d-8c6b-a75164fc7dfb?priceId=5a2d9f93-e1dd-4db0-a4f6-ec369bd928e7",
     },
     {
       imgSrc: "https://d3e25fyg0500ti.cloudfront.net/3.webp",
@@ -30,7 +33,16 @@ const Projects = () => {
       title: "Balloon Master",
       description:
         "BalloonMaster, the ultimate tool for ballooning dimensions specifically for inspection purposes in Inventor.",
-      link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=630776272717761885&appLang=en&os=Win64&mode=preview",
+      // link: "https://apps.autodesk.com/INVNTOR/en/Detail/Index?id=630776272717761885&appLang=en&os=Win64&mode=preview",
+      link: "https://marketplace.autodesk.com/apps/d4ac2239-59dc-4686-9f78-3e7bba0d0049?priceId=4a520971-6b34-4e96-8ab1-089d7ca13df9",
+    },
+    {
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/SlotMate.png",
+      alt: "SlotMate",
+      title: "SlotMate",
+      description:
+        "SlotMate automatically creates slot constraints and enables contact behavior for cylindrical components in Autodesk Inventor assemblies.",
+      link: "https://marketplace.autodesk.com/apps/8c1b4871-5500-4320-92b4-c20129093ca6?priceId=0e445fbf-fd3a-485e-9e3a-0b858cf98681",
     },
   ];
   const revit = [
@@ -40,7 +52,16 @@ const Projects = () => {
       title: "Elbow Rotate",
       description:
         "'Elbow Rotate'  is a Revit® add-in that allows precise, adjustable rotation of pipe-fitting elbows beyond the default 90-degree increments for enhanced flexibility.",
-      link: "https://apps.autodesk.com/RVT/en/Detail/Index?id=1819107434539299929&appLang=en&os=Win64",
+      // link: "https://apps.autodesk.com/RVT/en/Detail/Index?id=1819107434539299929&appLang=en&os=Win64",
+      link: "https://marketplace.autodesk.com/apps/33e39db7-7ac2-4669-b2d9-684c28c3fae2?priceId=cdacfabe-2986-48cb-a67c-b4f80a1b803d",
+    },
+    {
+      imgSrc: "https://d3e25fyg0500ti.cloudfront.net/TextManager.png",
+      alt: "Text Manager",
+      title: "Text Manager",
+      description:
+        "A tool designed to help Autodesk® Revit® users efficiently handle text-related tasks within their projects.",
+      link: "https://marketplace.autodesk.com/apps/9e0b8bd7-cd7a-4ac2-83cf-077636604631?priceId=0cb7f75c-a125-4264-8976-8814ea88aa7e",
     },
   ];
   return (
@@ -48,6 +69,7 @@ const Projects = () => {
       <div className="flex flex-col gap-8 w-[90%] xs:w-[95%] mx-auto">
         <motion.div variants={textVariant()}>
           <div className={styles.sectionSubText}>Our Products</div>
+
 
           <div className="2xl:text-3xl xl:text-3xl lg:text-2xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
             For Autodesk Inventor
@@ -150,9 +172,10 @@ const Projects = () => {
           ))}
         </div>
 
+
         {/* -------------------------------------------------------- lg ---------------------------------------------------- */}
-        
-        <div className="lg:flex lg:justify-between lg:flex-row lg:flex-nowrap w-full 2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
+       
+        <div className="lg:flex lg:flex-row lg:flex-wrap lg:justify-start lg:gap-x-12 lg:gap-y-16 w-full 2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -198,12 +221,13 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
 
         {/* ================= */}
         <div className="lg:flex  2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden lg:text-2xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
             For Autodesk Revit®
           </div>
-        <div className="lg:flex lg:justify-between lg:flex-row lg:flex-nowrap w-full 2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
+        <div className="lg:flex lg:flex-row lg:flex-wrap lg:justify-start lg:gap-x-12 lg:gap-y-16 w-full 2xl:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
           {revit.map((project, index) => (
             <motion.div
               key={index}
@@ -250,9 +274,11 @@ const Projects = () => {
           ))}
         </div>
 
+
         {/* --------------------------------------------------------2xl ---------------------------------------------------- */}
 
-        <div className="2xl:flex justify-around w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
+
+        <div className="2xl:flex flex-wrap justify-start gap-x-12 gap-y-16 w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -297,11 +323,12 @@ const Projects = () => {
           ))}
         </div>
 
+
         {/* ========= */}
         <div className="2xl:flex w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden 2xl:text-3xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
           For Autodesk Revit®
         </div>
-        <div className="2xl:flex w-[90%] mx-auto lg:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
+        <div className="2xl:flex flex-wrap justify-start gap-x-12 gap-y-16 w-full lg:hidden xl:hidden md:hidden sm:hidden xs:hidden ">
           {revit.map((project, index) => (
             <motion.div
               key={index}
@@ -346,9 +373,11 @@ const Projects = () => {
           ))}
         </div>
 
+
         {/* --------------------------------------------------------xl ---------------------------------------------------- */}
 
-        <div className="xl:flex justify-around w-full lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden ">
+
+        <div className="xl:flex flex-wrap justify-start gap-x-12 gap-y-16 w-full lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden ">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -398,7 +427,7 @@ const Projects = () => {
         <div className="xl:flex lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden  xl:text-3xl font-semibold sm:text-2xl xs:text-xl text-gray-700">
           For Autodesk Revit®
         </div>
-        <div className="xl:flex w-[96%] mx-auto lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden ">
+        <div className="xl:flex flex-wrap justify-start gap-x-12 gap-y-16 w-full lg:hidden 2xl:hidden md:hidden sm:hidden xs:hidden ">
           {revit.map((project, index) => (
             <motion.div
               key={index}
@@ -445,7 +474,9 @@ const Projects = () => {
           ))}
         </div>
 
+
         {/* --------------------------------------------------------md ---------------------------------------------------- */}
+
 
         <div className="md:flex 2xl:hidden xl:hidden lg:hidden sm:hidden xs:hidden xs:flex-col sm:flex-col md:flex-1 md:flex-wrap md:gap-8 md:justify-center w-full justify-between">
           {projects.map((project, index) => (
@@ -540,7 +571,10 @@ const Projects = () => {
           ))}
         </div>
 
+
         {/* ==============================================sm=============================== */}
+
+
 
 
       </div>
@@ -548,4 +582,8 @@ const Projects = () => {
   );
 };
 
+
 export default SectionWrapper(Projects, "projects");
+
+
+

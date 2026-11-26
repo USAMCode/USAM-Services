@@ -54,7 +54,7 @@ const Services = () => {
             className="text-lg 2xl:w-5/6 xl:w-[90%] gap-2 md:gap-0 sm:gap-0 justify-center items-center flex flex-col"
           >
             <div className="2xl:text-xl xl:text-xl md:text-lg xs:text-lg font-semibold text-gray-900">
-              With over 34 years of experience in the CAD/BIM domain, We at USAM
+              With over 36 years of experience in the CAD/BIM domain, We at USAM
               have identified critical areas where design companies often lag
             </div>
             <div className="flex flex-col gap-4 xs:gap-1 mt-5 xl:mt-3 lg:mt-1">
